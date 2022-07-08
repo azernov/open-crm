@@ -3,4 +3,5 @@ CRM с открытым исходным кодом. Разрабатывает�
 
 ## Проект в Figma
 * [🔗 Диаграмма интерфейсов](https://www.figma.com/file/cirR0hSIurfw7REWftgjQi/OpenCRM-Interface-Flow)
-* [🔗 Прототипы интерфейсов](https://www.figma.com/file/vOYxwLEXkzuY0nLzkc57iM/OpenCRM)
+* [🔗 Прототипы интерфейсов](https://www.figma.com/file/vOYxwLEXkzuY0nLzkc57iM/OpenCRM-Prototypes)
+* [🔗 Дизайн интерфейсов](https://www.figma.com/file/28gd2JrZO28FCN9PCKM4qK/OpenCRM-Design)
