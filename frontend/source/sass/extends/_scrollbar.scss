@@ -1,0 +1,21 @@
+%scrollbar {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $color_neutral_20;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color_neutral_60;
+        outline: none;
+        border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}

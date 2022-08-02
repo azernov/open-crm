@@ -1,0 +1,14 @@
+include ../common.blocks/**/*.pug
+html
+    head
+        title Draft
+        link(rel='stylesheet' type='text/css' href='css/app.css')
+    body
+        +base
+            +button Кнопка
+            +button.button_disabled Кнопка отключена
+            +button.button_size_s Малая кнопка
+            +button.button_size_xs Крохотная кнопка
+            +button.button_size_xs.button_disabled Крохотная кнопка отключена
+            +button.button_size_xs.button_transparent Крохотная кнопка отключена
+            +button.button_size_s.button_transparent.button_disabled Крохотная кнопка отключена

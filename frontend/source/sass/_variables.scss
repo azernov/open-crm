@@ -1,0 +1,132 @@
+/*********************************************
+ * Sizes&Spaces
+ *********************************************/
+$gap_xs: .5rem;
+$gap_s: 1rem;
+$gap_m: 2rem;
+$gap_l: 4rem;
+$gap_xl: 8rem;
+
+/*********************************************
+ * Text styles
+ *********************************************/
+
+//font family
+$fontfamily_text: 'Rubik';
+
+//Line height
+$lineheight_text: 1.2;
+
+//Sizes
+$fontsize_text_xs: 1rem;
+$fontsize_text_s: 1.2rem;
+$fontsize_text_m: 1.4rem;
+$fontsize_text_l: 1.6rem;
+$fontsize_text_xl: 2rem;
+
+//Weights
+$fontweight_text_xs: 400;
+$fontweight_text_s: 400;
+$fontweight_text_m: 400;
+$fontweight_text_l: 400;
+$fontweight_text_xl: 400;
+
+//Bold text font-weight
+$fontweight_text_bold: 500;
+
+/*********************************************
+ * Text styles
+ *********************************************/
+
+//font-family
+$fontfamily_header: 'Rubik';
+
+//Line height
+$lineheight_header: 1.2;
+
+//Sizes
+$fontsize_header_xs: 1.6rem;
+$fontsize_header_s: 2rem;
+$fontsize_header_m: 2.4rem;
+$fontsize_header_l: 3.2rem;
+$fontsize_header_xl: 3.6rem;
+
+//Weights
+$fontweight_header_xs: 500;
+$fontweight_header_s: 500;
+$fontweight_header_m: 500;
+$fontweight_header_l: 500;
+$fontweight_header_xl: 500;
+
+//Bold text font-weight
+$fontweight_header_bold: 500;
+
+/*********************************************
+ * Colors
+ *********************************************/
+
+//Primary
+$color_primary_10: #F5FBF3;
+$color_primary_20: #EBF6E6;
+$color_primary_40: #D0EBC7;
+$color_primary_60: #9CD388;
+$color_primary_80: #5AB639;
+$color_primary_100: #4DB02A;
+
+//Secondary
+$color_secondary_10: #F5FCFF;
+$color_secondary_20: #DEF3FE;
+$color_secondary_40: #ADE0FC;
+$color_secondary_60: #81CFFB;
+$color_secondary_80: #5FC2FA;
+$color_secondary_100: #3AB4F8;
+$color_secondary_200: #073954;
+
+//Neutral
+$color_neutral_0: #FFFFFF;
+$color_neutral_10: #F7F7F7;
+$color_neutral_20: #F0F0F0;
+$color_neutral_40: #BFBFBF;
+$color_neutral_60: #888888;
+$color_neutral_80: #5A5A5A;
+$color_neutral_100: #000000;
+
+//Error
+$color_error_20: #F6D3D3;
+$color_error_40: #EDAAAA;
+$color_error_60: #E17474;
+$color_error_80: #D64242;
+$color_error_100: #CC1414;
+
+//Success
+$color_success_20: #D8F4CF;
+$color_success_40: #AEE799;
+$color_success_60: #82DB62;
+$color_success_80: #59CE2F;
+$color_success_100: #33C300;
+
+//Warning
+$color_warning_20: #FFFACE;
+$color_warning_40: #FEF49E;
+$color_warning_60: #FCED63;
+$color_warning_80: #FCE83C;
+$color_warning_100: #FAE105;
+
+
+/*********************************************
+ * Radius
+ *********************************************/
+$radius_m: 1rem;
+$radius_s: .5rem;
+
+/*********************************************
+ * Shadows
+ *********************************************/
+$shadow_m: 0 0 1rem rgba(0, 0, 0, 0.16);
+$shadow_l: 0 0 2.5rem rgba(0, 0, 0, 0.16);
+
+/*********************************************
+ * Animation
+ *********************************************/
+$animation_speed_m: .3s;
+$animation_type: ease;
