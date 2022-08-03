@@ -1,0 +1,28 @@
+.button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    text-decoration: none;
+
+    border-color: $color_primary_100;
+    border-width: $border_width_m;
+    border-style: solid;
+    border-radius: $radius_m;
+
+    background-color: $color_primary_100;
+    color: $color_neutral_0;
+    font-size: $fontsize_text_l;
+    line-height: $lineheight_text;
+    padding: calc(#{$gap_m} - #{$border_width_m * 2}) calc(#{$gap_l} - #{$border_width_m * 2});
+
+    transition: all $animation_speed_m $animation_type;
+
+    &:hover {
+        background-color: $color_primary_80;
+        border-color: $color_primary_80;
+        box-shadow: $shadow_m;
+    }
+}

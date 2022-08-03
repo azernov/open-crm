@@ -1,0 +1,9 @@
+.button.button_color_secondary {
+    background-color: $color_secondary_100;
+    border-color: $color_secondary_100;
+
+    &:hover {
+        background-color: $color_secondary_80;
+        border-color: $color_secondary_80;
+    }
+}

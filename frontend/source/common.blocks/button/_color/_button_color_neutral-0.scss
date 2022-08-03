@@ -1,0 +1,11 @@
+.button.button_color_neutral-0 {
+    background-color: $color_neutral_0;
+    border-color: $color_neutral_0;
+    color: $color_neutral_100;
+
+    &:hover {
+        background-color: $color_neutral_20;
+        border-color: $color_neutral_20;
+        color: $color_neutral_80;
+    }
+}

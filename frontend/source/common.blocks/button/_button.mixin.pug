@@ -1,0 +1,6 @@
+mixin button
+    a.button(href='#' class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,6 @@
+.button.button_disabled {
+    background-color: $color_neutral_40;
+    border-color: $color_neutral_40;
+    pointer-events: none;
+    color: $color_neutral_0;
+}
