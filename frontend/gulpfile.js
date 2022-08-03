@@ -159,8 +159,8 @@ const svgSpriteBuild = () => {
                     sprite: "../sprite.svg",
                     render: {
                         scss: {
-                            dest: '../../../sass/_sprite.scss',
-                            template: config.dir.source.sass + "templates/_sprite_template.scss"
+                            dest: '../../../../source/common.blocks/icon/_icon.scss',
+                            template: config.dir.source.sass + "templates/_sprite_template"
                         }
                     },
                     example: true
