@@ -35,31 +35,31 @@ $fontweight_text_xl: 400;
 $fontweight_text_bold: 500;
 
 /*********************************************
- * Text styles
+ * Titles styles
  *********************************************/
 
 //font-family
-$fontfamily_header: 'Rubik';
+$fontfamily_title: 'Rubik';
 
 //Line height
-$lineheight_header: 1.2;
+$lineheight_title: 1.2;
 
 //Sizes
-$fontsize_header_xs: 1.6rem;
-$fontsize_header_s: 2rem;
-$fontsize_header_m: 2.4rem;
-$fontsize_header_l: 3.2rem;
-$fontsize_header_xl: 3.6rem;
+$fontsize_title_xs: 1.6rem;
+$fontsize_title_s: 2rem;
+$fontsize_title_m: 2.4rem;
+$fontsize_title_l: 3.2rem;
+$fontsize_title_xl: 3.6rem;
 
 //Weights
-$fontweight_header_xs: 500;
-$fontweight_header_s: 500;
-$fontweight_header_m: 500;
-$fontweight_header_l: 500;
-$fontweight_header_xl: 500;
+$fontweight_title_xs: 500;
+$fontweight_title_s: 500;
+$fontweight_title_m: 500;
+$fontweight_title_l: 500;
+$fontweight_title_xl: 500;
 
 //Bold text font-weight
-$fontweight_header_bold: 500;
+$fontweight_title_bold: 500;
 
 /*********************************************
  * Colors
@@ -112,6 +112,11 @@ $color_warning_60: #FCED63;
 $color_warning_80: #FCE83C;
 $color_warning_100: #FAE105;
 
+
+/*********************************************
+ * Borders
+ *********************************************/
+$border_width_m: 2px;
 
 /*********************************************
  * Radius

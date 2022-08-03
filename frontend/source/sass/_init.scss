@@ -8,10 +8,8 @@ html {
 }
 
 body {
-    display: flex;
-
-    font-size: $fontsize_text_m;
-    font-weight: $fontweight_text_m;
+    @extend %flex-column-hcenter-vstart-nowrap;
+    @extend %text-m;
 
     color: $color_neutral_100;
     background-color: $color_neutral_0;

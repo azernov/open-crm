@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////
+//    BASE TEXT&TITLE STYLES
+////////////////////////////////////////////////////
+
+//Text styles
+%text-xl {
+    font-family: $fontfamily_text;
+    font-size: $fontsize_text_xl;
+    font-weight: $fontweight_text_xl;
+    line-height: $lineheight_text;
+}
+
+%text-l {
+    font-family: $fontfamily_text;
+    font-size: $fontsize_text_l;
+    font-weight: $fontweight_text_l;
+    line-height: $lineheight_text;
+}
+
+%text-m {
+    font-family: $fontfamily_text;
+    font-size: $fontsize_text_m;
+    font-weight: $fontweight_text_m;
+    line-height: $lineheight_text;
+}
+
+%text-s {
+    font-family: $fontfamily_text;
+    font-size: $fontsize_text_s;
+    font-weight: $fontweight_text_s;
+    line-height: $lineheight_text;
+}
+
+%text-xs {
+    font-family: $fontfamily_text;
+    font-size: $fontsize_text_xs;
+    font-weight: $fontweight_text_xs;
+    line-height: $lineheight_text;
+}
+
+
+//Title styles
+%title-xl {
+    font-family: $fontfamily_title;
+    font-size: $fontsize_title_xl;
+    font-weight: $fontweight_title_xl;
+    line-height: $lineheight_title;
+}
+
+%title-l {
+    font-family: $fontfamily_title;
+    font-size: $fontsize_title_l;
+    font-weight: $fontweight_title_l;
+    line-height: $lineheight_title;
+}
+
+%title-m {
+    font-family: $fontfamily_title;
+    font-size: $fontsize_title_m;
+    font-weight: $fontweight_title_m;
+    line-height: $lineheight_title;
+}
+
+%title-s {
+    font-family: $fontfamily_title;
+    font-size: $fontsize_title_s;
+    font-weight: $fontweight_title_s;
+    line-height: $lineheight_title;
+}
+
+%title-xs {
+    font-family: $fontfamily_title;
+    font-size: $fontsize_title_xs;
+    font-weight: $fontweight_title_xs;
+    line-height: $lineheight_title;
+}
