@@ -2,7 +2,7 @@ const gulp = require('gulp'),
     //rimraf = require('rimraf'),
     pug = require('gulp-pug'),
     sass = require('gulp-sass')(require('sass')),
-    sassGlob = require('gulp-sass-glob'),
+    sassGlob = require('@artprog/gulp-sass-glob'),
     pugIncludeGlob = require('pug-include-glob'),
     inlineimage = require('gulp-inline-image'),
     prefix = require('gulp-autoprefixer'),
@@ -65,7 +65,9 @@ const compileSass = () => {
     ])
         .pipe(plumber())
         .pipe(sourcemaps.init())
-        .pipe(sassGlob())
+        .pipe(sassGlob({
+            nosort: true
+        }))
         .pipe(sass().on('error', notify.onError(
             {
                 message: "<%= error.message %>",
@@ -219,6 +221,7 @@ gulp.task('watch', function (done) {
 gulp.task('browser-sync', function () {
     return browserSync.init({
         port: 1337,
+        startPath: '/draft.html',
         server: {
             baseDir: config.dir.target.dist
         }
