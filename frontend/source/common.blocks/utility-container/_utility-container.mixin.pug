@@ -1,0 +1,6 @@
+mixin utility-container
+    .utility-container(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

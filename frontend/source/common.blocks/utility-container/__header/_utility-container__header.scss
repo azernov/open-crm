@@ -1,0 +1,6 @@
+.utility-container__header {
+    padding: $gap_l;
+    background: $color_primary_100;
+    color: $color_neutral_0;
+    @extend %title-l;
+}

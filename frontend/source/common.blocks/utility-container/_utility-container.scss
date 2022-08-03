@@ -1,0 +1,8 @@
+/*****************************************************
+ * Utility block for displaying other blocks
+ * in different states
+ ******************************************************/
+.utility-container {
+    @extend %flex-column-hstretch-vstart-nowrap;
+    width: 100%;
+}

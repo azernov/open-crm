@@ -1,0 +1,6 @@
+mixin utility-container__header
+    .utility-container__header(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
