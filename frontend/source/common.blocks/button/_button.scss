@@ -25,4 +25,10 @@
         border-color: $color_primary_80;
         box-shadow: $shadow_m;
     }
+
+    .icon {
+        width: $icon_size_s;
+        height: $icon_size_s;
+        margin-right: $gap_xs;
+    }
 }

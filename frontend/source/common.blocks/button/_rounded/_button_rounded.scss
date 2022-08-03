@@ -1,0 +1,11 @@
+.button.button_rounded {
+    border-radius: $gap_xl;
+
+    &.button_size_s {
+        border-radius: $gap_xl;
+    }
+
+    &.button_size_xs {
+        border-radius: $gap_xl;
+    }
+}

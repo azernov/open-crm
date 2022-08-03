@@ -1,0 +1,21 @@
+.button.button_no-text {
+    padding: $gap_m;
+
+    &.button_size_s {
+        padding: $gap_s;
+        .icon {
+            margin: 0;
+        }
+    }
+
+    &.button_size_xs {
+        padding: $gap_xs;
+        .icon {
+            margin: 0;
+        }
+    }
+
+    .icon {
+        margin: 0;
+    }
+}
