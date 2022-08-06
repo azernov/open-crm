@@ -1,0 +1,14 @@
+.textbox__controls {
+    display: block;
+    position: absolute;
+    right: $gap_s;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .button {
+        margin-right: $gap_xs;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

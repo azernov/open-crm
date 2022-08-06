@@ -1,0 +1,17 @@
+.textbox.textbox_fixable_edit {
+    .textbox__input {
+        //Определяем правый отступ по размеру кнопок и отступов между ними
+        padding-right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_xs + ($gap_s * 2 + $gap_s) + $gap_s);
+    }
+
+    .textbox__controls {
+        .button:nth-child(1) {
+            display: none;
+        }
+
+        .button:nth-child(2),
+        .button:nth-child(3) {
+            display: inline-flex;
+        }
+    }
+}

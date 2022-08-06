@@ -1,0 +1,17 @@
+.textbox__input {
+    @extend %text-m;
+    width: 100%;
+    padding: $gap_m;
+    border: 1px solid $color_neutral_80;
+    border-radius: $radius_m;
+    transition: all $animation_speed_m $animation_type;
+
+    &::placeholder {
+        color: $color_neutral_40;
+    }
+
+    &:focus {
+        border-color: $color_neutral_100;
+        box-shadow: $shadow_m;
+    }
+}

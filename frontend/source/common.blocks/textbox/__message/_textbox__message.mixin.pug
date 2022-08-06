@@ -1,0 +1,6 @@
+mixin textbox__message
+    .textbox__message(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

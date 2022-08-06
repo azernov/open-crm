@@ -1,0 +1,6 @@
+mixin textbox__wrapper
+    label.textbox__wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,40 @@
+.textbox.textbox_fixable {
+    .textbox__input {
+        //Определяем правый отступ по размеру кнопок и отступов между ними
+        padding-right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_s);
+    }
+
+    &:not(.textbox_fixable_edit) {
+        .textbox__wrapper {
+            pointer-events: none;
+        }
+
+        .textbox__controls {
+            pointer-events: all;
+        }
+
+        .textbox__input {
+            pointer-events: none;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 0;
+            background: transparent;
+        }
+
+        .textbox__label {
+            background: transparent;
+        }
+    }
+
+    .textbox__controls {
+        .button:nth-child(1) {
+            display: inline-flex;
+        }
+
+        .button:nth-child(2),
+        .button:nth-child(3) {
+            display: none;
+        }
+    }
+}

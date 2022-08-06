@@ -1,0 +1,13 @@
+.textbox.textbox_error {
+    .textbox__input {
+        border-color: $color_error_100;
+    }
+
+    .textbox__message {
+        color: $color_error_100;
+    }
+
+    .textbox__label {
+        color: $color_error_100;
+    }
+}

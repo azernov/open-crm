@@ -1,0 +1,5 @@
+.textbox__message {
+    @extend %text-xs;
+    color: $color_neutral_80;
+    margin-top: $gap_xs;
+}

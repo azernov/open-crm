@@ -1,4 +1,9 @@
 .utility-container__body {
     padding: $gap_l;
     background-color: $color_neutral_20;
+
+    .textbox {
+        margin: 0 $gap_m $gap_m 0;
+        min-width: 40rem;
+    }
 }

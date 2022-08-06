@@ -1,0 +1,15 @@
+.textbox__label {
+    @extend %text-xs;
+    line-height: 1;
+    white-space: nowrap;
+    max-width: 100%;
+    color: $color_neutral_80;
+    background: $color_neutral_0;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -.6rem;
+    left: $gap_m;
+    padding: calc($gap_xs / 2);
+    border-radius: $radius_xs;
+}
