@@ -1,0 +1,6 @@
+mixin dropdown-select__message
+    .dropdown-select__message(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

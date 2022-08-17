@@ -1,0 +1,45 @@
+.dropdown-select.dropdown-select_fixable {
+    .dropdown-select__input {
+        //Определяем правый отступ по размеру кнопок и отступов между ними
+        padding-right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_s);
+    }
+
+    &:not(.dropdown-select_fixable_edit) {
+        .dropdown-select__wrapper {
+            pointer-events: none;
+        }
+
+        .dropdown-select__controls {
+            pointer-events: all;
+        }
+
+        .dropdown-select__input {
+            pointer-events: none;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 0;
+            background: transparent;
+        }
+
+        .dropdown-select__label {
+            background: transparent;
+        }
+    }
+
+    .dropdown-select__controls {
+        .button:nth-child(1) {
+            display: inline-flex;
+        }
+
+        .button:nth-child(2),
+        .button:nth-child(3) {
+            display: none;
+        }
+    }
+
+    .dropdown-select__arrow {
+        display: none;
+        right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_s);
+    }
+}

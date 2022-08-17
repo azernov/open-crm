@@ -1,0 +1,6 @@
+mixin dropdown-select__input-wrapper
+    .dropdown-select__input-wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

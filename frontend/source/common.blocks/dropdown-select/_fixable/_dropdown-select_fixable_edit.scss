@@ -1,0 +1,25 @@
+.dropdown-select.dropdown-select_fixable_edit {
+    .dropdown-select__input {
+        //Определяем правый отступ по размеру кнопок и отступов между ними
+        padding-right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_xs + ($gap_s * 2 + $gap_s) + $gap_s);
+    }
+
+    .dropdown-select__controls {
+        .button:nth-child(1) {
+            display: none;
+        }
+
+        .button:nth-child(2),
+        .button:nth-child(3) {
+            display: inline-flex;
+        }
+    }
+
+    .dropdown-select__arrow {
+        right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_xs + ($gap_s * 2 + $gap_s));
+    }
+
+    .dropdown-select__list-wrapper {
+        display: block;
+    }
+}

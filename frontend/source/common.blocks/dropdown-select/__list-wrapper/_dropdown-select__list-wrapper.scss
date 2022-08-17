@@ -1,0 +1,12 @@
+.dropdown-select__list-wrapper {
+    display: none;
+    position: absolute;
+    top: calc(100% + #{$gap_xs});
+    @extend %scrollbar;
+    background: $color_neutral_0;
+    width: 100%;
+    max-height: 15rem;
+    overflow-y: auto;
+    border-radius: $radius_m;
+    box-shadow: $shadow_m;
+}

@@ -121,4 +121,22 @@ html
                     +textbox(label="Просто поле" message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_success.textbox_size_s
 
 
+            +utility-container
+                +utility-container__header
+                    +utility-container__title .dropdown-select
+                +utility-container__body
+                    +dropdown-select
+                    +dropdown-select
+                    +dropdown-select(message="Вспомогательный текст")
+                    +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1")
+                    +dropdown-select(label="Название поля" message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_error
+                    +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_success
+
+                    +dropdown-select(fixable=true).dropdown-select_fixable
+                    +dropdown-select(fixable=true).dropdown-select_fixable_edit
+
+                    +dropdown-select.dropdown-select_size_s
+                    +dropdown-select.dropdown-select_size_s.dropdown-select_show-list
+                    +dropdown-select(label="Название поля").dropdown-select_size_s
+
         script(src='js/app.bundle.js')

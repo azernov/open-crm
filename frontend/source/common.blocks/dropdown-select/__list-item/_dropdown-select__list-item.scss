@@ -1,0 +1,9 @@
+.dropdown-select__list-item {
+    @extend %text-s;
+    padding: $gap_s;
+    cursor: pointer;
+
+    &:hover {
+        background: $color_neutral_10;
+    }
+}

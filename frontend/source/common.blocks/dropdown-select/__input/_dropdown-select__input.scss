@@ -1,0 +1,4 @@
+.dropdown-select__input {
+    @extend %input-field-input;
+    cursor: pointer;
+}

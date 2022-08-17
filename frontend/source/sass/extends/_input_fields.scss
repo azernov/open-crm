@@ -1,0 +1,55 @@
+%input-field-label {
+    @extend %text-xs;
+    line-height: 1;
+    white-space: nowrap;
+    max-width: 100%;
+    color: $color_neutral_80;
+    background: $color_neutral_0;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -.6rem;
+    left: $gap_m;
+    padding: calc($gap_xs / 2);
+    border-radius: $radius_xs;
+}
+
+%input-field-input {
+    @extend %text-m;
+    width: 100%;
+    padding: $gap_m;
+    border: 1px solid $color_neutral_80;
+    border-radius: $radius_m;
+    transition: all $animation_speed_m $animation_type;
+    background: $color_neutral_0;
+
+    &::placeholder {
+        color: $color_neutral_40;
+    }
+
+    &:focus {
+        border-color: $color_neutral_100;
+        box-shadow: $shadow_m;
+    }
+}
+
+%input-field-controls {
+    display: block;
+    position: absolute;
+    right: $gap_s;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .button {
+        margin-right: $gap_xs;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+%input-field-message {
+    @extend %text-xs;
+    color: $color_neutral_80;
+    margin-top: $gap_xs;
+}

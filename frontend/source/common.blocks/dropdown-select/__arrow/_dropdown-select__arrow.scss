@@ -1,0 +1,14 @@
+.dropdown-select__arrow {
+    display: block;
+    position: absolute;
+    right: $gap_s;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color_neutral_80;
+    cursor: pointer;
+
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

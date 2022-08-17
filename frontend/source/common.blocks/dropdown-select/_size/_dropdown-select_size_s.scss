@@ -1,0 +1,14 @@
+.dropdown-select.dropdown-select_size_s {
+    .dropdown-select__input {
+        @extend %text-xs;
+        padding: $gap_xs * 1.5;
+        border-radius: $radius_s;
+    }
+
+    .dropdown-select__label {
+        position: relative;
+        background: transparent;
+        padding: 0;
+        left: 0;
+    }
+}

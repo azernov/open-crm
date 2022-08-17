@@ -1,0 +1,28 @@
+mixin dropdown-select
+    .dropdown-select(class!=attributes.class)
+        +dropdown-select__wrapper
+            if attributes.label
+                +dropdown-select__label Название поля
+            +dropdown-select__input-wrapper
+                +dropdown-select__input
+                +dropdown-select__arrow
+                    +icon('chevron-down')
+            if attributes.fixable
+                +dropdown-select__controls
+                    +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                        +icon('pencil')
+                    +button.button_size_xs.button_rounded.button_no-text
+                        +icon('check')
+                    +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                        +icon('trash')
+            +dropdown-select__list-wrapper
+                +dropdown-select__list
+                    +dropdown-select__list-item Пункт 1
+                    +dropdown-select__list-item Пункт 2
+                    +dropdown-select__list-item Очень-очень-очень длинный пункт с огромным и большим названием
+                    +dropdown-select__list-item.dropdown-select__list-item_active Пункт 3
+                    +dropdown-select__list-item Пункт 4
+                    +dropdown-select__list-item Пункт 5
+                    +dropdown-select__list-item Пункт 6
+        if attributes.message
+            +dropdown-select__message= attributes.message

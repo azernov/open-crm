@@ -1,0 +1,13 @@
+.dropdown-select.dropdown-select_error {
+    .dropdown-select__input {
+        border-color: $color_error_100;
+    }
+
+    .dropdown-select__message {
+        color: $color_error_100;
+    }
+
+    .dropdown-select__label {
+        color: $color_error_100;
+    }
+}

@@ -1,0 +1,6 @@
+mixin dropdown-select__list-item
+    .dropdown-select__list-item(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
