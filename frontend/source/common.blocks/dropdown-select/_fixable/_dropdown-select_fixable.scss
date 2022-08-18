@@ -30,6 +30,7 @@
     .dropdown-select__controls {
         .button:nth-child(1) {
             display: inline-flex;
+            margin-right: 0;
         }
 
         .button:nth-child(2),
@@ -40,6 +41,6 @@
 
     .dropdown-select__arrow {
         display: none;
-        right: calc($gap_s + ($gap_s * 2 + $gap_s) + $gap_s);
+        right: calc($gap_s + ($gap_s * 2) + $gap_s + $gap_s);
     }
 }

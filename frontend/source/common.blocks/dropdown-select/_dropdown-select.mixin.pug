@@ -4,7 +4,7 @@ mixin dropdown-select
             if attributes.label
                 +dropdown-select__label Название поля
             +dropdown-select__input-wrapper
-                +dropdown-select__input
+                +dropdown-select__input(value=attributes.value)
                 +dropdown-select__arrow
                     +icon('chevron-down')
             if attributes.fixable

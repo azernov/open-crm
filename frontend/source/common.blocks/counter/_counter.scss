@@ -3,7 +3,7 @@
     @extend %text-s;
     box-shadow: $shadow_m;
     padding: #{$gap_xs * .6} #{$gap_xs * .8};
-    border-radius: $radius_m;
+    border-radius: $radius_m * 2;
     color: $color_neutral_0;
     background-color: $color_error_100;
     text-align: center;
