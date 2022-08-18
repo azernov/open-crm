@@ -1,0 +1,22 @@
+.counter {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+    @extend %text-s;
+    box-shadow: $shadow_m;
+    padding: #{$gap_xs * .6} #{$gap_xs * .8};
+    border-radius: $radius_m;
+    color: $color_neutral_0;
+    background-color: $color_error_100;
+    text-align: center;
+    min-width: #{$gap_xs * .8 + $fontsize_text_s};
+
+    .icon {
+        font-size: inherit;
+    }
+
+    > * {
+        margin-right: $gap_xs;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

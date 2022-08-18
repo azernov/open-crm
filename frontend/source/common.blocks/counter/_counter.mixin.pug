@@ -1,0 +1,8 @@
+mixin counter
+    .counter(class!=attributes.class)
+        if attributes.icon
+            +icon(attributes.icon)
+        else if block
+            block
+        else
+            | "default content"

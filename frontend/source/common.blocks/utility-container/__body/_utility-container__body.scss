@@ -3,13 +3,12 @@
     padding: $gap_l;
     background-color: $color_neutral_20;
 
-    > .button {
+    > * {
         margin: 0 $gap_m $gap_m 0;
     }
 
     > .textbox,
     > .dropdown-select {
-        margin: 0 $gap_m $gap_m 0;
         min-width: 40rem;
     }
 }

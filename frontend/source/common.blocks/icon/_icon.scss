@@ -4,8 +4,9 @@
 //используйте: frontend/source/sass/templates/_sprite_template
 .icon {
     display: inline-block;
-    width: $icon_size_m;
-    height: $icon_size_m;
+    font-size: $icon_size_m;
+    width: 1em;
+    height: #{$lineheight_text}em;
     fill: none;
     stroke: currentColor;
     stroke-width: $border_width_m;

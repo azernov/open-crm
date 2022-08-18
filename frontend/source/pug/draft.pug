@@ -142,7 +142,22 @@ html
 
             +utility-container
                 +utility-container__header
-                    +utility-container__title .
+                    +utility-container__title .counter
                 +utility-container__body
+                    +counter 15
+                    +counter.counter_color_success 15
+                    +counter.counter_color_warning 15
+                    +counter(icon='check')
+                    +counter(icon='pencil').counter_color_success
+                    +counter(icon='check').counter_color_warning
+
+                    +counter
+                        span 1542
+                        +icon('check')
+
+                    +counter.counter_color_warning
+                        +icon('exclamation')
+                        span 1542
+
 
         script(src='js/app.bundle.js')
