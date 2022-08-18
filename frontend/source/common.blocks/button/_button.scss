@@ -27,8 +27,8 @@
     }
 
     .icon {
-        width: $icon_size_s;
-        height: $icon_size_s;
+        font-size: $icon_size_s;
+        height: 1em;
         margin-right: $gap_xs;
     }
 }

@@ -2,7 +2,7 @@
     z-index: 999;
     .dropdown-select__input {
         //Определяем правый отступ по размеру кнопок и отступов между ними
-        padding-right: calc($gap_s + 2 * (($gap_xs * 2 + $fontsize_text_s + $border_width_m * 2)) + $gap_xs + $gap_s + $fontsize_text_s + $gap_xs);
+        padding-right: calc($gap_s + 2 * ($gap_xs * 2 + $icon_size_xs + $border_width_m * 2 + $gap_xs) + $gap_xs + $fontsize_text_s + $gap_xs);
     }
 
     .dropdown-select__controls {
@@ -18,7 +18,7 @@
 
     .dropdown-select__arrow {
         //Вымеряем 2 кнопки, состоящие из границ, отступов и иконки внутри
-        right: calc($gap_s + 2 * (($gap_xs * 2 + $fontsize_text_s + $border_width_m * 2)) + $gap_xs + $gap_s);
+        right: calc($gap_s + 2 * (($gap_xs * 2 + $icon_size_xs + $border_width_m * 2)) + $gap_xs + $gap_xs);
     }
 
     .dropdown-select__list-wrapper {

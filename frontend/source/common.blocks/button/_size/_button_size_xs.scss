@@ -4,8 +4,7 @@
     border-radius: $radius_s;
 
     .icon {
-        width: $icon_size_xs;
-        height: $icon_size_xs;
+        font-size: $icon_size_xs;
         margin-right: calc(#{$gap_xs} / 2);
     }
 }
