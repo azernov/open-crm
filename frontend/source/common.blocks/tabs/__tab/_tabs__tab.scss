@@ -1,0 +1,38 @@
+@keyframes tab-animation {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.tabs__tab {
+    @extend %text-l;
+    font-weight: $fontweight_text_bold;
+    color: $color_neutral_80;
+    padding: #{$gap_s + $gap_xs} #{$gap_l};
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color $animation_speed_m $animation_type;
+
+    &:hover {
+        color: $color_primary_100;
+    }
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-150%);
+        height: $border_width_m;
+        background: $color_primary_100;
+        animation: tab-animation $animation_type $animation_speed_m 1 normal;
+
+    }
+}

@@ -1,0 +1,6 @@
+mixin tabs__tab
+    .tabs__tab(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,8 @@
+.tabs__tab.tabs__tab_active {
+    color: $color_primary_100;
+    &:after {
+        transform: translateX(-50%);
+        transition: transform $animation_speed_m $animation_type;
+        animation: none;
+    }
+}
