@@ -1,0 +1,35 @@
+.datepicker__wrapper {
+    position: relative;
+    display: block;
+
+    > .icon_type_calendar,
+    > .icon_type_x {
+        transition: color $animation_speed_m $animation_type;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        color: $color_neutral_60;
+    }
+
+    > .icon_type_calendar {
+        left: $gap_m;
+        font-size: $icon_size_m;
+    }
+
+    > .icon_type_x {
+        cursor: pointer;
+        right: $gap_m;
+        font-size: $icon_size_s;
+
+        &:hover {
+            color: $color_neutral_100;
+        }
+    }
+
+    &:focus-within {
+        > .icon_type_calendar {
+            color: $color_neutral_100;
+        }
+    }
+}

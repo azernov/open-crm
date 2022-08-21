@@ -1,0 +1,6 @@
+mixin datepicker__wrapper
+    .datepicker__wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,4 +1,10 @@
 .textbox {
     display: inline-block;
     position: relative;
+
+    &:focus-within {
+        .textbox__label {
+            color: $color_neutral_100;
+        }
+    }
 }

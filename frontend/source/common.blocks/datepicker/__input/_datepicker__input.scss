@@ -1,0 +1,5 @@
+.datepicker__input {
+    @extend %input-field-input;
+    padding-left: calc($gap_m + $icon_size_m + $gap_xs);
+    padding-right: calc($gap_m + $icon_size_s + $gap_xs);
+}

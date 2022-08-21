@@ -1,4 +1,10 @@
 .dropdown-select__wrapper {
     position: relative;
     display: block;
+
+    &:focus-within {
+        > .dropdown-select__arrow {
+            color: $color_neutral_100;
+        }
+    }
 }

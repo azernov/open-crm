@@ -1,0 +1,6 @@
+mixin datepicker__controls
+    .datepicker__controls(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

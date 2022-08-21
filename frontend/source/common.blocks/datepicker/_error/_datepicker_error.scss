@@ -1,0 +1,13 @@
+.datepicker.datepicker_error {
+    .datepicker__input {
+        border-color: $color_error_100;
+    }
+
+    .datepicker__message {
+        color: $color_error_100;
+    }
+
+    .datepicker__label {
+        color: $color_error_100;
+    }
+}

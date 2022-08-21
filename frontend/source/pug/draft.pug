@@ -5,6 +5,7 @@ html
         link(rel='stylesheet' type='text/css' href='css/app.css')
     body
         +app
+            // Button
             +utility-container
                 +utility-container__header
                     +utility-container__title .button
@@ -93,6 +94,7 @@ html
                         +icon('calendar')
 
 
+            // TextBox
             +utility-container
                 +utility-container__header
                     +utility-container__title .textbox
@@ -121,13 +123,14 @@ html
                     +textbox(label="Просто поле" message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_success.textbox_size_s
 
 
+            // DropdownSelect
             +utility-container
                 +utility-container__header
                     +utility-container__title .dropdown-select
                 +utility-container__body
                     +dropdown-select
                     +dropdown-select
-                    +dropdown-select(message="Вспомогательный текст")
+                    +dropdown-select(label="Название поля" message="Вспомогательный текст")
                     +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1")
                     +dropdown-select(label="Название поля" message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_error
                     +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_success
@@ -136,10 +139,26 @@ html
                     +dropdown-select(fixable=true value="Какое-то очень-очень длинное значение, уходящее вправо").dropdown-select_fixable_edit
 
                     +dropdown-select.dropdown-select_size_s
-                    +dropdown-select.dropdown-select_size_s.dropdown-select_show-list
+                    +dropdown-select.dropdown-select_size_s
                     +dropdown-select(label="Название поля").dropdown-select_size_s
+                    +dropdown-select(label="Название поля").dropdown-select_size_s
+                    +dropdown-select(label="Название поля" value="Введенное значение").dropdown-select_size_s
 
 
+            // DatePicker
+            +utility-container
+                +utility-container__header
+                    +utility-container__title .datepicker
+                +utility-container__body
+                    +datepicker(message="Вспомогательный текст" label="Выберите дату")
+                    +datepicker(message="Вспомогательный текст")
+                    +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015")
+                    +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_error
+                    +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_success
+
+                    +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable
+                    +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable_edit
+            // Counter
             +utility-container
                 +utility-container__header
                     +utility-container__title .counter

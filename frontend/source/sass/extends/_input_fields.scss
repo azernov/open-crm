@@ -12,6 +12,7 @@
     left: $gap_m;
     padding: calc($gap_xs / 2);
     border-radius: $radius_xs;
+    transition: color $animation_speed_m $animation_type;
 }
 
 %input-field-input {

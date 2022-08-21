@@ -1,0 +1,18 @@
+mixin datepicker
+    .datepicker(class!=attributes.class)
+        +datepicker__wrapper
+            +icon('calendar')
+            +icon('x')
+            if attributes.label
+                +datepicker__label= attributes.label
+            +datepicker__input(type=attributes.type value=attributes.value textarea=attributes.textarea)
+            if attributes.fixable
+                +datepicker__controls
+                    +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                        +icon('pencil')
+                    +button.button_size_xs.button_rounded.button_no-text
+                        +icon('check')
+                    +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                        +icon('trash')
+        if attributes.message
+            +datepicker__message= attributes.message

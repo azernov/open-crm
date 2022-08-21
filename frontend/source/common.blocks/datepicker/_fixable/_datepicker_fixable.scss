@@ -1,0 +1,45 @@
+.datepicker.datepicker_fixable {
+    .datepicker__input {
+        //Определяем правый отступ по размеру кнопок и отступов между ними
+        padding-right: calc($gap_s + 1 * ($gap_xs * 2 + $icon_size_xs + $border_width_m * 2 + $gap_xs) + $gap_xs);
+    }
+
+    &:not(.datepicker_fixable_edit) {
+        .datepicker__wrapper {
+            pointer-events: none;
+        }
+
+        .datepicker__controls {
+            pointer-events: all;
+        }
+
+        .datepicker__input {
+            pointer-events: none;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 0;
+            background: transparent;
+        }
+
+        .datepicker__label {
+            background: transparent;
+        }
+    }
+
+    .datepicker__controls {
+        .button:nth-child(1) {
+            display: inline-flex;
+            margin-right: 0;
+        }
+
+        .button:nth-child(2),
+        .button:nth-child(3) {
+            display: none;
+        }
+    }
+
+    .datepicker__wrapper > .icon_type_x {
+        display: none;
+    }
+}
