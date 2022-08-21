@@ -9,7 +9,7 @@ html
             +utility-container
                 +utility-container__header
                     +utility-container__title .button
-                +utility-container__body
+                +utility-container__body.utility-container__body_bg_neutral-20
                     +button Кнопка
                     +button.button_disabled Кнопка отключена
                     +button.button_size_s Малая кнопка
@@ -98,7 +98,7 @@ html
             +utility-container
                 +utility-container__header
                     +utility-container__title .textbox
-                +utility-container__body
+                +utility-container__body.utility-container__body_bg_neutral-20
                     +textbox(label="Название поля")
                     +textbox(label="Пароль" type="password")
                     +textbox(label="Какое-то число" type="number").textbox_error
@@ -127,7 +127,7 @@ html
             +utility-container
                 +utility-container__header
                     +utility-container__title .dropdown-select
-                +utility-container__body
+                +utility-container__body.utility-container__body_bg_neutral-20
                     +dropdown-select
                     +dropdown-select
                     +dropdown-select(label="Название поля" message="Вспомогательный текст")
@@ -149,7 +149,7 @@ html
             +utility-container
                 +utility-container__header
                     +utility-container__title .datepicker
-                +utility-container__body
+                +utility-container__body.utility-container__body_bg_neutral-20
                     +datepicker(message="Вспомогательный текст" label="Выберите дату")
                     +datepicker(message="Вспомогательный текст")
                     +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015")
@@ -241,6 +241,15 @@ html
                 +utility-container__header
                     +utility-container__title .tabs
                 +utility-container__body
-                    +tabs
+                    +tabs(items=[{
+                        title: "Вкладка 1",
+                        class: ""
+                    }, {
+                        title: "Вкладка 2",
+                        class: "tabs__tab_active"
+                    }, {
+                        title: "Вкладка 3",
+                        class: ""
+                    }])
 
         script(src='js/app.bundle.js')

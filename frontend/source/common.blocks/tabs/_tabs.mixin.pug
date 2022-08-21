@@ -1,5 +1,4 @@
 mixin tabs
     .tabs(class!=attributes.class)
-        +tabs__tab Вкладка 1
-        +tabs__tab Вкладка 2
-        +tabs__tab Вкладка 3
+        each item in attributes.items
+            +tabs__tab(class=item.class)= item.title

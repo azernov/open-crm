@@ -33,6 +33,6 @@
         height: $border_width_m;
         background: $color_primary_100;
         animation: tab-animation $animation_type $animation_speed_m 1 normal;
-
+        z-index: 3;
     }
 }
