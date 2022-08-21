@@ -1,0 +1,8 @@
+.radio-group__title {
+    @extend %title-xs;
+    color: $color_neutral_100;
+    margin-bottom: $gap_s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

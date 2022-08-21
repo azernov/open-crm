@@ -1,0 +1,14 @@
+.radio {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    @extend %text-m;
+    cursor: pointer;
+    input {
+        display: none;
+
+        &:checked + .radio__input {
+            &:after {
+                opacity: 100;
+            }
+        }
+    }
+}

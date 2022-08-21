@@ -1,0 +1,11 @@
+mixin radio-group
+    .radio-group(class!=attributes.class)
+        +radio-group__wrapper
+            +radio-group__title Заголовок группы
+            +radio-group__description Вспомогательный текст с описанием, чего мы хотим от пользователя
+        +radio-group__wrapper
+            +radio-group__controls
+                each item in attributes.items
+                    +radio-group__control
+                        +radio(name=attributes.name value=item.value label=item.label checked=item.checked)
+            +radio-group__message= attributes.message ? attributes.message : "Вспомогательный текст с описанием, чего мы хотим от пользователя"

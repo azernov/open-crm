@@ -1,0 +1,6 @@
+mixin radio-group__description
+    .radio-group__description(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

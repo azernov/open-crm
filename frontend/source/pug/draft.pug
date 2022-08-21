@@ -179,4 +179,52 @@ html
                         span 1542
 
 
+            // Radio
+            +utility-container
+                +utility-container__header
+                    +utility-container__title .radio
+                +utility-container__body
+                    +radio(name="example-1" value="1" label="Значение 1")
+                    +radio(name="example-1" value="2" label="Значение 2" checked=true)
+                    +radio(name="example-2" value="1")
+                    +radio(name="example-2" value="2" checked=true)
+            // RadioGroup
+            +utility-container
+                +utility-container__header
+                    +utility-container__title .radio-group
+                +utility-container__body
+                    +radio-group(name="example-3" items=[
+                        {
+                            value: 1,
+                            label: "Значение тестовое 1"
+                        }, {
+                            value: 2,
+                            label: "Значение тестовое 2 Значение тестовое 2"
+                        }, {
+                            value: 3,
+                            label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
+                        }, {
+                            value: 4,
+                            label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
+                        }
+                    ])
+                    +radio-group.radio-group_error(name="example-4" items=[
+                        {
+                            value: 1,
+                            label: "Значение 1"
+                        }, {
+                            value: 2,
+                            label: "Значение 2 чуть длиннее"
+                        }
+                    ])
+                    +radio-group.radio-group_success(name="example-5" message="Успешно сохранено" items=[
+                        {
+                            value: 1,
+                            label: "Значение тестовое 1"
+                        }, {
+                            value: 2,
+                            label: "Значение тестовое 2",
+                            checked: true
+                        }
+                    ])
         script(src='js/app.bundle.js')

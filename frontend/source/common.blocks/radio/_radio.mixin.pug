@@ -1,0 +1,6 @@
+mixin radio
+    label.radio(class!=attributes.class)
+        input(type="radio" name=attributes.name value=attributes.value checked=attributes.checked)
+        +radio__input(name=attributes.name value=attributes.value checked=attributes.checked)
+        if attributes.label
+            +radio__label= attributes.label ? attributes.label : 'Значение по-умолчанию'

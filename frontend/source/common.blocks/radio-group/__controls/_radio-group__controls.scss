@@ -1,0 +1,8 @@
+.radio-group__controls {
+    @extend %flex-row-vcenter-hstart-wrap;
+    margin: -#{$gap_m / 2};
+    margin-bottom: #{$gap_m / 2};
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

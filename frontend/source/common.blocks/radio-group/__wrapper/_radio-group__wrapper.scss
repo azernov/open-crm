@@ -1,0 +1,6 @@
+.radio-group__wrapper {
+    margin-bottom: $gap_m;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

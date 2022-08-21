@@ -1,0 +1,6 @@
+mixin radio__label
+    .radio__label(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
