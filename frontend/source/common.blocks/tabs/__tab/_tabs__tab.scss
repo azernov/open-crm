@@ -10,6 +10,7 @@
 
 .tabs__tab {
     @extend %text-l;
+    text-align: center;
     font-weight: $fontweight_text_bold;
     color: $color_neutral_80;
     padding: #{$gap_s + $gap_xs} #{$gap_l};
@@ -22,15 +23,25 @@
         color: $color_primary_100;
     }
 
+    &:before,
     &:after {
         display: block;
         content: '';
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 0;
         width: 100%;
-        transform: translateX(-150%);
         height: $border_width_m;
+    }
+
+    &:before {
+        background: $color_neutral_20;
+        z-index: 2;
+    }
+
+    &:after {
+        left: 50%;
+        transform: translateX(-150%);
         background: $color_primary_100;
         animation: tab-animation $animation_type $animation_speed_m 1 normal;
         z-index: 3;
