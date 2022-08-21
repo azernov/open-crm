@@ -1,0 +1,6 @@
+mixin checkbox__label
+    .checkbox__label(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

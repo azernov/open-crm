@@ -1,0 +1,6 @@
+mixin checkbox
+    label.checkbox(class!=attributes.class)
+        input(type="checkbox" name=attributes.name value=attributes.value checked=attributes.checked)
+        +checkbox__input(name=attributes.name value=attributes.value checked=attributes.checked)
+        if attributes.label
+            +checkbox__label= attributes.label ? attributes.label : 'Значение по-умолчанию'

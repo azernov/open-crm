@@ -1,0 +1,12 @@
+.checkbox {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    @extend %text-m;
+    cursor: pointer;
+    input {
+        display: none;
+
+        &:checked + .checkbox__input .icon {
+            opacity: 100;
+        }
+    }
+}

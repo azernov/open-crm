@@ -1,0 +1,26 @@
+.checkbox__input {
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: inline-block;
+    width: 1.43em;
+    height: 1.43em;
+    background-color: $color_primary_40;
+    position: relative;
+    border-radius: $radius_xs;
+    margin-right: $gap_s;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .icon {
+        display: block;
+        font-size: .75em;
+        color: $color_neutral_100;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity $animation_speed_m $animation_type;
+    }
+}

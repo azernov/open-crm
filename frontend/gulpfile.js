@@ -143,7 +143,8 @@ const svgSpriteBuild = () => {
         .pipe(cheerio({
             run: function ($) {
                 $('[fill]').removeAttr('fill');
-                $('[stroke]').removeAttr('stroke');
+                //$('[stroke]').removeAttr('stroke');
+                $('[stroke]').attr('stroke', 'currentColor');
                 $('[style]').removeAttr('style');
             },
             parserOptions: {

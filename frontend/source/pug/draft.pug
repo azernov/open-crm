@@ -227,4 +227,13 @@ html
                             checked: true
                         }
                     ])
+            // Checkbox
+            +utility-container
+                +utility-container__header
+                    +utility-container__title .checkbox
+                +utility-container__body
+                    +checkbox(name="example-1" value="1" label="Значение 1")
+                    +checkbox(name="example-1" value="2" label="Значение 2" checked=true)
+                    +checkbox(name="example-2" value="1")
+                    +checkbox(name="example-2" value="2" checked=true)
         script(src='js/app.bundle.js')
