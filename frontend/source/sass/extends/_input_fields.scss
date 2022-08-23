@@ -23,6 +23,7 @@
     border-radius: $radius_m;
     transition: all $animation_speed_m $animation_type;
     background: $color_neutral_0;
+    color: $color_neutral_100;
 
     &::placeholder {
         color: $color_neutral_40;
