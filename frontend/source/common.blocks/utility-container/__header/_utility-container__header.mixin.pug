@@ -1,6 +1,4 @@
 mixin utility-container__header
     .utility-container__header(class!=attributes.class)
-        if block
-            block
-        else
-            = "default content"
+        +utility-container__title= attributes.title
+        +logo(src='i/logo/logo-neutral-0.svg')

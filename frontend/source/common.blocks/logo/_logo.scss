@@ -1,0 +1,12 @@
+.logo {
+    display: inline-block;
+    height: $gap_m;
+    width: auto;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

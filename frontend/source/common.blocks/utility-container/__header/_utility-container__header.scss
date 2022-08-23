@@ -1,4 +1,5 @@
 .utility-container__header {
+    @extend %flex-row-vcenter-hspacebetween-nowrap;
     padding: $gap_l;
     background: $color_primary_100;
     color: $color_neutral_0;

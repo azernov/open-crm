@@ -7,8 +7,7 @@ html
         +app
             // Button
             +utility-container
-                +utility-container__header
-                    +utility-container__title .button
+                +utility-container__header(title='.button')
                 +utility-container__body.utility-container__body_bg_neutral-20
                     +button Кнопка
                     +button.button_disabled Кнопка отключена
@@ -96,8 +95,7 @@ html
 
             // TextBox
             +utility-container
-                +utility-container__header
-                    +utility-container__title .textbox
+                +utility-container__header(title='.textbox')
                 +utility-container__body.utility-container__body_bg_neutral-20
                     +textbox(label="Название поля")
                     +textbox(label="Пароль" type="password")
@@ -125,8 +123,7 @@ html
 
             // DropdownSelect
             +utility-container
-                +utility-container__header
-                    +utility-container__title .dropdown-select
+                +utility-container__header(title='.dropdown-select')
                 +utility-container__body.utility-container__body_bg_neutral-20
                     +dropdown-select
                     +dropdown-select
@@ -147,8 +144,7 @@ html
 
             // DatePicker
             +utility-container
-                +utility-container__header
-                    +utility-container__title .datepicker
+                +utility-container__header(title='.datepicker')
                 +utility-container__body.utility-container__body_bg_neutral-20
                     +datepicker(message="Вспомогательный текст" label="Выберите дату")
                     +datepicker(message="Вспомогательный текст")
@@ -160,8 +156,7 @@ html
                     +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable_edit
             // Counter
             +utility-container
-                +utility-container__header
-                    +utility-container__title .counter
+                +utility-container__header(title='.counter')
                 +utility-container__body
                     +counter 15
                     +counter.counter_color_success 15
@@ -181,8 +176,7 @@ html
 
             // Radio
             +utility-container
-                +utility-container__header
-                    +utility-container__title .radio
+                +utility-container__header(title='.radio')
                 +utility-container__body
                     +radio(name="example-1" value="1" label="Значение 1")
                     +radio(name="example-1" value="2" label="Значение 2" checked=true)
@@ -190,8 +184,7 @@ html
                     +radio(name="example-2" value="2" checked=true)
             // RadioGroup
             +utility-container
-                +utility-container__header
-                    +utility-container__title .radio-group
+                +utility-container__header(title='.radio-group')
                 +utility-container__body
                     +radio-group(name="example-3" items=[
                         {
@@ -229,8 +222,7 @@ html
                     ])
             // Checkbox
             +utility-container
-                +utility-container__header
-                    +utility-container__title .checkbox
+                +utility-container__header(title='.checkbox')
                 +utility-container__body
                     +checkbox(name="example-1" value="1" label="Значение 1")
                     +checkbox(name="example-1" value="2" label="Значение 2" checked=true)
@@ -238,8 +230,7 @@ html
                     +checkbox(name="example-2" value="2" checked=true)
             // Tabs
             +utility-container
-                +utility-container__header
-                    +utility-container__title .tabs
+                +utility-container__header(title='.tabs')
                 +utility-container__body
                     +tabs(items=[{
                         title: "Вкладка 1",
@@ -252,4 +243,23 @@ html
                         class: ""
                     }])
 
+            // Logo
+            +utility-container
+                +utility-container__header(title='.logo')
+                +utility-container__body
+                    +logo.logo_size_s
+                    +logo
+                    +logo.logo_size_l
+
+                    +logo.logo_size_s(src='i/logo/logo-light.svg')
+                    +logo(src='i/logo/logo-light.svg')
+                    +logo.logo_size_l(src='i/logo/logo-light.svg')
+
+                    +logo.logo_size_s(src='i/logo/logo-neutral-80.svg')
+                    +logo(src='i/logo/logo-neutral-80.svg')
+                    +logo.logo_size_l(src='i/logo/logo-neutral-80.svg')
+
+                    +logo.logo_size_s(src='i/logo/logo-neutral-0.svg')
+                    +logo(src='i/logo/logo-neutral-0.svg')
+                    +logo.logo_size_l(src='i/logo/logo-neutral-0.svg')
         script(src='js/app.bundle.js')
