@@ -1,0 +1,6 @@
+mixin user-avatar__wrapper
+    .user-avatar__wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

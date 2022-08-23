@@ -1,0 +1,12 @@
+mixin user-avatar
+    .user-avatar(class!=attributes.class)
+        if attributes.editable
+            +button.button_rounded.button_no-text.button_color_secondary.button_size_xs
+                +icon('trash')
+        +user-avatar__wrapper
+            if attributes.imageSet
+                +user-avatar__image
+            if attributes.editable
+                +user-avatar__upload-link
+                    +icon('upload')
+                    span загрузить

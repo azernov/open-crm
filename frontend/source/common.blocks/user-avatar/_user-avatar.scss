@@ -1,0 +1,21 @@
+.user-avatar {
+    position: relative;
+    width: $avatar_size_m;
+    height: $avatar_size_m;
+
+    > .button {
+        transition: opacity $animation_speed_m $animation_type;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    &:hover {
+        > .button {
+            opacity: 1;
+        }
+    }
+}

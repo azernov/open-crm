@@ -1,0 +1,13 @@
+.user-avatar.user-avatar_size_xl {
+    width: $avatar_size_xl;
+    height: $avatar_size_xl;
+
+    .user-avatar__upload-link {
+        font-size: $fontsize_text_s !important;
+    }
+
+    > .button {
+        top: math.div($gap_xs, 2);
+        left: math.div($gap_xs, 2);
+    }
+}

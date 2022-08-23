@@ -1,0 +1,28 @@
+.user-avatar__upload-link {
+    @extend %flex-column-hcenter-vcenter-nowrap;
+    @extend %text-xs;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: $color_neutral_80;
+    opacity: .25;
+    transition: all $animation_speed_m $animation_type;
+    z-index: 2;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    .icon {
+        font-size: 3em;
+    }
+
+    &:hover {
+        color: $color_neutral_0;
+        background: rgba($color_neutral_100, .5);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,7 @@
+mixin user-avatar__upload-link
+    label.user-avatar__upload-link(class!=attributes.class)
+        input(type="file" name="avatar_image")
+        if block
+            block
+        else
+            = "default content"

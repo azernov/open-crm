@@ -1,0 +1,6 @@
+mixin user-avatar__image
+    if !attributes.src
+        - attributes.src = 'i/avatar-example.jpg'
+    if !attributes.alt
+        - attributes.alt = 'avatar'
+    img.user-avatar__image(class!=attributes.class)&attributes(attributes)
