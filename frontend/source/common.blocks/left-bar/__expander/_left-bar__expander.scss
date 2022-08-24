@@ -1,5 +1,6 @@
 .left-bar__expander {
     position: absolute;
-    right: -#{math.div($gap_m, 2)};
+    right: 0;
     top: $gap_m;
+    transform: translateX(50%);
 }
