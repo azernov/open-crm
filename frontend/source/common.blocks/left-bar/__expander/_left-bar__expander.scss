@@ -1,0 +1,5 @@
+.left-bar__expander {
+    position: absolute;
+    right: -#{math.div($gap_m, 2)};
+    top: $gap_m;
+}

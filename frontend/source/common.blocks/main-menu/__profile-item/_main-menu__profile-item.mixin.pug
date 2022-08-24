@@ -1,0 +1,11 @@
+mixin main-menu__profile-item
+    - cls = attributes.class ? attributes.class : ''
+    if attributes.active
+        - cls += ' main-menu__profile-item_active'
+    .main-menu__profile-item(class!=cls)
+        +main-menu__link(href="#")
+            +user-avatar(imageSet=true).user-avatar_size_s
+            +main-menu__link-title= attributes.title
+        +main-menu__link(href="#logout")
+            +icon('logout').icon_size_s
+

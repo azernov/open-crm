@@ -1,0 +1,15 @@
+mixin main-menu__item
+    - cls = attributes.class ? attributes.class : ''
+    if attributes.subItems
+        - cls += ' main-menu__item_has-sub-items'
+    if attributes.expanded
+        - cls += ' main-menu__item_expanded'
+    if attributes.active
+        - cls += ' main-menu__item_active'
+    .main-menu__item(class!=cls)
+        +main-menu__link(href='#' icon=attributes.icon hasSubItems=attributes.subItems ? true : false title!=attributes.title)
+        if attributes.subItems
+            +main-menu__sub-items
+                each item in attributes.subItems
+                    +main-menu__item(icon=item.icon href=item.href subItems=item.subItems title!=item.title active=item.active)
+

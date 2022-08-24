@@ -1,0 +1,13 @@
+.main-menu__control {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+    margin-left: auto;
+    width: $gap_m;
+    height: $gap_m;
+    border-radius: 50%;
+    border: $border_width_s solid $color_secondary_100;
+    transition: background-color $animation_speed_m $animation_type;
+
+    .icon {
+        font-size: $icon_size_xs;
+    }
+}

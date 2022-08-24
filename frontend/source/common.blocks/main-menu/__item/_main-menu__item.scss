@@ -1,0 +1,10 @@
+.main-menu__item {
+    background: $color_secondary_200;
+    position: relative;
+
+    &:hover {
+        > .main-menu__link > .main-menu__control {
+            background: $color_secondary_100;
+        }
+    }
+}

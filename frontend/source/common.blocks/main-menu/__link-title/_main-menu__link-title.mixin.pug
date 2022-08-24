@@ -1,0 +1,6 @@
+mixin main-menu__link-title
+    .main-menu__link-title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

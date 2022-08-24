@@ -1,0 +1,6 @@
+mixin left-bar__logo-wrapper
+    .left-bar__logo-wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

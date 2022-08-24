@@ -1,0 +1,24 @@
+.main-menu__item.main-menu__item_expanded {
+    &.main-menu__item_has-sub-items {
+        > .main-menu__link {
+            z-index: 2;
+            box-shadow: $shadow_l;
+        }
+
+        > .main-menu__link > .main-menu__control {
+            background: $color_secondary_100;
+        }
+
+        > .main-menu__link > .main-menu__control .icon_type_minus {
+            display: block;
+        }
+
+        > .main-menu__link > .main-menu__control .icon_type_plus {
+            display: none;
+        }
+
+        > .main-menu__sub-items {
+            display: block;
+        }
+    }
+}

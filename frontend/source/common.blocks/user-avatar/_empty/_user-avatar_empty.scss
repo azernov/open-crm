@@ -1,0 +1,9 @@
+.user-avatar.user-avatar_empty {
+    > .button {
+        visibility: hidden;
+    }
+
+    .user-avatar__wrapper {
+        border-color: $color_neutral_60;
+    }
+}

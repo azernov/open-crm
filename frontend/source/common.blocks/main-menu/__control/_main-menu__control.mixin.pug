@@ -1,0 +1,6 @@
+mixin main-menu__control
+    .main-menu__control(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

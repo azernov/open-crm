@@ -1,0 +1,25 @@
+.main-menu__link {
+    @extend %text-s;
+    @extend %flex-row-vcenter-hstart-nowrap;
+    color: $color_neutral_0;
+    padding: $gap_s $gap_m;
+    text-decoration: none;
+    position: relative;
+    transition: background-color $animation_speed_m $animation_type;
+
+    > .icon {
+        margin-right: $gap_s;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    > .user-avatar {
+        margin-right: $gap_s;
+    }
+
+    &:hover {
+        text-shadow: $shadow_m;
+        background-color: rgba($color_neutral_100, .12);
+    }
+}

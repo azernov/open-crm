@@ -262,17 +262,118 @@ html
                     +logo.logo_size_s(src='i/logo/logo-neutral-0.svg')
                     +logo(src='i/logo/logo-neutral-0.svg')
                     +logo.logo_size_l(src='i/logo/logo-neutral-0.svg')
-            // User-avatar
+            // UserAvatar
             +utility-container
                 +utility-container__header(title='.user-avatar')
                 +utility-container__body
-                    +user-avatar.user-avatar_size_xl(editable=true)
-                    +user-avatar.user-avatar_size_xl.user-avatar_image-set(editable=true imageSet=true)
-                    +user-avatar.user-avatar_size_l(editable=true)
-                    +user-avatar.user-avatar_size_l.user-avatar_image-set(editable=true imageSet=true)
+                    +user-avatar.user-avatar_size_xl.user-avatar_empty(editable=true)
+                    +user-avatar.user-avatar_size_xl(editable=true imageSet=true)
+                    +user-avatar.user-avatar_size_l.user-avatar_empty(editable=true)
+                    +user-avatar.user-avatar_size_l(editable=true imageSet=true)
                     +user-avatar
-                    +user-avatar.user-avatar_image-set(imageSet=true)
-                    +user-avatar.user-avatar_size_s
-                    +user-avatar.user-avatar_size_s.user-avatar_image-set(imageSet=true)
-
+                    +user-avatar(imageSet=true)
+                    +user-avatar.user-avatar_size_s.user-avatar_empty
+                    +user-avatar.user-avatar_size_s(imageSet=true)
+            // MainMenu
+            +utility-container
+                +utility-container__header(title='.main-menu')
+                +utility-container__body
+                    +main-menu(items=[{
+                        title: "Иван Иванов",
+                        href: "#",
+                        active: false,
+                        profile: true
+                    }, {
+                        title: "Пользователи",
+                        href: "#",
+                        icon: "user-group",
+                        active: false
+                    }, {
+                        title: "Группы компаний",
+                        href: "#",
+                        icon: "office-building",
+                        active: true
+                    }, {
+                        title: "Контрагенты",
+                        href: "#",
+                        icon: "share"
+                    }, {
+                        title: "Контракты",
+                        href: "#",
+                        icon: "document-text"
+                    }, {
+                        title: "Сделки",
+                        href: "#",
+                        icon: "receipt-tax"
+                    }, {
+                        title: "Настройки",
+                        href: "#",
+                        icon: "cog",
+                        expanded: false,
+                        subItems: [{
+                            title: "Роли и права",
+                            href: "#",
+                            icon: "shield-exclamation"
+                        }, {
+                            title: "Статусы сделок",
+                            href: "#",
+                            icon: "view-boards"
+                        }, {
+                            title: "Настройка доп. полей",
+                            href: "#",
+                            icon: "table"
+                        }]
+                    }])
+                    +main-menu(items=[{
+                        title: "Иван Иванов",
+                        href: "#",
+                        active: true,
+                        profile: true
+                    }, {
+                        title: "Пользователи",
+                        href: "#",
+                        icon: "user-group",
+                        active: false
+                    }, {
+                        title: "Группы компаний",
+                        href: "#",
+                        icon: "office-building",
+                        active: true
+                    }, {
+                        title: "Контрагенты",
+                        href: "#",
+                        icon: "share"
+                    }, {
+                        title: "Контракты",
+                        href: "#",
+                        icon: "document-text"
+                    }, {
+                        title: "Сделки",
+                        href: "#",
+                        icon: "receipt-tax"
+                    }, {
+                        title: "Настройки",
+                        href: "#",
+                        icon: "cog",
+                        expanded: true,
+                        subItems: [{
+                            title: "Роли и права",
+                            href: "#",
+                            icon: "shield-exclamation"
+                        }, {
+                            title: "Статусы сделок",
+                            href: "#",
+                            icon: "view-boards",
+                            active: true
+                        }, {
+                            title: "Настройка доп. полей",
+                            href: "#",
+                            icon: "table"
+                        }]
+                    }])
+            // LeftBar
+            +utility-container
+                +utility-container__header(title='.left-bar')
+                +utility-container__body
+                    +left-bar
         script(src='js/app.bundle.js')

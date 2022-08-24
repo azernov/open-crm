@@ -6,7 +6,7 @@
     > .button {
         transition: opacity $animation_speed_m $animation_type;
         opacity: 0;
-        visibility: hidden;
+        visibility: visible;
         position: absolute;
         top: 0;
         left: 0;

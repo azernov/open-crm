@@ -1,0 +1,8 @@
+.main-menu__item.main-menu__item_active {
+    z-index: 2;
+    box-shadow: $shadow_m;
+
+    > .main-menu__link > .main-menu__control {
+        background: $color_secondary_100;
+    }
+}

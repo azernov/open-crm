@@ -1,0 +1,5 @@
+.main-menu__item.main-menu__item_has-sub-items {
+    > .main-menu__link > .main-menu__control .icon_type_minus {
+        display: none;
+    }
+}

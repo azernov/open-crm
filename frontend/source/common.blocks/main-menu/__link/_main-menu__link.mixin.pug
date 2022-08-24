@@ -1,0 +1,13 @@
+mixin main-menu__link
+    a.main-menu__link(class!=attributes.class href=attributes.href)
+        if block
+            block
+        else
+            +icon(attributes.icon ? attributes.icon : 'user')
+            +main-menu__link-title !{attributes.title}
+            +main-menu__control
+                if attributes.hasSubItems
+                    +icon('plus')
+                    +icon('minus')
+                else
+                    +icon('chevron-right')

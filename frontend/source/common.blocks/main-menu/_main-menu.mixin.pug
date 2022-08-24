@@ -1,0 +1,7 @@
+mixin main-menu
+    .main-menu(class!=attributes.class)
+        each item in attributes.items
+            if item.profile
+                +main-menu__profile-item(title=item.title href=item.href active=item.active)
+            else
+                +main-menu__item(title=item.title href=item.href icon=item.icon subItems=item.subItems expanded=item.expanded active=item.active)

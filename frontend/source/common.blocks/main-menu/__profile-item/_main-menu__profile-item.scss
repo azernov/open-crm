@@ -1,0 +1,18 @@
+.main-menu__profile-item {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    align-items: stretch;
+    background: $color_primary_100;
+    position: relative;
+    margin-bottom: $gap_s;
+    transition: background-color $animation_speed_m $animation_type;
+
+    &:hover {
+        background: $color_primary_80;
+    }
+
+    > .main-menu__link {
+        &:first-child {
+            flex-grow: 1;
+        }
+    }
+}

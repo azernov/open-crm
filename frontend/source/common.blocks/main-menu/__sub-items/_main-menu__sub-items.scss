@@ -1,0 +1,6 @@
+.main-menu__sub-items {
+    display: none;
+    > .main-menu__item > .main-menu__link {
+        padding-left: $gap_l;
+    }
+}

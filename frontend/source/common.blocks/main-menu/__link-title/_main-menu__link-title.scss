@@ -1,0 +1,6 @@
+.main-menu__link-title {
+    margin-right: $gap_m;
+    &:last-child {
+        margin-right: 0;
+    }
+}

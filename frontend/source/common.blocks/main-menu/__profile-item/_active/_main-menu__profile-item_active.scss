@@ -1,0 +1,7 @@
+.main-menu__profile-item.main-menu__profile-item_active {
+    background: $color_secondary_100;
+
+    &:hover {
+        background: $color_secondary_80;
+    }
+}
