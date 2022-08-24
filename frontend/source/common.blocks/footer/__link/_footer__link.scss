@@ -1,0 +1,9 @@
+.footer__link {
+    color: $color_neutral_40;
+    transition: color $animation_speed_m $animation_type;
+
+    &:hover, &:focus {
+        color: $color_primary_40;
+        text-decoration: none;
+    }
+}

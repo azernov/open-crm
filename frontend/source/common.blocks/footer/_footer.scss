@@ -1,0 +1,8 @@
+.footer {
+    @extend %flex-row-vend-hstart-nowrap;
+    width: 100%;
+    padding: $gap_m;
+    background: $color_neutral_80;
+    @extend %text-s;
+    color: $color_neutral_0;
+}

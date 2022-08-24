@@ -1,0 +1,13 @@
+.footer__items-group {
+    margin-right: $gap_l;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .footer__item {
+        margin-right: $gap_m;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

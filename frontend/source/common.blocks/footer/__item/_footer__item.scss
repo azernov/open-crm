@@ -1,0 +1,7 @@
+.footer__item {
+    display: inline-block;
+    margin-right: $gap_l;
+    &:last-child {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,13 @@
+mixin footer
+    .footer(class!=attributes.class)
+        +footer__copyright
+            | &copy;2019-2022 Company Name
+        +footer__items-group
+            +footer__item
+                +footer__link(href='#') Ссылка
+            +footer__item
+                +footer__link(href='#') Техподдержка
+        +footer__item Построено на
+            |
+            |
+            +footer__link(href='#') OpenCRM

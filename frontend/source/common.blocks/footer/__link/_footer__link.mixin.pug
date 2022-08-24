@@ -1,0 +1,6 @@
+mixin footer__link
+    a.footer__link(class!=attributes.class)&attributes(attributes)
+        if block
+            block
+        else
+            = "default content"
