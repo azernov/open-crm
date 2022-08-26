@@ -1,0 +1,7 @@
+.pagination__column {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    &:last-child {
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+}

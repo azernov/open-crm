@@ -1,0 +1,8 @@
+.pagination__text {
+    @extend %text-s;
+
+    margin-right: $gap_s;
+    &:last-child {
+        margin-right: 0;
+    }
+}

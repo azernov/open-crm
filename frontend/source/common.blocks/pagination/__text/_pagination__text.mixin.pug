@@ -1,0 +1,6 @@
+mixin pagination__text
+    .pagination__text(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

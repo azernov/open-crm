@@ -1,0 +1,14 @@
+mixin pagination
+    .pagination(class!=attributes.class)
+        +pagination__column
+            +pagination__text.pagination__text_range 0 — 10
+            +pagination__text из 1200 записей
+        +pagination__column
+            +pagination__text страница
+            +pagination__controls
+                +button.button_size_xs.button_no-text
+                    +icon('chevron-left')
+                +textbox.textbox_size_s.textbox_text-center
+                +button.button_size_xs.button_no-text
+                    +icon('chevron-right')
+            +pagination__text из 120

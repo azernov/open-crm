@@ -1,0 +1,6 @@
+.pagination {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    background-color: $color_neutral_20;
+    padding: $gap_xs $gap_s;
+    width: 100%;
+}

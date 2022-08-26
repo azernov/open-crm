@@ -1,0 +1,6 @@
+mixin pagination__column
+    .pagination__column(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

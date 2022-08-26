@@ -1,0 +1,20 @@
+.pagination__controls {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+
+    margin-right: $gap_s;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    > .button,
+    > .textbox {
+        margin-right: $gap_s;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    > .textbox {
+        width: #{$gap_m * 2};
+    }
+}
