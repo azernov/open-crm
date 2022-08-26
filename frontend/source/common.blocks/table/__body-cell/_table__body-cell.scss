@@ -1,0 +1,17 @@
+.table__body-cell,
+.table > tbody > tr > td {
+    @extend %text-s;
+    padding: #{$gap_m * 0.75} $gap_s;
+    text-align: left;
+    > * {
+        vertical-align : middle;
+    }
+
+    > .icon {
+        color: $color_neutral_60;
+        margin-right: $gap_xs;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

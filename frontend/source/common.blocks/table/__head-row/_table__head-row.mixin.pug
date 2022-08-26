@@ -1,0 +1,13 @@
+mixin table__head-row
+    tr.table__head-row(class!=attributes.class)
+        +table__head-cell
+        +table__head-cell #
+        +table__head-cell Заголовок
+        +table__head-cell Заголовок подлиннее
+        +table__head-cell Очень-очень-очень длинный заголовок, который может быть не поместится
+        +table__head-cell Заголовок
+        +table__head-cell.table__head-cell_actions
+            +button.button_no-text.button_size_xs.button_transparent
+                +icon('cog')
+            +button.button_no-text.button_size_xs.button_transparent
+                +icon('filter')

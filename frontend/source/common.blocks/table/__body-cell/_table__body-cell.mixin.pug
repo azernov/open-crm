@@ -1,0 +1,6 @@
+mixin table__body-cell
+    td.table__body-cell(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

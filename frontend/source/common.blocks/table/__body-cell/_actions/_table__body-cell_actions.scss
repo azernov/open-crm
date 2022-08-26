@@ -1,0 +1,13 @@
+.table__body-cell.table__body-cell_actions {
+    text-align: right;
+    padding-top: #{$gap_m * 0.75 - math.div($gap_s,2)};
+    padding-bottom: #{$gap_m * 0.75 - math.div($gap_s,2)};
+    > .button {
+        margin-left: $gap_s;
+        margin-top: math.div($gap_s,2);
+        margin-bottom: math.div($gap_s,2);
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

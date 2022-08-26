@@ -186,7 +186,11 @@ html
             +utility-container
                 +utility-container__header(title='.radio-group')
                 +utility-container__body
-                    +radio-group(name="example-3" items=[
+                    +radio-group(title="Заголовок группы"
+                        description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                        message="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                        name="example-3"
+                        items=[
                         {
                             value: 1,
                             label: "Значение тестовое 1"
@@ -201,7 +205,11 @@ html
                             label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
                         }
                     ])
-                    +radio-group.radio-group_error(name="example-4" items=[
+                    +radio-group.radio-group_error(title="Заголовок группы"
+                        description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                        message="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                        name="example-4"
+                        items=[
                         {
                             value: 1,
                             label: "Значение 1"
@@ -210,7 +218,11 @@ html
                             label: "Значение 2 чуть длиннее"
                         }
                     ])
-                    +radio-group.radio-group_success(name="example-5" message="Успешно сохранено" items=[
+                    +radio-group.radio-group_success(title="Заголовок группы"
+                        description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                        name="example-5"
+                        message="Успешно сохранено"
+                        items=[
                         {
                             value: 1,
                             label: "Значение тестовое 1"
@@ -386,4 +398,9 @@ html
                 +utility-container__header(title='.pagination')
                 +utility-container__body
                     +pagination
+            // Pagination
+            +utility-container
+                +utility-container__header(title='.table')
+                +utility-container__body
+                    +table
         script(src='js/app.bundle.js')

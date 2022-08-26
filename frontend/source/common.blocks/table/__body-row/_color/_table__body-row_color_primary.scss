@@ -1,0 +1,17 @@
+.table__body-row.table__body-row_color_primary {
+    > .table__body-cell,
+    > td {
+        background-color: $color_primary_100;
+        color: $color_neutral_0;
+        > .icon {
+            color: inherit;
+        }
+    }
+
+    &:nth-child(odd){
+        > .table__body-cell,
+        > td {
+            background-color: $color_primary_80;
+        }
+    }
+}

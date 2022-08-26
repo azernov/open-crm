@@ -1,0 +1,9 @@
+.table__head-cell,
+.table > thead > tr > th
+{
+    @extend %text-s;
+    font-weight: $fontweight_text_bold;
+    padding: #{$gap_m * 0.75} $gap_s;
+    border-bottom: 1px solid $color_neutral_40;
+    text-align: left;
+}

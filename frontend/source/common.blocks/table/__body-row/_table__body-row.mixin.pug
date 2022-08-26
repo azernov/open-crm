@@ -1,0 +1,32 @@
+mixin table__body-row
+    tr.table__body-row(class!=attributes.class)
+        +table__body-cell
+            +checkbox
+        +table__body-cell
+            +user-avatar(imageSet=true).user-avatar_size_s
+        +table__body-cell
+            +icon('check-circle').icon_size_s
+        +table__body-cell
+            +icon('check-circle').icon_size_s
+            span Значение
+        +table__body-cell
+            +dropdown-select.dropdown-select_size_s
+        +table__body-cell
+            +radio-group(name="example-table-radio"
+                        items=[
+                        {
+                            value: 1,
+                            label: "Да",
+                            checked: true
+                        }, {
+                            value: 2,
+                            label: "Нет"
+                        }
+                    ])
+        +table__body-cell.table__body-cell_actions
+            +button.button_no-text.button_rounded.button_size_xs
+                +icon('pencil')
+            +button.button_no-text.button_rounded.button_size_xs
+                +icon('trash')
+            +button.button_no-text.button_rounded.button_size_xs
+                +icon('check-circle')
