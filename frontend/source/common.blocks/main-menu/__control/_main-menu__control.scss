@@ -1,5 +1,6 @@
 .main-menu__control {
     @extend %flex-row-vcenter-hcenter-nowrap;
+    flex-shrink: 0;
     margin-left: auto;
     width: $gap_m;
     height: $gap_m;

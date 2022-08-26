@@ -8,6 +8,7 @@
     transition: background-color $animation_speed_m $animation_type;
 
     > .icon {
+        flex-shrink: 0;
         margin-right: $gap_s;
         &:last-child {
             margin-right: 0;
@@ -15,6 +16,7 @@
     }
 
     > .user-avatar {
+        flex-shrink: 0;
         margin-right: $gap_s;
     }
 
