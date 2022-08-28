@@ -23,10 +23,30 @@ mixin table__body-row
                             label: "Нет"
                         }
                     ])
+
+        // немного логики, которая определяет, какие классы должны быть у кнопок в колонке с действиями
+        // классы кнопок по-умолчанию
+        - var buttonClasses = ['button_no-text','button_rounded','button_size_xs']
+        // классы-модификаторы .table__body-row, при которых у кнопки не должно быть прозрачности
+        - var notTransparentClasses = ['success','error','warning','primary','secondary']
+        - var addTransparentClass = true
+        each cls in notTransparentClasses
+            if attributes.class && attributes.class.indexOf('table__body-row_color_' + cls) !== -1
+                - addTransparentClass = false
+                break
+        if addTransparentClass
+            - buttonClasses.push('button_transparent');
+        // классы-модификаторы .table__body-row, при которых цвет кнопки должен быть color_secondary
+        - var secondaryColorClasses = ['success', 'primary']
+        each cls in secondaryColorClasses
+            if attributes.class && attributes.class.indexOf('table__body-row_color_' + cls) !== -1
+                - buttonClasses.push('button_color_secondary');
+                break
+
         +table__body-cell.table__body-cell_actions
-            +button.button_no-text.button_rounded.button_size_xs
+            +button(class=buttonClasses)
                 +icon('pencil')
-            +button.button_no-text.button_rounded.button_size_xs
+            +button(class=buttonClasses)
                 +icon('trash')
-            +button.button_no-text.button_rounded.button_size_xs
+            +button(class=buttonClasses)
                 +icon('check-circle')
