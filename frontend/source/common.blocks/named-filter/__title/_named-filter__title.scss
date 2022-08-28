@@ -1,0 +1,11 @@
+.named-filter__title {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    @extend %text-l;
+    text-transform: uppercase;
+    font-weight: $fontweight_text_bold;
+    margin-bottom: $gap_xs;
+
+    > .icon {
+        margin-right: $gap_xs;
+    }
+}

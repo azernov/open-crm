@@ -1,5 +1,6 @@
 .counter {
     @extend %flex-row-vcenter-hcenter-nowrap;
+    display: inline-flex;
     @extend %text-s;
     box-shadow: $shadow_m;
     padding: #{$gap_xs * .6} #{$gap_xs * .8};

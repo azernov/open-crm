@@ -1,0 +1,6 @@
+mixin named-filter__description
+    .named-filter__description(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

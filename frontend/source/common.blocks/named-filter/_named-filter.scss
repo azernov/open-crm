@@ -1,0 +1,20 @@
+.named-filter {
+    padding: $gap_s;
+    border-radius: $radius_m;
+    border: $border_width_s solid $color_success_100;
+    position: relative;
+    color: $color_neutral_100;
+    cursor: pointer;
+    transition: color $animation_speed_m $animation_type, background-color $animation_speed_m $animation_type;
+
+    &:hover {
+        background-color: $color_success_20;
+    }
+
+    > .counter {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(40%, -40%);
+    }
+}

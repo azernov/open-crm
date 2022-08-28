@@ -1,0 +1,19 @@
+mixin named-filter
+    .named-filter(class!=attributes.class)
+        - var counterClasses = []
+        if attributes.class && attributes.class.indexOf('named-filter_color_warning') !== -1
+            - counterClasses.push('counter_color_warning')
+        else if attributes.class && attributes.class.indexOf('named-filter_color_error') !== -1
+            //- counterClasses.push('counter_color_error')
+        else
+            - counterClasses.push('counter_color_success')
+        if attributes.counterIcon
+            +counter(icon=attributes.counterIcon class=counterClasses)
+        else
+            +counter(class=counterClasses) 15
+        +named-filter__title
+            +icon('filter').icon_size_s
+            span Лиды
+        +named-filter__description
+            | Необработанные пользователи, которые проявили интерес.
+            | Создайте контрагентов на их основе или удалите этих пользователей

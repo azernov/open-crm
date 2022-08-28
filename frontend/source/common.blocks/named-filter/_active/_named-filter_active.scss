@@ -1,0 +1,9 @@
+.named-filter.named-filter_active {
+    background-color: $color_success_100;
+    color: $color_neutral_0;
+    box-shadow: $shadow_l;
+
+    &:hover {
+        background-color: $color_success_80;
+    }
+}

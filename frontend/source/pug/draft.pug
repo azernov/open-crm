@@ -407,11 +407,22 @@ html
             +utility-container
                 +utility-container__header(title='.table-view')
                 +utility-container__body
-                    +table-viewli
+                    +table-view
             // LinkedFields
             +utility-container
                 +utility-container__header(title='.linked-fields')
                 +utility-container__body
                     +linked-fields
                     +linked-fields.linked-fields_edit
+            // NamedFilter
+            +utility-container
+                +utility-container__header(title='.named-filter')
+                +utility-container__body
+                    +named-filter(counterIcon='check')
+                    +named-filter.named-filter_color_error
+                    +named-filter(counterIcon='exclamation-circle').named-filter_color_warning
+                    +named-filter(counterIcon='check').named-filter_active
+                    +named-filter.named-filter_color_error.named-filter_active
+                    +named-filter(counterIcon='exclamation-circle').named-filter_color_warning.named-filter_active
+
         script(src='js/app.bundle.js')

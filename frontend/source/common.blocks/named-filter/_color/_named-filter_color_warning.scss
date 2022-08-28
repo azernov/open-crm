@@ -1,0 +1,16 @@
+.named-filter.named-filter_color_warning {
+    border-color: $color_warning_100;
+
+    &:hover {
+        background-color: $color_warning_20;
+    }
+
+    &.named-filter_active {
+        background-color: $color_warning_100;
+        color: $color_neutral_100;
+
+        &:hover {
+            background-color: $color_warning_80;
+        }
+    }
+}

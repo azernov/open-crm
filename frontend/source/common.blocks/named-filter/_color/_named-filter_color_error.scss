@@ -1,0 +1,15 @@
+.named-filter.named-filter_color_error {
+    border-color: $color_error_100;
+
+    &:hover {
+        background-color: $color_error_20;
+    }
+
+    &.named-filter_active {
+        background-color: $color_error_100;
+        color: $color_neutral_0;
+        &:hover {
+            background-color: $color_error_80;
+        }
+    }
+}
