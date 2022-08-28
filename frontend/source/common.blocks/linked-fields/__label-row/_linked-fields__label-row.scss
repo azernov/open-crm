@@ -1,0 +1,5 @@
+.linked-fields__label-row {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    margin-bottom: $gap_m;
+    padding: 0 $gap_s;
+}

@@ -1,0 +1,30 @@
+.linked-fields.linked-fields_edit {
+    background: $color_neutral_10;
+
+    .linked-fields__edit-item {
+        display: flex;
+    }
+
+    .linked-fields__display-item {
+        display: none;
+    }
+
+    .linked-fields__bottom-controls {
+        display: flex;
+    }
+
+    .linked-fields__top-controls {
+        > .button {
+            &:nth-child(1) {
+                display: none;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: inline-flex;
+            }
+        }
+    }
+
+
+}

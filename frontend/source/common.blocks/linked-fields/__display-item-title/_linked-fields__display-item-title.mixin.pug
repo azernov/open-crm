@@ -1,0 +1,6 @@
+mixin linked-fields__display-item-title
+    .linked-fields__display-item-title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,12 @@
+.linked-fields__edit-item {
+    @extend %flex-column-hstart-vstart-nowrap;
+    display: none;
+
+    > * {
+        width: 100%;
+        margin-bottom: $gap_s;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

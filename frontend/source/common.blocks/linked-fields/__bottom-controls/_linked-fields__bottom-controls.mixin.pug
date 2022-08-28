@@ -1,0 +1,6 @@
+mixin linked-fields__bottom-controls
+    .linked-fields__bottom-controls(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

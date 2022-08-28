@@ -1,0 +1,5 @@
+.linked-fields__bottom-controls {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+    display: none;
+    margin-top: $gap_m;
+}

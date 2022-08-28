@@ -1,0 +1,5 @@
+.linked-fields__label {
+    @extend %text-s;
+    color: $color_neutral_60;
+    margin-right: $gap_s;
+}

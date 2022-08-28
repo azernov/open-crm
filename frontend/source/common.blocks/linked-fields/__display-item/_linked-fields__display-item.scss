@@ -1,0 +1,4 @@
+.linked-fields__display-item {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    padding: 0 $gap_s;
+}
