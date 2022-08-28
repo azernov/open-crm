@@ -1,0 +1,20 @@
+mixin notification
+    .notification(class!=attributes.class)
+        +notification__close
+            +icon('x').icon_size_xs
+        +icon('exclamation-circle')
+        +notification__content
+            +notification__title Есть незакрытые сделки
+            +notification__description
+                | Перейдите в интерфейс
+                |
+                a(href='#') Сделки
+                |
+                | и обработайте незакрытые сделки
+            +notification__buttons
+                - var btnClasses = ['button_size_xs']
+                +button(class=btnClasses) Перейти
+                - btnClasses.push('button_transparent')
+                if attributes.class && (attributes.class.indexOf('notification_color_error') !== -1 || attributes.class.indexOf('notification_color_success') !== -1)
+                    - btnClasses.push('button_color_neutral-0')
+                +button(class=btnClasses) Закрыть

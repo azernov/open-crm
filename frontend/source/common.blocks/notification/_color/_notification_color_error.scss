@@ -1,0 +1,9 @@
+.notification.notification_color_error {
+    background-color: $color_error_100;
+
+    .notification__description {
+        a {
+            color: $color_neutral_0;
+        }
+    }
+}

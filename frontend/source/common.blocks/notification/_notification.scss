@@ -1,0 +1,13 @@
+.notification {
+    @extend %flex-row-vstart-hstart-nowrap;
+    padding: $gap_s;
+    border-radius: $radius_m;
+    position: relative;
+    color: $color_neutral_0;
+    background-color: $color_neutral_100;
+    box-shadow: $shadow_l;
+
+    > .icon {
+        margin-right: $gap_s;
+    }
+}

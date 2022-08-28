@@ -1,0 +1,12 @@
+.notification__description {
+    @extend %text-s;
+
+    margin-bottom: $gap_s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $color_secondary_100;
+    }
+}

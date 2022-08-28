@@ -1,0 +1,8 @@
+.notification__buttons {
+    > .button {
+        margin-right: $gap_xs;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

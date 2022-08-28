@@ -1,0 +1,6 @@
+mixin notification__buttons
+    .notification__buttons(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

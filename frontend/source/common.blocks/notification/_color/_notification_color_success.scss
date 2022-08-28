@@ -1,0 +1,9 @@
+.notification.notification_color_success {
+    background-color: $color_success_100;
+
+    .notification__description {
+        a {
+            color: $color_neutral_0;
+        }
+    }
+}

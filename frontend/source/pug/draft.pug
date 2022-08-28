@@ -424,5 +424,12 @@ html
                     +named-filter(counterIcon='check').named-filter_active
                     +named-filter.named-filter_color_error.named-filter_active
                     +named-filter(counterIcon='exclamation-circle').named-filter_color_warning.named-filter_active
-
+            // Notification
+            +utility-container
+                +utility-container__header(title='.notification')
+                +utility-container__body
+                    +notification
+                    +notification.notification_color_success
+                    +notification.notification_color_warning
+                    +notification.notification_color_error
         script(src='js/app.bundle.js')

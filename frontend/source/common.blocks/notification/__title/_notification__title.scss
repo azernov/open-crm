@@ -1,0 +1,10 @@
+.notification__title {
+    @extend %text-s;
+    text-transform: uppercase;
+    font-weight: $fontweight_text_bold;
+
+    margin-bottom: $gap_xs;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

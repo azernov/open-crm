@@ -1,0 +1,6 @@
+mixin notification__description
+    .notification__description(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
