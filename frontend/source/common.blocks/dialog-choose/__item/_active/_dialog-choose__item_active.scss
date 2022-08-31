@@ -1,0 +1,11 @@
+.dialog-choose__item.dialog-choose__item_active {
+    background-color: $color_primary_100;
+
+    > .dialog-choose__item-title {
+        color: $color_neutral_0;
+    }
+
+    > .dialog-choose__item-subtitle {
+        color: $color_neutral_20;
+    }
+}

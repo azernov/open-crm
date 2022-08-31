@@ -1,0 +1,6 @@
+mixin dialog-choose__title
+    .dialog-choose__title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

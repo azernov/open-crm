@@ -1,0 +1,6 @@
+mixin dialog-choose__close
+    .dialog-choose__close(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

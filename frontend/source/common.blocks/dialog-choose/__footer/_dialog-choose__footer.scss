@@ -1,0 +1,6 @@
+.dialog-choose__footer {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+    padding: $gap_m;
+    background-color: $color_neutral_10;
+    box-shadow: $shadow_l;
+}

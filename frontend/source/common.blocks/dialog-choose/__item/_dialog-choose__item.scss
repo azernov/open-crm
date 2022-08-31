@@ -1,0 +1,10 @@
+.dialog-choose__item {
+    display: block;
+    padding: $gap_s $gap_m;
+    transition: background-color $animation_speed_m $animation_type;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color_primary_20;
+    }
+}

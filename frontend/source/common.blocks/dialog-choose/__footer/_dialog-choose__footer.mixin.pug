@@ -1,0 +1,6 @@
+mixin dialog-choose__footer
+    .dialog-choose__footer(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

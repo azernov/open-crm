@@ -1,0 +1,9 @@
+.dialog-choose__head {
+    padding: $gap_m;
+    background-color: $color_neutral_10;
+    box-shadow: $shadow_l;
+
+    .textbox {
+        width: 100%;
+    }
+}

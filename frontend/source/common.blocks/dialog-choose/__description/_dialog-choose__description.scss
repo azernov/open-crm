@@ -1,0 +1,11 @@
+.dialog-choose__description {
+    @extend %text-m;
+    margin-bottom: $gap_m;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $color_primary_100;
+    }
+}

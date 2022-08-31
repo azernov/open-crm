@@ -1,0 +1,7 @@
+.dialog-choose__title {
+    @extend %title-m;
+    margin-bottom: $gap_s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

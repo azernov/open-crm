@@ -1,0 +1,10 @@
+%dialog-close {
+    position: absolute;
+    top: $gap_s;
+    right: $gap_s;
+    cursor: pointer;
+    transition: transform $animation_speed_m $animation_type;
+    &:hover {
+        transform: scale(1.3);
+    }
+}

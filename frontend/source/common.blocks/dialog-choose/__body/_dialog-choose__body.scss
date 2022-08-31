@@ -1,0 +1,5 @@
+.dialog-choose__body {
+    max-height: 36.8rem;
+    overflow-y: auto;
+    @extend %scrollbar;
+}

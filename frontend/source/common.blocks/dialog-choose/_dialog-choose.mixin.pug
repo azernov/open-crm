@@ -1,0 +1,16 @@
+mixin dialog-choose
+    .dialog-choose(class!=attributes.class)
+        +dialog-choose__close
+            +icon('x').icon_size_l
+        +dialog-choose__head
+            +dialog-choose__title Контрагент
+            +dialog-choose__description
+                | Выберите контрагента из списка. Чтобы добавить нового контрагента, воспользуйтесь интерфейсом
+                |
+                a(href="#") Контрагенты
+            +textbox(label="Название контрагента")
+        +dialog-choose__body
+            +dialog-choose__items
+        +dialog-choose__footer
+            +button.button_size_s.button_no-text.button_rounded
+                +icon('plus-circle')
