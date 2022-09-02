@@ -1,0 +1,16 @@
+.widget-user-profile__item-title {
+    @extend %text-m;
+    color: $color_neutral_100;
+    text-decoration: none;
+
+    @at-root {
+        a#{&} {
+            text-decoration: underline;
+            transition: color $animation_speed_m $animation_type;
+            &:hover {
+                text-decoration: none;
+                color: $color_secondary_100;
+            }
+        }
+    }
+}

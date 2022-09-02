@@ -1,0 +1,13 @@
+.widget-user-profile__item {
+    @extend %flex-row-vcenter-hstart-nowrap;
+
+    margin-bottom: $gap_s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > .icon {
+        margin-right: $gap_s;
+        color: $color_primary_60;
+    }
+}

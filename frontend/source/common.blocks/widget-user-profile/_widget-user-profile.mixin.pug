@@ -1,0 +1,28 @@
+mixin widget-user-profile
+    .widget-user-profile(class!=attributes.class)
+        +widget-user-profile__controls
+            +button.button_size_xs.button_rounded.button_no-text
+                +icon('pencil')
+        +widget-user-profile__head
+            +user-avatar.user-avatar_size_l(editable=false imageSet=true)
+            +widget-user-profile__name Иван Иванов
+        +widget-user-profile__body
+            +widget-user-profile__item
+                +icon('office-building')
+                +widget-user-profile__item-content
+                    +widget-user-profile__item-title ИП Иванов Иван Иванович
+                    +widget-user-profile__item-subtitle индивидуальный предприниматель
+            +widget-user-profile__item
+                +icon('office-building')
+                +widget-user-profile__item-content
+                    +widget-user-profile__item-title ООО "Иванов и партнеры"
+                    +widget-user-profile__item-subtitle Технический директор
+            +widget-user-profile__item
+                +icon('mail')
+                +widget-user-profile__item-content
+                    +widget-user-profile__item-title(href="mailto:info@example.com") info@example.com
+            +widget-user-profile__item
+                +icon('phone')
+                +widget-user-profile__item-content
+                    +widget-user-profile__item-title(href="tel:+71231235599") +7(123) 123-55-99
+

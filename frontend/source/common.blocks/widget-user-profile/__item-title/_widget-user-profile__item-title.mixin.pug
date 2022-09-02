@@ -1,0 +1,13 @@
+mixin widget-user-profile__item-title
+    if attributes.href
+        a.widget-user-profile__item-title(class!=attributes.class href=attributes.href)
+            if block
+                block
+            else
+                = "default content"
+    else
+        .widget-user-profile__item-title(class!=attributes.class)
+            if block
+                block
+            else
+                = "default content"

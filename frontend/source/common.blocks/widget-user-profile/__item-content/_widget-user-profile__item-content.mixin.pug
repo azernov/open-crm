@@ -1,0 +1,6 @@
+mixin widget-user-profile__item-content
+    .widget-user-profile__item-content(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

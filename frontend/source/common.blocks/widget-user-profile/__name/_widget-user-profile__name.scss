@@ -1,0 +1,6 @@
+.widget-user-profile__name {
+    @extend %text-m;
+    font-weight: $fontweight_text_bold;
+    text-align: center;
+    color: $color_neutral_100;
+}

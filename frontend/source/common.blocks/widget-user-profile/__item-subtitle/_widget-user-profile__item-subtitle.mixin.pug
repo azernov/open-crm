@@ -1,0 +1,6 @@
+mixin widget-user-profile__item-subtitle
+    .widget-user-profile__item-subtitle(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

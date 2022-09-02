@@ -1,0 +1,14 @@
+.widget-user-profile__head {
+    @extend %flex-column-hcenter-vcenter-nowrap;
+    margin-bottom: $gap_m;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > .user-avatar {
+        margin-bottom: $gap_s;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
