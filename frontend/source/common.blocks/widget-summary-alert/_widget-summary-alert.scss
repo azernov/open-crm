@@ -1,0 +1,7 @@
+.widget-summary-alert {
+    @extend %flex-column-hstart-vstart-nowrap;
+    padding: $gap_m;
+    background-color: $color_warning_100;
+    border-radius: $radius_l;
+    width: 35rem;
+}

@@ -1,0 +1,8 @@
+.widget-summary-alert__head {
+    @extend %flex-row-vcenter-hstart-nowrap;
+
+    margin-bottom: $gap_m;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

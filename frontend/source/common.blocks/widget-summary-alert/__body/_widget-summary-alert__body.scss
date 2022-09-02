@@ -1,0 +1,9 @@
+.widget-summary-alert__body {
+    @extend %flex-column-hstart-vstart-nowrap;
+    flex-grow: 1;
+
+    > .button {
+        margin-top: auto;
+        margin-right: $gap_s;
+    }
+}

@@ -1,0 +1,11 @@
+.widget-summary-alert__counter {
+    @extend %text-xl;
+    @extend %flex-column-hcenter-vcenter-nowrap;
+    background-color: $color_neutral_0;
+    color: $color_neutral_100;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: $gap_s;
+    flex: 0 0 auto;
+}

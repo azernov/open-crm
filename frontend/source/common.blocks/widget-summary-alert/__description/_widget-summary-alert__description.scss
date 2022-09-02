@@ -1,0 +1,9 @@
+.widget-summary-alert__description {
+    @extend %text-s;
+    color: $color_neutral_100;
+
+    margin-bottom: $gap_s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

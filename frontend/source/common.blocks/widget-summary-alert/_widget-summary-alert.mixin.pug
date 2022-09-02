@@ -1,0 +1,10 @@
+mixin widget-summary-alert
+    .widget-summary-alert(class!=attributes.class)
+        +widget-summary-alert__head
+            +widget-summary-alert__counter 15
+            +widget-summary-alert__title Пользователей проявили интерес
+        +widget-summary-alert__body
+            +widget-summary-alert__description
+                | Обработайте заявки пользователей, создайте контрагентов или отметьте их как просмотренные.
+            +button.button_size_s Обработать
+

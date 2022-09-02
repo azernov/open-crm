@@ -1,0 +1,6 @@
+mixin widget-summary-alert__head
+    .widget-summary-alert__head(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

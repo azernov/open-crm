@@ -1,0 +1,19 @@
+.widget-summary-alert.widget-summary-alert_layout_h {
+    width: 100%;
+
+    > .widget-summary-alert__body {
+        flex-grow: 0;
+        flex-direction: row;
+        align-items: center;
+
+        > .button {
+            margin-top: 0;
+            order: 1;
+        }
+
+        > .widget-summary-alert__description {
+            order: 2;
+            margin-bottom: 0;
+        }
+    }
+}
