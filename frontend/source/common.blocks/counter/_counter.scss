@@ -8,7 +8,7 @@
     color: $color_neutral_0;
     background-color: $color_error_100;
     text-align: center;
-    min-width: #{$gap_xs * .8 + $fontsize_text_s};
+    min-width: #{$gap_xs * 1.7 + $fontsize_text_s};
 
     .icon {
         font-size: inherit;
