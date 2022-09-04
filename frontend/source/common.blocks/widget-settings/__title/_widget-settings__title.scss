@@ -1,0 +1,13 @@
+.widget-settings__title {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    @extend %text-l;
+    font-weight: $fontweight_text_bold;
+    text-transform: uppercase;
+    color: $color_neutral_100;
+
+    margin-bottom: $gap_m;
+
+    .icon {
+        margin-right: $gap_s;
+    }
+}

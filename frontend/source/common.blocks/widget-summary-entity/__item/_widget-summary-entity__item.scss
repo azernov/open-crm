@@ -1,0 +1,7 @@
+.widget-summary-entity__item {
+    padding: #{math.div($gap_s, 2)} #{math.div($gap_m, 2)};
+
+    .counter {
+        margin-right: $gap_s;
+    }
+}

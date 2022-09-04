@@ -1,0 +1,12 @@
+.widget-summary-entity__head {
+    @extend %flex-row-vstart-hstart-nowrap;
+
+    margin-bottom: $gap_m;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > .button {
+        margin-left: auto;
+    }
+}

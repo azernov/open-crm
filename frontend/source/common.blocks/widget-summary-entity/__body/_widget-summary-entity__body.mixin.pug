@@ -1,0 +1,6 @@
+mixin widget-summary-entity__body
+    .widget-summary-entity__body(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,6 @@
+mixin widget-settings__buttons
+    .widget-settings__buttons(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

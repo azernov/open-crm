@@ -1,0 +1,4 @@
+.widget-summary-entity__body {
+    @extend %flex-row-vcenter-hstart-wrap;
+    margin: -#{math.div($gap_s,2)} -#{math.div($gap_m,2)};
+}

@@ -161,6 +161,8 @@ html
                     +counter 15
                     +counter.counter_color_success 15
                     +counter.counter_color_warning 15
+                    +counter.counter_color_neutral-0 15
+                    +counter.counter_color_neutral-100 15
                     +counter(icon='check')
                     +counter(icon='pencil').counter_color_success
                     +counter(icon='check').counter_color_warning
@@ -448,4 +450,21 @@ html
                 +utility-container__body
                     +widget-summary-alert
                     +widget-summary-alert.widget-summary-alert_layout_h
+            // WidgetSummaryEntity
+            +utility-container
+                +utility-container__header(title='.widget-summary-entity')
+                +utility-container__body
+                    +widget-summary-entity(icon='receipt-tax' title='Сделки')
+                    +widget-summary-entity(icon='share' title='Контрагенты')
+                    +widget-summary-entity(icon='office-building' title='Группы компаний')
+                    +widget-summary-entity(icon='user-group' title='Пользователи')
+                    +widget-summary-entity(icon='document-text' title='Контракты')
+
+                    +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_warning
+                    +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_success
+            // WidgetSettings
+            +utility-container
+                +utility-container__header(title='.widget-settings')
+                +utility-container__body
+                    +widget-settings
         script(src='js/app.bundle.js')

@@ -1,0 +1,6 @@
+.widget-settings__buttons {
+    margin: -#{math.div($gap_s,2)};
+    .button {
+        margin: math.div($gap_s,2);
+    }
+}

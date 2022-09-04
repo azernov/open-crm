@@ -1,0 +1,19 @@
+mixin widget-settings
+    .widget-settings(class!=attributes.class)
+        +widget-settings__title
+            +icon('cog')
+            span Настройки
+        +widget-settings__buttons
+            +button.button_size_xs.button_color_neutral-100.button_transparent
+                +icon('cog')
+                | Настройки
+            +button.button_size_xs.button_color_neutral-100.button_transparent
+                +icon('table')
+                | Доп. поля
+            +button.button_size_xs.button_color_neutral-100.button_transparent
+                +icon('shield-exclamation')
+                | Роли и права
+            +button.button_size_xs.button_color_neutral-100.button_transparent
+                +icon('view-boards')
+                | Статусы сделок
+

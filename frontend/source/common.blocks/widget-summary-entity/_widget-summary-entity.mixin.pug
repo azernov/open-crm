@@ -1,0 +1,18 @@
+mixin widget-summary-entity
+    .widget-summary-entity(class!=attributes.class)
+        +widget-summary-entity__head
+            +widget-summary-entity__title
+                +icon(attributes.icon ? attributes.icon : 'receipt-tax').icon_size_l
+                span= attributes.title ? attributes.title : 'Сделки'
+            +button.button_size_s.button_rounded.button_no-text.button_transparent
+                +icon('arrow-right')
+        +widget-summary-entity__body
+            +widget-summary-entity__item
+                +counter 2
+                span Требуют внимания
+            +widget-summary-entity__item
+                +counter.counter_color_neutral-0 10
+                span В этом месяце
+            +widget-summary-entity__item
+                +counter.counter_color_neutral-0 150
+                span Всего

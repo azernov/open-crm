@@ -1,0 +1,12 @@
+.widget-summary-entity__title {
+    @extend %flex-row-vcenter-hstart-nowrap;
+    @extend %text-l;
+    font-weight: $fontweight_text_bold;
+    text-transform: uppercase;
+    margin-right: $gap_m;
+    color: $color_neutral_100;
+
+    .icon {
+        margin-right: $gap_s;
+    }
+}
