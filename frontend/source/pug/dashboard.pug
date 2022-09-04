@@ -1,0 +1,9 @@
+extends layouts/layout
+append vars
+    - pageTitle = 'Dashboard'
+block app
+    +app__wrapper.app__wrapper_page-type_inner
+        +left-bar
+        +app__main
+            +dashboard
+    +footer

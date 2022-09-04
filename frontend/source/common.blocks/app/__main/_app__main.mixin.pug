@@ -1,0 +1,6 @@
+mixin app__main
+    .app__main(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

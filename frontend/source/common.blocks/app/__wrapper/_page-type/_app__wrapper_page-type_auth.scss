@@ -1,0 +1,13 @@
+.app__wrapper.app__wrapper_page-type_auth {
+    @extend %flex-column-hcenter-vcenter-nowrap;
+    padding: $gap_l;
+    width: 100%;
+    background-color: $color_neutral_20;
+
+    > * {
+        margin-bottom: $gap_xl;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

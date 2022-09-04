@@ -1,0 +1,8 @@
+extends layouts/layout
+append vars
+    - pageTitle = 'SignIn'
+block app
+    +app__wrapper.app__wrapper_page-type_auth
+        +logo.logo_size_l
+        +form-auth
+    +footer

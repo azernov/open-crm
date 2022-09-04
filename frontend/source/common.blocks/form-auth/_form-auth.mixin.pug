@@ -1,0 +1,28 @@
+mixin form-auth
+    .form-auth(class!=attributes.class)
+        if attributes.type == 'signup'
+            +form-auth__title Регистрация
+            +form-auth__main
+                +textbox(label="E-mail")
+                +textbox(label="Фамилия")
+                +textbox(label="Имя")
+                +textbox(label="Отчество")
+                +textbox(label="Пароль" type="password")
+                +form-auth__button-row
+                    +button Регистрация
+                    +form-auth__bottom-description
+                        span Уже есть аккаунт?
+                        br
+                        a(href="#") Войти
+        else
+            +form-auth__title Аутентификация
+            +form-auth__main
+                +textbox(label="E-mail")
+                +textbox(label="Пароль" type="password")
+                +form-auth__button-row
+                    +button Войти
+                    +form-auth__bottom-description
+                        span Еще нет аккаунта?
+                        br
+                        a(href="#") Регистрация
+

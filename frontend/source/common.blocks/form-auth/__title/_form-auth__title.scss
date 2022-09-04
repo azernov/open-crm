@@ -1,0 +1,6 @@
+.form-auth__title {
+    @extend %title-xl;
+    color: $color_neutral_100;
+    text-align: center;
+    margin-bottom: $gap_l;
+}

@@ -1,0 +1,7 @@
+.form-auth__button-row {
+    @extend %flex-row-vcenter-hstart-nowrap;
+
+    .button {
+        margin-right: $gap_m;
+    }
+}

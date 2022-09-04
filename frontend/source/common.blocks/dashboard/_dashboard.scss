@@ -1,0 +1,25 @@
+.dashboard {
+    padding: $gap_m;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: $gap_m;
+
+    > .widget-summary-alert {
+        width: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    > .widget-user-profile {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row-end: 4;
+    }
+
+    > .widget-user-profile,
+    > .widget-settings,
+    > .widget-summary-entity {
+        width: auto;
+    }
+}

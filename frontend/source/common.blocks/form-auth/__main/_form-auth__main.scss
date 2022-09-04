@@ -1,0 +1,12 @@
+.form-auth__main {
+    padding: $gap_xl;
+    border-radius: $radius_l;
+    box-shadow: $shadow_l;
+    background-color: $color_neutral_0;
+
+    > .textbox {
+        display: block;
+        width: 100%;
+        margin-bottom: $gap_m;
+    }
+}

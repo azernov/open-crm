@@ -1,0 +1,6 @@
+mixin form-auth__bottom-description
+    .form-auth__bottom-description(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

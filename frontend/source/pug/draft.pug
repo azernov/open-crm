@@ -1,470 +1,466 @@
-include ../common.blocks/**/*.pug
-html
-    head
-        title Draft
-        link(rel='stylesheet' type='text/css' href='css/app.css')
-    body
-        +app
-            // Button
-            +utility-container
-                +utility-container__header(title='.button')
-                +utility-container__body.utility-container__body_bg_neutral-20
-                    +button Кнопка
-                    +button.button_disabled Кнопка отключена
-                    +button.button_size_s Малая кнопка
-                    +button.button_size_xs Крохотная кнопка
-                    +button.button_size_xs.button_disabled Крохотная кнопка отключена
-                    +button.button_size_xs.button_transparent Крохотная кнопка отключена
-                    +button.button_size_s.button_transparent.button_disabled Крохотная кнопка отключена
+extends layouts/layout
+append vars
+    - pageTitle = 'Draft'
+block app
+    // Button
+    +utility-container
+        +utility-container__header(title='.button')
+        +utility-container__body.utility-container__body_bg_neutral-20
+            +button Кнопка
+            +button.button_disabled Кнопка отключена
+            +button.button_size_s Малая кнопка
+            +button.button_size_xs Крохотная кнопка
+            +button.button_size_xs.button_disabled Крохотная кнопка отключена
+            +button.button_size_xs.button_transparent Крохотная кнопка отключена
+            +button.button_size_s.button_transparent.button_disabled Крохотная кнопка отключена
 
-                    +button.button_color_secondary Кнопка
-                    +button.button_color_secondary.button_disabled Кнопка отключена
-                    +button.button_color_secondary.button_transparent Кнопка
-                    +button.button_color_secondary.button_transparent.button_disabled Кнопка
+            +button.button_color_secondary Кнопка
+            +button.button_color_secondary.button_disabled Кнопка отключена
+            +button.button_color_secondary.button_transparent Кнопка
+            +button.button_color_secondary.button_transparent.button_disabled Кнопка
 
-                    +button.button_color_neutral-0 Кнопка
-                    +button.button_color_neutral-0.button_disabled Кнопка
-                    +button.button_color_neutral-0.button_transparent Кнопка
-                    +button.button_color_neutral-0.button_transparent.button_disabled Кнопка
+            +button.button_color_neutral-0 Кнопка
+            +button.button_color_neutral-0.button_disabled Кнопка
+            +button.button_color_neutral-0.button_transparent Кнопка
+            +button.button_color_neutral-0.button_transparent.button_disabled Кнопка
 
-                    +button.button_color_neutral-100 Кнопка
-                    +button.button_color_neutral-100.button_disabled Кнопка
-                    +button.button_color_neutral-100.button_transparent Кнопка
-                    +button.button_color_neutral-100.button_transparent.button_disabled Кнопка
+            +button.button_color_neutral-100 Кнопка
+            +button.button_color_neutral-100.button_disabled Кнопка
+            +button.button_color_neutral-100.button_transparent Кнопка
+            +button.button_color_neutral-100.button_transparent.button_disabled Кнопка
 
-                    +button.button_color_secondary.button_size_s Кнопка
-                    +button.button_color_secondary.button_disabled.button_size_s Кнопка отключена
-                    +button.button_color_secondary.button_transparent.button_size_s Кнопка
-                    +button.button_color_secondary.button_transparent.button_disabled.button_size_s Кнопка
+            +button.button_color_secondary.button_size_s Кнопка
+            +button.button_color_secondary.button_disabled.button_size_s Кнопка отключена
+            +button.button_color_secondary.button_transparent.button_size_s Кнопка
+            +button.button_color_secondary.button_transparent.button_disabled.button_size_s Кнопка
 
-                    +button.button_color_neutral-0.button_size_s Кнопка
-                    +button.button_color_neutral-0.button_disabled.button_size_s Кнопка
-                    +button.button_color_neutral-0.button_transparent.button_size_s Кнопка
-                    +button.button_color_neutral-0.button_transparent.button_disabled.button_size_s Кнопка
+            +button.button_color_neutral-0.button_size_s Кнопка
+            +button.button_color_neutral-0.button_disabled.button_size_s Кнопка
+            +button.button_color_neutral-0.button_transparent.button_size_s Кнопка
+            +button.button_color_neutral-0.button_transparent.button_disabled.button_size_s Кнопка
 
-                    +button.button_color_neutral-100.button_size_s Кнопка
-                    +button.button_color_neutral-100.button_disabled.button_size_s Кнопка
-                    +button.button_color_neutral-100.button_transparent.button_size_s Кнопка
-                    +button.button_color_neutral-100.button_transparent.button_disabled.button_size_s Кнопка
+            +button.button_color_neutral-100.button_size_s Кнопка
+            +button.button_color_neutral-100.button_disabled.button_size_s Кнопка
+            +button.button_color_neutral-100.button_transparent.button_size_s Кнопка
+            +button.button_color_neutral-100.button_transparent.button_disabled.button_size_s Кнопка
 
-                    +button.button_color_secondary.button_size_xs Кнопка
-                    +button.button_color_secondary.button_disabled.button_size_xs Кнопка отключена
-                    +button.button_color_secondary.button_transparent.button_size_xs Кнопка
-                    +button.button_color_secondary.button_transparent.button_disabled.button_size_xs Кнопка
+            +button.button_color_secondary.button_size_xs Кнопка
+            +button.button_color_secondary.button_disabled.button_size_xs Кнопка отключена
+            +button.button_color_secondary.button_transparent.button_size_xs Кнопка
+            +button.button_color_secondary.button_transparent.button_disabled.button_size_xs Кнопка
 
-                    +button.button_color_neutral-0.button_size_xs Кнопка
-                    +button.button_color_neutral-0.button_disabled.button_size_xs Кнопка
-                    +button.button_color_neutral-0.button_transparent.button_size_xs Кнопка
-                    +button.button_color_neutral-0.button_transparent.button_disabled.button_size_xs Кнопка
+            +button.button_color_neutral-0.button_size_xs Кнопка
+            +button.button_color_neutral-0.button_disabled.button_size_xs Кнопка
+            +button.button_color_neutral-0.button_transparent.button_size_xs Кнопка
+            +button.button_color_neutral-0.button_transparent.button_disabled.button_size_xs Кнопка
 
-                    +button.button_color_neutral-100.button_size_xs Кнопка
-                    +button.button_color_neutral-100.button_disabled.button_size_xs Кнопка
-                    +button.button_color_neutral-100.button_transparent.button_size_xs Кнопка
-                    +button.button_color_neutral-100.button_transparent.button_disabled.button_size_xs Кнопка
+            +button.button_color_neutral-100.button_size_xs Кнопка
+            +button.button_color_neutral-100.button_disabled.button_size_xs Кнопка
+            +button.button_color_neutral-100.button_transparent.button_size_xs Кнопка
+            +button.button_color_neutral-100.button_transparent.button_disabled.button_size_xs Кнопка
 
-                    +button
-                        +icon('pencil')
-                        | Кнопка
+            +button
+                +icon('pencil')
+                | Кнопка
 
-                    +button.button_size_s
-                        +icon('calendar')
-                        | Кнопка
+            +button.button_size_s
+                +icon('calendar')
+                | Кнопка
 
-                    +button.button_size_xs
-                        +icon('x')
-                        | Кнопка
+            +button.button_size_xs
+                +icon('x')
+                | Кнопка
 
-                    +button.button_no-text
-                        +icon('calendar')
+            +button.button_no-text
+                +icon('calendar')
 
-                    +button.button_no-text.button_rounded
-                        +icon('calendar')
+            +button.button_no-text.button_rounded
+                +icon('calendar')
 
-                    +button.button_size_s.button_no-text
-                        +icon('calendar')
+            +button.button_size_s.button_no-text
+                +icon('calendar')
 
-                    +button.button_size_s.button_no-text.button_rounded
-                        +icon('calendar')
+            +button.button_size_s.button_no-text.button_rounded
+                +icon('calendar')
 
-                    +button.button_size_xs.button_no-text
-                        +icon('calendar')
+            +button.button_size_xs.button_no-text
+                +icon('calendar')
 
-                    +button.button_size_xs.button_no-text.button_rounded.button_color_secondary.button_transparent.button_disabled
-                        +icon('calendar')
+            +button.button_size_xs.button_no-text.button_rounded.button_color_secondary.button_transparent.button_disabled
+                +icon('calendar')
 
 
-            // TextBox
-            +utility-container
-                +utility-container__header(title='.textbox')
-                +utility-container__body.utility-container__body_bg_neutral-20
-                    +textbox(label="Название поля")
-                    +textbox(label="Пароль" type="password")
-                    +textbox(label="Какое-то число" type="number").textbox_error
-                    +textbox(label="Просто поле").textbox_success
+    // TextBox
+    +utility-container
+        +utility-container__header(title='.textbox')
+        +utility-container__body.utility-container__body_bg_neutral-20
+            +textbox(label="Название поля")
+            +textbox(label="Пароль" type="password")
+            +textbox(label="Какое-то число" type="number").textbox_error
+            +textbox(label="Просто поле").textbox_success
 
-                    +textbox(label="Название поля" message="Вспомогательный текст с форматом или описанием, чего мы ждем")
-                    +textbox(label="Пароль" type="password" message="Вспомогательный текст с форматом или описанием, чего мы ждем")
-                    +textbox(label="Какое-то число" type="number" message="Текст ошибки").textbox_error
-                    +textbox(label="Просто поле" message="Сохранено").textbox_success
+            +textbox(label="Название поля" message="Вспомогательный текст с форматом или описанием, чего мы ждем")
+            +textbox(label="Пароль" type="password" message="Вспомогательный текст с форматом или описанием, чего мы ждем")
+            +textbox(label="Какое-то число" type="number" message="Текст ошибки").textbox_error
+            +textbox(label="Просто поле" message="Сохранено").textbox_success
 
-                    +textbox(label="Название поля" fixable=true value="Какое-то там очень-очень-очень длинное значение").textbox_fixable
-                    +textbox(label="Название поля" fixable=true value="Какое-то там очень-очень-очень длинное значение").textbox_fixable.textbox_fixable_edit
+            +textbox(label="Название поля" fixable=true value="Какое-то там очень-очень-очень длинное значение").textbox_fixable
+            +textbox(label="Название поля" fixable=true value="Какое-то там очень-очень-очень длинное значение").textbox_fixable.textbox_fixable_edit
 
-                    +textbox(label="Название поля" fixable=true message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_fixable
+            +textbox(label="Название поля" fixable=true message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_fixable
 
-                    +textbox(label="Название поля" message="Вспомогательный текст с форматом или описанием, чего мы ждем" textarea=true)
-
-
-                    +textbox(label="Название поля").textbox_size_s
-                    +textbox(label="Пароль" type="password" message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_size_s
-                    +textbox(label="Какое-то число" type="number" message="Текст ошибки").textbox_error.textbox_size_s
-                    +textbox(label="Просто поле" message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_success.textbox_size_s
+            +textbox(label="Название поля" message="Вспомогательный текст с форматом или описанием, чего мы ждем" textarea=true)
 
 
-            // DropdownSelect
-            +utility-container
-                +utility-container__header(title='.dropdown-select')
-                +utility-container__body.utility-container__body_bg_neutral-20
-                    +dropdown-select
-                    +dropdown-select
-                    +dropdown-select(label="Название поля" message="Вспомогательный текст")
-                    +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1")
-                    +dropdown-select(label="Название поля" message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_error
-                    +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_success
-
-                    +dropdown-select(fixable=true).dropdown-select_fixable
-                    +dropdown-select(fixable=true value="Какое-то очень-очень длинное значение, уходящее вправо").dropdown-select_fixable_edit
-
-                    +dropdown-select.dropdown-select_size_s
-                    +dropdown-select.dropdown-select_size_s
-                    +dropdown-select(label="Название поля").dropdown-select_size_s
-                    +dropdown-select(label="Название поля").dropdown-select_size_s
-                    +dropdown-select(label="Название поля" value="Введенное значение").dropdown-select_size_s
+            +textbox(label="Название поля").textbox_size_s
+            +textbox(label="Пароль" type="password" message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_size_s
+            +textbox(label="Какое-то число" type="number" message="Текст ошибки").textbox_error.textbox_size_s
+            +textbox(label="Просто поле" message="Вспомогательный текст с форматом или описанием, чего мы ждем").textbox_success.textbox_size_s
 
 
-            // DatePicker
-            +utility-container
-                +utility-container__header(title='.datepicker')
-                +utility-container__body.utility-container__body_bg_neutral-20
-                    +datepicker(message="Вспомогательный текст" label="Выберите дату")
-                    +datepicker(message="Вспомогательный текст")
-                    +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015")
-                    +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_error
-                    +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_success
+    // DropdownSelect
+    +utility-container
+        +utility-container__header(title='.dropdown-select')
+        +utility-container__body.utility-container__body_bg_neutral-20
+            +dropdown-select
+            +dropdown-select
+            +dropdown-select(label="Название поля" message="Вспомогательный текст")
+            +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1")
+            +dropdown-select(label="Название поля" message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_error
+            +dropdown-select(message="Вспомогательный текст" value="Введенное значение 1").dropdown-select_success
 
-                    +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable
-                    +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable_edit
-            // Counter
-            +utility-container
-                +utility-container__header(title='.counter')
-                +utility-container__body
-                    +counter 15
-                    +counter.counter_color_success 15
-                    +counter.counter_color_warning 15
-                    +counter.counter_color_neutral-0 15
-                    +counter.counter_color_neutral-100 15
-                    +counter(icon='check')
-                    +counter(icon='pencil').counter_color_success
-                    +counter(icon='check').counter_color_warning
+            +dropdown-select(fixable=true).dropdown-select_fixable
+            +dropdown-select(fixable=true value="Какое-то очень-очень длинное значение, уходящее вправо").dropdown-select_fixable_edit
 
-                    +counter
-                        span 1542
-                        +icon('check')
-
-                    +counter.counter_color_warning
-                        +icon('exclamation')
-                        span 1542
+            +dropdown-select.dropdown-select_size_s
+            +dropdown-select.dropdown-select_size_s
+            +dropdown-select(label="Название поля").dropdown-select_size_s
+            +dropdown-select(label="Название поля").dropdown-select_size_s
+            +dropdown-select(label="Название поля" value="Введенное значение").dropdown-select_size_s
 
 
-            // Radio
-            +utility-container
-                +utility-container__header(title='.radio')
-                +utility-container__body
-                    +radio(name="example-1" value="1" label="Значение 1")
-                    +radio(name="example-1" value="2" label="Значение 2" checked=true)
-                    +radio(name="example-2" value="1")
-                    +radio(name="example-2" value="2" checked=true)
-            // RadioGroup
-            +utility-container
-                +utility-container__header(title='.radio-group')
-                +utility-container__body
-                    +radio-group(title="Заголовок группы"
-                        description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
-                        message="Вспомогательный текст с описанием, чего мы хотим от пользователя"
-                        name="example-3"
-                        items=[
-                        {
-                            value: 1,
-                            label: "Значение тестовое 1"
-                        }, {
-                            value: 2,
-                            label: "Значение тестовое 2 Значение тестовое 2"
-                        }, {
-                            value: 3,
-                            label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
-                        }, {
-                            value: 4,
-                            label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
-                        }
-                    ])
-                    +radio-group.radio-group_error(title="Заголовок группы"
-                        description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
-                        message="Вспомогательный текст с описанием, чего мы хотим от пользователя"
-                        name="example-4"
-                        items=[
-                        {
-                            value: 1,
-                            label: "Значение 1"
-                        }, {
-                            value: 2,
-                            label: "Значение 2 чуть длиннее"
-                        }
-                    ])
-                    +radio-group.radio-group_success(title="Заголовок группы"
-                        description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
-                        name="example-5"
-                        message="Успешно сохранено"
-                        items=[
-                        {
-                            value: 1,
-                            label: "Значение тестовое 1"
-                        }, {
-                            value: 2,
-                            label: "Значение тестовое 2",
-                            checked: true
-                        }
-                    ])
-            // Checkbox
-            +utility-container
-                +utility-container__header(title='.checkbox')
-                +utility-container__body
-                    +checkbox(name="example-1" value="1" label="Значение 1")
-                    +checkbox(name="example-1" value="2" label="Значение 2" checked=true)
-                    +checkbox(name="example-2" value="1")
-                    +checkbox(name="example-2" value="2" checked=true)
-            // Tabs
-            +utility-container
-                +utility-container__header(title='.tabs')
-                +utility-container__body
-                    +tabs(items=[{
-                        title: "Вкладка 1",
-                        class: ""
-                    }, {
-                        title: "Вкладка 2",
-                        class: "tabs__tab_active"
-                    }, {
-                        title: "Вкладка 3",
-                        class: ""
-                    }])
+    // DatePicker
+    +utility-container
+        +utility-container__header(title='.datepicker')
+        +utility-container__body.utility-container__body_bg_neutral-20
+            +datepicker(message="Вспомогательный текст" label="Выберите дату")
+            +datepicker(message="Вспомогательный текст")
+            +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015")
+            +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_error
+            +datepicker(message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_success
 
-            // Logo
-            +utility-container
-                +utility-container__header(title='.logo')
-                +utility-container__body.utility-container__body_bg_neutral-20
-                    +logo.logo_size_s
-                    +logo
-                    +logo.logo_size_l
+            +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable
+            +datepicker(fixable=true message="Вспомогательный текст" label="Выберите дату" value="25 дек 2015").datepicker_fixable_edit
+    // Counter
+    +utility-container
+        +utility-container__header(title='.counter')
+        +utility-container__body
+            +counter 15
+            +counter.counter_color_success 15
+            +counter.counter_color_warning 15
+            +counter.counter_color_neutral-0 15
+            +counter.counter_color_neutral-100 15
+            +counter(icon='check')
+            +counter(icon='pencil').counter_color_success
+            +counter(icon='check').counter_color_warning
 
-                    +logo.logo_size_s(src='i/logo/logo-light.svg')
-                    +logo(src='i/logo/logo-light.svg')
-                    +logo.logo_size_l(src='i/logo/logo-light.svg')
+            +counter
+                span 1542
+                +icon('check')
 
-                    +logo.logo_size_s(src='i/logo/logo-neutral-80.svg')
-                    +logo(src='i/logo/logo-neutral-80.svg')
-                    +logo.logo_size_l(src='i/logo/logo-neutral-80.svg')
+            +counter.counter_color_warning
+                +icon('exclamation')
+                span 1542
 
-                    +logo.logo_size_s(src='i/logo/logo-neutral-0.svg')
-                    +logo(src='i/logo/logo-neutral-0.svg')
-                    +logo.logo_size_l(src='i/logo/logo-neutral-0.svg')
-            // UserAvatar
-            +utility-container
-                +utility-container__header(title='.user-avatar')
-                +utility-container__body
-                    +user-avatar.user-avatar_size_xl.user-avatar_empty(editable=true)
-                    +user-avatar.user-avatar_size_xl(editable=true imageSet=true)
-                    +user-avatar.user-avatar_size_l.user-avatar_empty(editable=true)
-                    +user-avatar.user-avatar_size_l(editable=true imageSet=true)
-                    +user-avatar.user-avatar_empty
-                    +user-avatar(imageSet=true)
-                    +user-avatar.user-avatar_size_s.user-avatar_empty
-                    +user-avatar.user-avatar_size_s(imageSet=true)
-            // MainMenu
-            +utility-container
-                +utility-container__header(title='.main-menu')
-                +utility-container__body
-                    +main-menu(items=[{
-                        title: "Иван Иванов",
-                        href: "#",
-                        active: false,
-                        profile: true
-                    }, {
-                        title: "Пользователи",
-                        href: "#",
-                        icon: "user-group",
-                        active: false
-                    }, {
-                        title: "Группы компаний",
-                        href: "#",
-                        icon: "office-building",
-                        active: true
-                    }, {
-                        title: "Контрагенты",
-                        href: "#",
-                        icon: "share"
-                    }, {
-                        title: "Контракты",
-                        href: "#",
-                        icon: "document-text"
-                    }, {
-                        title: "Сделки",
-                        href: "#",
-                        icon: "receipt-tax"
-                    }, {
-                        title: "Настройки",
-                        href: "#",
-                        icon: "cog",
-                        expanded: false,
-                        subItems: [{
-                            title: "Роли и права",
-                            href: "#",
-                            icon: "shield-exclamation"
-                        }, {
-                            title: "Статусы сделок",
-                            href: "#",
-                            icon: "view-boards"
-                        }, {
-                            title: "Настройка доп. полей",
-                            href: "#",
-                            icon: "table"
-                        }]
-                    }])
-                    +main-menu(items=[{
-                        title: "Иван Иванов",
-                        href: "#",
-                        active: true,
-                        profile: true
-                    }, {
-                        title: "Пользователи",
-                        href: "#",
-                        icon: "user-group",
-                        active: false
-                    }, {
-                        title: "Группы компаний",
-                        href: "#",
-                        icon: "office-building",
-                        active: true
-                    }, {
-                        title: "Контрагенты",
-                        href: "#",
-                        icon: "share"
-                    }, {
-                        title: "Контракты",
-                        href: "#",
-                        icon: "document-text"
-                    }, {
-                        title: "Сделки",
-                        href: "#",
-                        icon: "receipt-tax"
-                    }, {
-                        title: "Настройки",
-                        href: "#",
-                        icon: "cog",
-                        expanded: true,
-                        subItems: [{
-                            title: "Роли и права",
-                            href: "#",
-                            icon: "shield-exclamation"
-                        }, {
-                            title: "Статусы сделок",
-                            href: "#",
-                            icon: "view-boards",
-                            active: true
-                        }, {
-                            title: "Настройка доп. полей",
-                            href: "#",
-                            icon: "table"
-                        }]
-                    }])
-            // LeftBar
-            +utility-container
-                +utility-container__header(title='.left-bar')
-                +utility-container__body
-                    +left-bar
-            // Footer
-            +utility-container
-                +utility-container__header(title='.footer')
-                +utility-container__body
-                    +footer
-            // Pagination
-            +utility-container
-                +utility-container__header(title='.pagination')
-                +utility-container__body
-                    +pagination
-            // Table
-            +utility-container
-                +utility-container__header(title='.table')
-                +utility-container__body
-                    +table
-            // TableView
-            +utility-container
-                +utility-container__header(title='.table-view')
-                +utility-container__body
-                    +table-view
-            // LinkedFields
-            +utility-container
-                +utility-container__header(title='.linked-fields')
-                +utility-container__body
-                    +linked-fields
-                    +linked-fields.linked-fields_edit
-            // NamedFilter
-            +utility-container
-                +utility-container__header(title='.named-filter')
-                +utility-container__body
-                    +named-filter(counterIcon='check')
-                    +named-filter.named-filter_color_error
-                    +named-filter(counterIcon='exclamation-circle').named-filter_color_warning
-                    +named-filter(counterIcon='check').named-filter_active
-                    +named-filter.named-filter_color_error.named-filter_active
-                    +named-filter(counterIcon='exclamation-circle').named-filter_color_warning.named-filter_active
-            // Notification
-            +utility-container
-                +utility-container__header(title='.notification')
-                +utility-container__body
-                    +notification
-                    +notification.notification_color_success
-                    +notification.notification_color_warning
-                    +notification.notification_color_error
-            // DialogChoose
-            +utility-container
-                +utility-container__header(title='.dialog-choose')
-                +utility-container__body
-                    +dialog-choose
-            // WidgetUserProfile
-            +utility-container
-                +utility-container__header(title='.widget-user-profile')
-                +utility-container__body
-                    +widget-user-profile
-            // WidgetSummaryAlert
-            +utility-container
-                +utility-container__header(title='.widget-summary-alert')
-                +utility-container__body
-                    +widget-summary-alert
-                    +widget-summary-alert.widget-summary-alert_layout_h
-            // WidgetSummaryEntity
-            +utility-container
-                +utility-container__header(title='.widget-summary-entity')
-                +utility-container__body
-                    +widget-summary-entity(icon='receipt-tax' title='Сделки')
-                    +widget-summary-entity(icon='share' title='Контрагенты')
-                    +widget-summary-entity(icon='office-building' title='Группы компаний')
-                    +widget-summary-entity(icon='user-group' title='Пользователи')
-                    +widget-summary-entity(icon='document-text' title='Контракты')
 
-                    +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_warning
-                    +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_success
-            // WidgetSettings
-            +utility-container
-                +utility-container__header(title='.widget-settings')
-                +utility-container__body
-                    +widget-settings
-        script(src='js/app.bundle.js')
+    // Radio
+    +utility-container
+        +utility-container__header(title='.radio')
+        +utility-container__body
+            +radio(name="example-1" value="1" label="Значение 1")
+            +radio(name="example-1" value="2" label="Значение 2" checked=true)
+            +radio(name="example-2" value="1")
+            +radio(name="example-2" value="2" checked=true)
+    // RadioGroup
+    +utility-container
+        +utility-container__header(title='.radio-group')
+        +utility-container__body
+            +radio-group(title="Заголовок группы"
+                description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                message="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                name="example-3"
+                items=[
+                {
+                    value: 1,
+                    label: "Значение тестовое 1"
+                }, {
+                    value: 2,
+                    label: "Значение тестовое 2 Значение тестовое 2"
+                }, {
+                    value: 3,
+                    label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
+                }, {
+                    value: 4,
+                    label: "Значение тестовое 3 Значение тестовое 3 Значение тестовое 3"
+                }
+            ])
+            +radio-group.radio-group_error(title="Заголовок группы"
+                description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                message="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                name="example-4"
+                items=[
+                {
+                    value: 1,
+                    label: "Значение 1"
+                }, {
+                    value: 2,
+                    label: "Значение 2 чуть длиннее"
+                }
+            ])
+            +radio-group.radio-group_success(title="Заголовок группы"
+                description="Вспомогательный текст с описанием, чего мы хотим от пользователя"
+                name="example-5"
+                message="Успешно сохранено"
+                items=[
+                {
+                    value: 1,
+                    label: "Значение тестовое 1"
+                }, {
+                    value: 2,
+                    label: "Значение тестовое 2",
+                    checked: true
+                }
+            ])
+    // Checkbox
+    +utility-container
+        +utility-container__header(title='.checkbox')
+        +utility-container__body
+            +checkbox(name="example-1" value="1" label="Значение 1")
+            +checkbox(name="example-1" value="2" label="Значение 2" checked=true)
+            +checkbox(name="example-2" value="1")
+            +checkbox(name="example-2" value="2" checked=true)
+    // Tabs
+    +utility-container
+        +utility-container__header(title='.tabs')
+        +utility-container__body
+            +tabs(items=[{
+                title: "Вкладка 1",
+                class: ""
+            }, {
+                title: "Вкладка 2",
+                class: "tabs__tab_active"
+            }, {
+                title: "Вкладка 3",
+                class: ""
+            }])
+
+    // Logo
+    +utility-container
+        +utility-container__header(title='.logo')
+        +utility-container__body.utility-container__body_bg_neutral-20
+            +logo.logo_size_s
+            +logo
+            +logo.logo_size_l
+
+            +logo.logo_size_s(src='i/logo/logo-light.svg')
+            +logo(src='i/logo/logo-light.svg')
+            +logo.logo_size_l(src='i/logo/logo-light.svg')
+
+            +logo.logo_size_s(src='i/logo/logo-neutral-80.svg')
+            +logo(src='i/logo/logo-neutral-80.svg')
+            +logo.logo_size_l(src='i/logo/logo-neutral-80.svg')
+
+            +logo.logo_size_s(src='i/logo/logo-neutral-0.svg')
+            +logo(src='i/logo/logo-neutral-0.svg')
+            +logo.logo_size_l(src='i/logo/logo-neutral-0.svg')
+    // UserAvatar
+    +utility-container
+        +utility-container__header(title='.user-avatar')
+        +utility-container__body
+            +user-avatar.user-avatar_size_xl.user-avatar_empty(editable=true)
+            +user-avatar.user-avatar_size_xl(editable=true imageSet=true)
+            +user-avatar.user-avatar_size_l.user-avatar_empty(editable=true)
+            +user-avatar.user-avatar_size_l(editable=true imageSet=true)
+            +user-avatar.user-avatar_empty
+            +user-avatar(imageSet=true)
+            +user-avatar.user-avatar_size_s.user-avatar_empty
+            +user-avatar.user-avatar_size_s(imageSet=true)
+    // MainMenu
+    +utility-container
+        +utility-container__header(title='.main-menu')
+        +utility-container__body
+            +main-menu(items=[{
+                title: "Иван Иванов",
+                href: "#",
+                active: false,
+                profile: true
+            }, {
+                title: "Пользователи",
+                href: "#",
+                icon: "user-group",
+                active: false
+            }, {
+                title: "Группы компаний",
+                href: "#",
+                icon: "office-building",
+                active: true
+            }, {
+                title: "Контрагенты",
+                href: "#",
+                icon: "share"
+            }, {
+                title: "Контракты",
+                href: "#",
+                icon: "document-text"
+            }, {
+                title: "Сделки",
+                href: "#",
+                icon: "receipt-tax"
+            }, {
+                title: "Настройки",
+                href: "#",
+                icon: "cog",
+                expanded: false,
+                subItems: [{
+                    title: "Роли и права",
+                    href: "#",
+                    icon: "shield-exclamation"
+                }, {
+                    title: "Статусы сделок",
+                    href: "#",
+                    icon: "view-boards"
+                }, {
+                    title: "Настройка доп. полей",
+                    href: "#",
+                    icon: "table"
+                }]
+            }])
+            +main-menu(items=[{
+                title: "Иван Иванов",
+                href: "#",
+                active: true,
+                profile: true
+            }, {
+                title: "Пользователи",
+                href: "#",
+                icon: "user-group",
+                active: false
+            }, {
+                title: "Группы компаний",
+                href: "#",
+                icon: "office-building",
+                active: true
+            }, {
+                title: "Контрагенты",
+                href: "#",
+                icon: "share"
+            }, {
+                title: "Контракты",
+                href: "#",
+                icon: "document-text"
+            }, {
+                title: "Сделки",
+                href: "#",
+                icon: "receipt-tax"
+            }, {
+                title: "Настройки",
+                href: "#",
+                icon: "cog",
+                expanded: true,
+                subItems: [{
+                    title: "Роли и права",
+                    href: "#",
+                    icon: "shield-exclamation"
+                }, {
+                    title: "Статусы сделок",
+                    href: "#",
+                    icon: "view-boards",
+                    active: true
+                }, {
+                    title: "Настройка доп. полей",
+                    href: "#",
+                    icon: "table"
+                }]
+            }])
+    // LeftBar
+    +utility-container
+        +utility-container__header(title='.left-bar')
+        +utility-container__body
+            +left-bar
+    // Footer
+    +utility-container
+        +utility-container__header(title='.footer')
+        +utility-container__body
+            +footer
+    // Pagination
+    +utility-container
+        +utility-container__header(title='.pagination')
+        +utility-container__body
+            +pagination
+    // Table
+    +utility-container
+        +utility-container__header(title='.table')
+        +utility-container__body
+            +table
+    // TableView
+    +utility-container
+        +utility-container__header(title='.table-view')
+        +utility-container__body
+            +table-view
+    // LinkedFields
+    +utility-container
+        +utility-container__header(title='.linked-fields')
+        +utility-container__body
+            +linked-fields
+            +linked-fields.linked-fields_edit
+    // NamedFilter
+    +utility-container
+        +utility-container__header(title='.named-filter')
+        +utility-container__body
+            +named-filter(counterIcon='check')
+            +named-filter.named-filter_color_error
+            +named-filter(counterIcon='exclamation-circle').named-filter_color_warning
+            +named-filter(counterIcon='check').named-filter_active
+            +named-filter.named-filter_color_error.named-filter_active
+            +named-filter(counterIcon='exclamation-circle').named-filter_color_warning.named-filter_active
+    // Notification
+    +utility-container
+        +utility-container__header(title='.notification')
+        +utility-container__body
+            +notification
+            +notification.notification_color_success
+            +notification.notification_color_warning
+            +notification.notification_color_error
+    // DialogChoose
+    +utility-container
+        +utility-container__header(title='.dialog-choose')
+        +utility-container__body
+            +dialog-choose
+    // WidgetUserProfile
+    +utility-container
+        +utility-container__header(title='.widget-user-profile')
+        +utility-container__body
+            +widget-user-profile
+    // WidgetSummaryAlert
+    +utility-container
+        +utility-container__header(title='.widget-summary-alert')
+        +utility-container__body
+            +widget-summary-alert
+            +widget-summary-alert.widget-summary-alert_layout_h
+    // WidgetSummaryEntity
+    +utility-container
+        +utility-container__header(title='.widget-summary-entity')
+        +utility-container__body
+            +widget-summary-entity(icon='receipt-tax' title='Сделки')
+            +widget-summary-entity(icon='share' title='Контрагенты')
+            +widget-summary-entity(icon='office-building' title='Группы компаний')
+            +widget-summary-entity(icon='user-group' title='Пользователи')
+            +widget-summary-entity(icon='document-text' title='Контракты')
+
+            +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_warning
+            +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_success
+    // WidgetSettings
+    +utility-container
+        +utility-container__header(title='.widget-settings')
+        +utility-container__body
+            +widget-settings

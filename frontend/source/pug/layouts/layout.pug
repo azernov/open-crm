@@ -1,0 +1,13 @@
+include ../../common.blocks/**/*.pug
+block vars
+    - var pageTitle = 'Default'
+html
+    head
+        title= pageTitle
+        block styles
+            link(rel='stylesheet' type='text/css' href='css/app.css')
+    body
+        +app
+            block app
+        block scripts
+            script(src='js/app.bundle.js')

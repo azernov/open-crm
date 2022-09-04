@@ -1,0 +1,6 @@
+mixin form-auth__button-row
+    .form-auth__button-row(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,12 @@
+mixin dashboard
+    .dashboard(class!=attributes.class)
+        +widget-summary-alert.widget-summary-alert_layout_h
+        +widget-summary-alert.widget-summary-alert_layout_h
+        +widget-summary-alert.widget-summary-alert_layout_h
+        +widget-user-profile
+        +widget-summary-entity(icon='receipt-tax' title='Сделки').widget-summary-entity_color_warning
+        +widget-summary-entity(icon='share' title='Контрагенты').widget-summary-entity_color_warning
+        +widget-summary-entity(icon='office-building' title='Группы компаний').widget-summary-entity_color_success
+        +widget-summary-entity(icon='user-group' title='Пользователи')
+        +widget-summary-entity(icon='document-text' title='Контракты')
+        +widget-settings

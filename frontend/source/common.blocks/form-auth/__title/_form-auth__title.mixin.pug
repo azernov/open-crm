@@ -1,0 +1,6 @@
+mixin form-auth__title
+    .form-auth__title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
