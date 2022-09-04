@@ -3,29 +3,36 @@
     color: $color_primary_100;
 
     &:hover {
-        background-color: transparent;
-        color: $color_primary_80;
+        background-color: $color_primary_100;
+        border-color: $color_primary_100;
+        color: $color_neutral_0;
         text-shadow: $shadow_m;
     }
 
     &.button_color_secondary {
         color: $color_secondary_100;
         &:hover {
-            color: $color_secondary_80;
+            background-color: $color_secondary_100;
+            border-color: $color_secondary_100;
+            color: $color_neutral_0;
         }
     }
 
     &.button_color_neutral-0 {
         color: $color_neutral_0;
         &:hover {
-            color: $color_neutral_20;
+            background-color: $color_neutral_0;
+            border-color: $color_neutral_0;
+            color: $color_neutral_100;
         }
     }
 
     &.button_color_neutral-100 {
         color: $color_neutral_100;
         &:hover {
-            color: $color_neutral_80;
+            background-color: $color_neutral_100;
+            border-color: $color_neutral_100;
+            color: $color_neutral_0;
         }
     }
 
