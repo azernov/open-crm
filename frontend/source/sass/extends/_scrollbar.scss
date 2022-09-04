@@ -1,18 +1,21 @@
 %scrollbar {
     &::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
+        width: 1rem;
+        height: 1rem;
+        border-radius: .5rem;
         background: transparent;
     }
 
     &::-webkit-scrollbar-track {
-        background: $color_neutral_20;
+        background: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: $color_neutral_60;
+        background-color: $color_neutral_40;
         outline: none;
-        border-radius: 3px;
+        border-radius: .5rem;
+        background-clip: content-box;
+        border: .3rem solid transparent;
     }
 
     &::-webkit-scrollbar-corner {
