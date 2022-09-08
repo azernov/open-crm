@@ -1,0 +1,16 @@
+.tabs__head {
+    @extend %flex-row-vend-hstart-wrap;
+    position: relative;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: $border_width_m;
+        background: $color_neutral_20;
+        z-index: 2;
+    }
+}

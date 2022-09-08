@@ -1,4 +1,7 @@
 mixin tabs
     .tabs(class!=attributes.class)
-        each item in attributes.items
-            +tabs__tab(class=item.class)= item.title
+        +tabs__head
+            each item in attributes.items
+                +tabs__tab(class=item.class)= item.title
+        +tabs__body
+            block
