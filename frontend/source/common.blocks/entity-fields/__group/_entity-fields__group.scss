@@ -1,0 +1,16 @@
+.entity-fields__group {
+    @extend %flex-column-hcenter-vstart-nowrap;
+    width: 100%;
+
+    > * {
+        margin-bottom: $gap_m;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    > .textbox {
+        width: 100%;
+        display: block;
+    }
+}

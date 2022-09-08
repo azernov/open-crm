@@ -1,0 +1,6 @@
+mixin main-content
+    .main-content(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

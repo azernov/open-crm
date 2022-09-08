@@ -1,0 +1,6 @@
+mixin entity-fields
+    .entity-fields(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

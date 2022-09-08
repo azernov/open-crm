@@ -1,0 +1,6 @@
+mixin right-bar
+    .right-bar(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

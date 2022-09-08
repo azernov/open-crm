@@ -1,0 +1,10 @@
+.entity-fields {
+    @extend %flex-column-hcenter-vstart-nowrap;
+
+    > * {
+        margin-bottom: $gap_l;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

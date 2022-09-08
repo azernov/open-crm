@@ -1,1 +1,5 @@
-.app__main {}
+.app__main {
+    @extend %flex-row-vstart-hstart-nowrap;
+    align-items: stretch;
+    flex-grow: 1;
+}

@@ -1,0 +1,6 @@
+mixin main-content__title
+    .main-content__title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
