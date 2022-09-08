@@ -1,4 +1,7 @@
 mixin table
     table.table(class!=attributes.class)
-        +table__head
-        +table__body
+        if block
+            block
+        else
+            +table__head
+            +table__body

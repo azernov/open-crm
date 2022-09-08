@@ -1,15 +1,18 @@
 mixin table__body
     tbody.table__body(class!=attributes.class)
-        +table__body-row
-        +table__body-row
-        +table__body-row.table__body-row_color_error
-        +table__body-row.table__body-row_color_error
-        +table__body-row.table__body-row_color_primary
-        +table__body-row.table__body-row_color_primary
-        +table__body-row.table__body-row_color_secondary
-        +table__body-row.table__body-row_color_secondary
-        +table__body-row.table__body-row_color_success
-        +table__body-row.table__body-row_color_success
-        +table__body-row.table__body-row_color_warning
-        +table__body-row.table__body-row_color_warning
+        if block
+            block
+        else
+            +table__body-row
+            +table__body-row
+            +table__body-row.table__body-row_color_error
+            +table__body-row.table__body-row_color_error
+            +table__body-row.table__body-row_color_primary
+            +table__body-row.table__body-row_color_primary
+            +table__body-row.table__body-row_color_secondary
+            +table__body-row.table__body-row_color_secondary
+            +table__body-row.table__body-row_color_success
+            +table__body-row.table__body-row_color_success
+            +table__body-row.table__body-row_color_warning
+            +table__body-row.table__body-row_color_warning
 

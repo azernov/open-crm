@@ -1,3 +1,6 @@
 mixin table__head
     thead.table__head(class!=attributes.class)
-        +table__head-row
+        if block
+            block
+        else
+            +table__head-row

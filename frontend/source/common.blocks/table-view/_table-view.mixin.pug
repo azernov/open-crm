@@ -1,4 +1,7 @@
 mixin table-view
     .table-view(class!=attributes.class)
-        +table
-        +pagination
+        if block
+            block
+        else
+            +table
+            +pagination

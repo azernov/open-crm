@@ -1,52 +1,55 @@
 mixin table__body-row
     tr.table__body-row(class!=attributes.class)
-        +table__body-cell
-            +checkbox
-        +table__body-cell
-            +user-avatar(imageSet=true).user-avatar_size_s
-        +table__body-cell
-            +icon('check-circle').icon_size_s
-        +table__body-cell
-            +icon('check-circle').icon_size_s
-            span Значение
-        +table__body-cell
-            +dropdown-select.dropdown-select_size_s
-        +table__body-cell
-            +radio-group(name="example-table-radio"
-                        items=[
-                        {
-                            value: 1,
-                            label: "Да",
-                            checked: true
-                        }, {
-                            value: 2,
-                            label: "Нет"
-                        }
-                    ])
+        if block
+            block
+        else
+            +table__body-cell
+                +checkbox
+            +table__body-cell
+                +user-avatar(imageSet=true).user-avatar_size_s
+            +table__body-cell
+                +icon('check-circle').icon_size_s
+            +table__body-cell
+                +icon('check-circle').icon_size_s
+                span Значение
+            +table__body-cell
+                +dropdown-select.dropdown-select_size_s
+            +table__body-cell
+                +radio-group(name="example-table-radio"
+                            items=[
+                            {
+                                value: 1,
+                                label: "Да",
+                                checked: true
+                            }, {
+                                value: 2,
+                                label: "Нет"
+                            }
+                        ])
 
-        // немного логики, которая определяет, какие классы должны быть у кнопок в колонке с действиями
-        // классы кнопок по-умолчанию
-        - var buttonClasses = ['button_no-text','button_rounded','button_size_xs']
-        // классы-модификаторы .table__body-row, при которых у кнопки не должно быть прозрачности
-        - var notTransparentClasses = ['success','error','warning','primary','secondary']
-        - var addTransparentClass = true
-        each cls in notTransparentClasses
-            if attributes.class && attributes.class.indexOf('table__body-row_color_' + cls) !== -1
-                - addTransparentClass = false
-                break
-        if addTransparentClass
-            - buttonClasses.push('button_transparent');
-        // классы-модификаторы .table__body-row, при которых цвет кнопки должен быть color_secondary
-        - var secondaryColorClasses = ['success', 'primary']
-        each cls in secondaryColorClasses
-            if attributes.class && attributes.class.indexOf('table__body-row_color_' + cls) !== -1
-                - buttonClasses.push('button_color_secondary');
-                break
+            // немного логики, которая определяет, какие классы должны быть у кнопок в колонке с действиями
+            // классы кнопок по-умолчанию
+            - var buttonClasses = ['button_no-text','button_rounded','button_size_xs']
+            // классы-модификаторы .table__body-row, при которых у кнопки не должно быть прозрачности
+            - var notTransparentClasses = ['success','error','warning','primary','secondary']
+            - var addTransparentClass = true
+            each cls in notTransparentClasses
+                if attributes.class && attributes.class.indexOf('table__body-row_color_' + cls) !== -1
+                    - addTransparentClass = false
+                    break
+            if addTransparentClass
+                - buttonClasses.push('button_transparent');
+            // классы-модификаторы .table__body-row, при которых цвет кнопки должен быть color_secondary
+            - var secondaryColorClasses = ['success', 'primary']
+            each cls in secondaryColorClasses
+                if attributes.class && attributes.class.indexOf('table__body-row_color_' + cls) !== -1
+                    - buttonClasses.push('button_color_secondary');
+                    break
 
-        +table__body-cell.table__body-cell_actions
-            +button(class=buttonClasses)
-                +icon('pencil')
-            +button(class=buttonClasses)
-                +icon('trash')
-            +button(class=buttonClasses)
-                +icon('check-circle')
+            +table__body-cell.table__body-cell_actions
+                +button(class=buttonClasses)
+                    +icon('pencil')
+                +button(class=buttonClasses)
+                    +icon('trash')
+                +button(class=buttonClasses)
+                    +icon('check-circle')
