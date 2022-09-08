@@ -6,4 +6,11 @@
             background-color: $color_neutral_10;
         }
     }
+
+    &:hover {
+        > .table__body-cell,
+        > td {
+            border-bottom-color: $color_neutral_40;
+        }
+    }
 }

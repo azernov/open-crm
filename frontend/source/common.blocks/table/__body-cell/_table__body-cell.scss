@@ -3,6 +3,9 @@
     @extend %text-s;
     padding: #{$gap_m * 0.75} $gap_s;
     text-align: left;
+    border-bottom: $border_width_m solid transparent;
+    transition: border-bottom-color $animation_speed_m $animation_type;
+
     > * {
         vertical-align : middle;
     }

@@ -14,4 +14,11 @@
             background-color: $color_primary_80;
         }
     }
+
+    &:hover {
+        > .table__body-cell,
+        > td {
+            border-bottom-color: $color_primary_20;
+        }
+    }
 }
