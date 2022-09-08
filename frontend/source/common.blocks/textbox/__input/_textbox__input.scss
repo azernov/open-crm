@@ -1,3 +1,9 @@
 .textbox__input {
     @extend %input-field-input;
+
+    @at-root {
+        textarea#{&} {
+            @extend %scrollbar;
+        }
+    }
 }
