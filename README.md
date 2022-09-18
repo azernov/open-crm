@@ -1,6 +1,11 @@
 # open-crm
 CRM с открытым исходным кодом. Разрабатывается как часть подробного учебного курса Lectoria.pro
 
+## Demo
+
+* [Блоки](http://open-crm-demo.artprog.pro/draft.html)
+* [Интерфейс](http://open-crm-demo.artprog.pro/profile.html) (боковые ссылки кликабельные) 
+
 ## Проект в Figma
 * [🔗 Диаграмма интерфейсов](https://www.figma.com/file/cirR0hSIurfw7REWftgjQi/OpenCRM-Interface-Flow)
 * [🔗 Прототипы интерфейсов](https://www.figma.com/file/vOYxwLEXkzuY0nLzkc57iM/OpenCRM-Prototypes)

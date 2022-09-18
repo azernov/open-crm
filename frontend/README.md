@@ -1,5 +1,12 @@
 # Проект frontend-части OpenCRM
 
+## Demo
+
+* [Блоки](http://open-crm-demo.artprog.pro/draft.html)
+* [Интерфейс](http://open-crm-demo.artprog.pro/profile.html) (боковые ссылки кликабельные)
+
+## Установка и сборка
+
 Для сборки проекта необходимо установить все зависимости:
 
 ```bash
