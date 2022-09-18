@@ -1,0 +1,68 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Settings'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Настройки
+        +main-content__body
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell Параметр
+                            +table__head-cell Значение
+                            +table__head-cell.table__head-cell_actions
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('cog')
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('filter')
+
+                    +table__body
+                        +table__body-row
+                            +table__body-cell
+                                | Название компании
+                            +table__body-cell
+                                +textbox(value='ООО "Иванов и партнеры"').textbox_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('refresh')
+                        +table__body-row
+                            +table__body-cell
+                                | Валюта по-умолчанию
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('refresh')
+                        +table__body-row
+                            +table__body-cell
+                                | Валюта по-умолчанию
+                            +table__body-cell
+                                +dropdown-select(value='₽').dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('refresh')
+                        +table__body-row
+                            +table__body-cell
+                                | Разрешить пользователям самостоятельную регистрацию
+                            +table__body-cell
+                                +radio-group(name="setting-1"
+                                            items=[
+                                            {
+                                                value: 1,
+                                                label: "Да",
+                                                checked: true
+                                            }, {
+                                                value: 2,
+                                                label: "Нет"
+                                            }
+                                        ])
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('refresh')
+
+
+
+                +pagination
+

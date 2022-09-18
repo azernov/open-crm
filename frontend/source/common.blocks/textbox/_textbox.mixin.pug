@@ -3,7 +3,7 @@ mixin textbox
         +textbox__wrapper
             if attributes.label
                 +textbox__label= attributes.label
-            +textbox__input(type=attributes.type value=attributes.value textarea=attributes.textarea placeholder=attributes.placeholder)
+            +textbox__input(type=attributes.type value!=attributes.value textarea=attributes.textarea placeholder=attributes.placeholder)
             if attributes.fixable
                 +textbox__controls
                     +button.button_size_xs.button_rounded.button_no-text.button_transparent

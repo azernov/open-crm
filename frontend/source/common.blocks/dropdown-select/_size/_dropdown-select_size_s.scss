@@ -2,6 +2,7 @@
     .dropdown-select__input {
         @extend %text-xs;
         padding: $gap_xs * 1.5;
+        padding-right: $gap_xs * 1.5 + $icon_size_xs + $gap_xs;
         border-radius: $radius_s;
     }
 

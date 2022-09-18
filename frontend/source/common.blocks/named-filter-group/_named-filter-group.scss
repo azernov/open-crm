@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-gap: $gap_s;
+    grid-gap: $gap_m;
 
     > .named-filter {
         width: auto;

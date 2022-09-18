@@ -3,4 +3,4 @@ mixin textbox__input
         textarea.textbox__input(class!=attributes.class placeholder=attributes.placeholder ? attributes.placeholder : "Плейсхолдер")
             = attributes.value
     else
-        input.textbox__input(class!=attributes.class type=attributes.type ? attributes.type : "text" placeholder=attributes.placeholder ? attributes.placeholder : "Плейсхолдер" value=attributes.value)
+        input.textbox__input(class!=attributes.class type=attributes.type ? attributes.type : "text" placeholder=attributes.placeholder ? attributes.placeholder : "Плейсхолдер" value!=attributes.value)
