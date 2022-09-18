@@ -3,7 +3,7 @@ mixin main-menu__profile-item
     if attributes.active
         - cls += ' main-menu__profile-item_active'
     .main-menu__profile-item(class!=cls)
-        +main-menu__link(href="#")
+        +main-menu__link(href=attributes.href ? attributes.href : '#')
             +user-avatar(imageSet=true).user-avatar_size_s
             +main-menu__link-title= attributes.title
         +main-menu__link(href="#logout")

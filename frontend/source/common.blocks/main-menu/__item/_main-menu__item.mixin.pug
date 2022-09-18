@@ -7,7 +7,7 @@ mixin main-menu__item
     if attributes.active
         - cls += ' main-menu__item_active'
     .main-menu__item(class!=cls)
-        +main-menu__link(href='#' icon=attributes.icon hasSubItems=attributes.subItems ? true : false title!=attributes.title)
+        +main-menu__link(href=attributes.href ? attributes.href : '#' icon=attributes.icon hasSubItems=attributes.subItems ? true : false title!=attributes.title)
         if attributes.subItems
             +main-menu__sub-items
                 each item in attributes.subItems
