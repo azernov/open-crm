@@ -122,6 +122,11 @@ textarea {
             color: transparent;
         }
     }
+
+    &:disabled,
+    &[disabled] {
+        opacity: 1;
+    }
 }
 
 textarea {

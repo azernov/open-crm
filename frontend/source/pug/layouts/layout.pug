@@ -4,8 +4,9 @@ block vars
 html
     head
         title= pageTitle
+        meta(charset="UTF-8")
         block styles
-            link(rel='stylesheet' type='text/css' href='css/app.css')
+            link(rel='stylesheet' type='text/css' href='css/app.css?v=0.03')
     body
         +app
             block app
