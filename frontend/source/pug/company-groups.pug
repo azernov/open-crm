@@ -1,0 +1,135 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Company groups'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Группы компаний
+            +page-controls
+                +button.button_size_s
+                    +icon('plus-circle')
+                    span Новая группа
+        +main-content__body
+            +search
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell Название группы
+                            +table__head-cell Компании
+                            +table__head-cell.table__head-cell_actions
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('cog')
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('filter')
+
+                    +table__body
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+                        +table__body-row
+                            +table__body-cell
+                                +icon('user-group').table__cell-item.icon_size_s
+                                strong.table__cell-item Холдинг "Рога и копыта"
+                            +table__body-cell
+                                a.table__cell-item(href='#') ООО "Иванов и партнеры"
+                                a.table__cell-item(href='#') ООО "Компания 2"
+                                a.table__cell-item(href='#') ЗАО "Строительный трест"
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+                +pagination
+

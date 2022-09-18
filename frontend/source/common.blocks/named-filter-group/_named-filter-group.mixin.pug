@@ -1,0 +1,6 @@
+mixin named-filter-group
+    .named-filter-group(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

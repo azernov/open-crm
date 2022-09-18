@@ -1,0 +1,12 @@
+.search {
+    @extend %flex-row-vcenter-hstart-nowrap;
+
+    .textbox {
+        width: auto;
+        flex: 1 0 auto;
+    }
+
+    .button {
+        margin-left: $gap_s;
+    }
+}

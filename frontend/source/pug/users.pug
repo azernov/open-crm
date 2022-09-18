@@ -1,0 +1,244 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Users'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Контактные лица и сотрудники
+            +page-controls
+                +button.button_size_s
+                    +icon('plus-circle')
+                    span Новый пользователь
+        +main-content__body
+            +named-filter-group
+                +named-filter.named-filter_color_error.named-filter_active
+                +named-filter(title="Контактные лица клиентов" description="Сотрудники контрагентов, зарегистрированные в системе").named-filter_color_error
+                +named-filter(title="Сотрудники" description="Пользователи внутри вашей компании").named-filter_color_error
+            +search
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell
+                            +table__head-cell ФИО
+                            +table__head-cell Контрагент
+                            +table__head-cell E-mail
+                            +table__head-cell Должность
+                            +table__head-cell Тип контрагента
+                            +table__head-cell.table__head-cell_actions
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('cog')
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('filter')
+
+                    +table__body
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+                        +table__body-row
+                            +table__body-cell
+                                +user-avatar(imageSet=true editable=false).user-avatar_size_s
+                            +table__body-cell
+                                | Иванов Иван
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | Заказчик
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('check-circle')
+
+
+
+
+                +pagination
+

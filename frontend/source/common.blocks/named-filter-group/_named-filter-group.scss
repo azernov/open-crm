@@ -1,0 +1,12 @@
+.named-filter-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: $gap_s;
+
+    > .named-filter {
+        width: auto;
+        grid-column-start: auto;
+        grid-column-end: span 1;
+    }
+}

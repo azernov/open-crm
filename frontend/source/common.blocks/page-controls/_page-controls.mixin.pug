@@ -1,0 +1,6 @@
+mixin page-controls
+    .page-controls(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

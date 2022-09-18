@@ -13,7 +13,10 @@ mixin named-filter
             +counter(class=counterClasses) 15
         +named-filter__title
             +icon('filter').icon_size_s
-            span Лиды
+            span= attributes.title ? attributes.title : "Лиды"
         +named-filter__description
-            | Необработанные пользователи, которые проявили интерес.
-            | Создайте контрагентов на их основе или удалите этих пользователей
+            if attributes.description
+                = attributes.description
+            else
+                | Необработанные пользователи, которые проявили интерес.
+                | Создайте контрагентов на их основе или удалите этих пользователей

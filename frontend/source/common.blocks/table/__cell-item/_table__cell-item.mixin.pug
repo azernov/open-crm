@@ -1,0 +1,6 @@
+mixin table__cell-item
+    .table__cell-item(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

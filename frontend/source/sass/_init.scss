@@ -20,3 +20,7 @@ body {
 
     @extend %scrollbar;
 }
+
+strong,b {
+    font-weight: $fontweight_text_bold;
+}

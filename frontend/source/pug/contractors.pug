@@ -1,0 +1,185 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Contractors'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Контрагенты
+            +page-controls
+                +button.button_size_s
+                    +icon('plus-circle')
+                    span Новый контрагент
+        +main-content__body
+            +named-filter-group
+                +named-filter(title="Ожидают подписания контракта" description="Обработайте этих клиентов или отложите подписание контракта").named-filter_color_error.named-filter_active
+                +named-filter(title="Ожидают поставки" description="Контрагенты, у которых близится срок завершения сделки. Обработайте их или перенесите даты завершения сделки.").named-filter_color_error
+                +named-filter(title="Клиенты в стадии сделки" description="Контрагенты, с которыми есть незавершенные сделки. Сроки поставок впереди, срочности в обработке этих контрагентов нет.").named-filter_color_error
+            +search
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell Контрагент
+                            +table__head-cell Главный контакт
+                            +table__head-cell E-mail
+                            +table__head-cell Должность
+                            +table__head-cell Сделки
+                            +table__head-cell
+                            +table__head-cell.table__head-cell_actions
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('cog')
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('filter')
+
+                    +table__body
+                        +table__body-row.table__body-row_color_secondary
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 1
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+
+                        +table__body-row.table__body-row_color_secondary
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 1
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+
+                        +table__body-row
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 1
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+
+                        +table__body-row
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 1
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+
+                        +table__body-row
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 1
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+
+                        +table__body-row
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 1
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+
+
+                        +table__body-row
+                            +table__body-cell
+                                | ООО "Иванов и партнеры"
+                            +table__body-cell
+                                +icon('user').icon_size_xs.table__cell-item
+                                a(href="#").table__cell-item Иванов Иван
+                            +table__body-cell
+                                a(href="#") noemail@please.com
+                            +table__body-cell
+                                | Гендиректор
+                            +table__body-cell
+                                | 2
+                            +table__body-cell
+                                +icon('thumb-up').icon_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+
+
+
+                +pagination
+

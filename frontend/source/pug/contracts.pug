@@ -1,0 +1,163 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Contractors'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Контракты
+            +page-controls
+                +button.button_size_s
+                    +icon('plus-circle')
+                    span Новый контракт
+        +main-content__body
+            +named-filter-group
+                +named-filter(title="Сроки нарушены!" description="Контракты, в которых есть сделки с нарушенными сроками поставки. Обработайте их или перенесите сроки сделки").named-filter_color_error.named-filter_active
+                +named-filter(title="Ожидают подписания" description="Обработайте этих клиентов или отложите подписание контракта").named-filter_color_error
+                +named-filter(title="Завершение сделки в течение недели" description="Контракты, у которых близится срок завершения сделки. Обработайте их или перенесите даты завершения сделки.").named-filter_color_error
+            +search
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell №
+                            +table__head-cell Заказчик
+                            +table__head-cell Исполнитель
+                            +table__head-cell Подписан
+                            +table__head-cell Сделки
+                            +table__head-cell.table__head-cell_actions
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('cog')
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('filter')
+
+                    +table__body
+                        +table__body-row.table__body-row_color_secondary
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+                        +table__body-row.table__body-row_color_secondary
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                | 20220612-O-2
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                a(href="#") ИП Иванов Иван
+                            +table__body-cell
+                                | Нет
+                            +table__body-cell
+                                | 25
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                +pagination
+
