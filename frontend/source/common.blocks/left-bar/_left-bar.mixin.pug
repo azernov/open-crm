@@ -1,52 +1,53 @@
 mixin left-bar
     .left-bar(class!=attributes.class)
         +left-bar__expander
-        +left-bar__logo-wrapper
-            +logo(src='i/logo/logo-light.svg')
-        +main-menu(items=[{
-            title: "Иван Иванов",
-            href: "profile.html",
-            active: false,
-            profile: true
-        }, {
-            title: "Пользователи",
-            href: "users.html",
-            icon: "user-group",
-            active: false
-        }, {
-            title: "Группы компаний",
-            href: "company-groups.html",
-            icon: "office-building",
-            active: true
-        }, {
-            title: "Контрагенты",
-            href: "contractors.html",
-            icon: "share"
-        }, {
-            title: "Контракты",
-            href: "contracts.html",
-            icon: "document-text"
-        }, {
-            title: "Сделки",
-            href: "deals.html",
-            icon: "receipt-tax"
-        }, {
-            title: "Настройки",
-            href: "settings.html",
-            icon: "cog",
-            expanded: true,
-            subItems: [{
-                title: "Роли и права",
-                href: "#",
-                icon: "shield-exclamation"
+        +left-bar__inner
+            +left-bar__logo-wrapper
+                +logo(src='i/logo/logo-light.svg')
+            +main-menu(items=[{
+                title: "Иван Иванов",
+                href: "profile.html",
+                active: false,
+                profile: true
             }, {
-                title: "Статусы сделок",
-                href: "#",
-                icon: "view-boards",
+                title: "Пользователи",
+                href: "users.html",
+                icon: "user-group",
+                active: false
+            }, {
+                title: "Группы компаний",
+                href: "company-groups.html",
+                icon: "office-building",
                 active: true
             }, {
-                title: "Настройка доп. полей",
-                href: "#",
-                icon: "table"
-            }]
-        }])
+                title: "Контрагенты",
+                href: "contractors.html",
+                icon: "share"
+            }, {
+                title: "Контракты",
+                href: "contracts.html",
+                icon: "document-text"
+            }, {
+                title: "Сделки",
+                href: "deals.html",
+                icon: "receipt-tax"
+            }, {
+                title: "Настройки",
+                href: "settings.html",
+                icon: "cog",
+                expanded: true,
+                subItems: [{
+                    title: "Роли и права",
+                    href: "#",
+                    icon: "shield-exclamation"
+                }, {
+                    title: "Статусы сделок",
+                    href: "#",
+                    icon: "view-boards",
+                    active: true
+                }, {
+                    title: "Настройка доп. полей",
+                    href: "#",
+                    icon: "table"
+                }]
+            }])

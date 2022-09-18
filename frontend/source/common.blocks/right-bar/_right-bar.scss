@@ -1,4 +1,6 @@
 .right-bar {
+    @extend %scrollbar;
+    overflow-y: auto;
     padding: $gap_m;
     background-color: $color_neutral_0;
     box-shadow: $shadow_l;

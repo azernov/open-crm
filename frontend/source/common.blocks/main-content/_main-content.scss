@@ -1,4 +1,6 @@
 .main-content {
     padding: $gap_m;
     flex-grow: 1;
+    @extend %scrollbar;
+    overflow: auto;
 }

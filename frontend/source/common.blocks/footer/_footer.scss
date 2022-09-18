@@ -5,4 +5,6 @@
     background: $color_neutral_80;
     @extend %text-s;
     color: $color_neutral_0;
+    position: relative;
+    z-index: 2;
 }

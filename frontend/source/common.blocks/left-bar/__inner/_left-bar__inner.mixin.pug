@@ -1,0 +1,6 @@
+mixin left-bar__inner
+    .left-bar__inner(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

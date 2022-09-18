@@ -1,0 +1,10 @@
+.left-bar__inner {
+    @extend %scrollbar;
+    overflow-y: auto;
+    height: 100%;
+    padding: $gap_m 0;
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($color_neutral_100, .25);
+    }
+}

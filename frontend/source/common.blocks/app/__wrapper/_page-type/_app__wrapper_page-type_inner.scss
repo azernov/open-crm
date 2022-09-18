@@ -1,6 +1,7 @@
 .app__wrapper.app__wrapper_page-type_inner {
     @extend %flex-row-vstart-hstart-nowrap;
     align-items: stretch;
+    height: 0;
 
     > .left-bar {
         flex-shrink: 0;

@@ -1,7 +1,7 @@
 .app {
     @extend %flex-column-hstart-vstart-nowrap;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 
     > .footer {
         margin-top: auto;
