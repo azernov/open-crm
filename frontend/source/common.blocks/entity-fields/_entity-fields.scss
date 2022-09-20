@@ -7,4 +7,10 @@
             margin-bottom: 0;
         }
     }
+
+    > .textbox,
+    > .dropdown-select {
+        width: 100%;
+        display: block;
+    }
 }

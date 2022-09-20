@@ -9,7 +9,9 @@
         }
     }
 
-    > .textbox {
+    > .textbox,
+    > .dropdown-select,
+    > .datepicker {
         width: 100%;
         display: block;
     }
