@@ -6,4 +6,7 @@
     padding: #{$gap_m * 0.75} $gap_s;
     border-bottom: 1px solid $color_neutral_40;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

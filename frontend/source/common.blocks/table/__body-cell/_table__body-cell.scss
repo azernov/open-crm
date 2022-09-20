@@ -3,6 +3,7 @@
     @extend %text-s;
     padding: #{$gap_m * 0.75} $gap_s;
     text-align: left;
+    border: 0;
     border-bottom: $border_width_m solid transparent;
     transition: border-bottom-color $animation_speed_m $animation_type;
 
@@ -21,5 +22,6 @@
     > .textbox,
     > .dropdown-select {
         width: 100%;
+        min-width: 10rem;
     }
 }
