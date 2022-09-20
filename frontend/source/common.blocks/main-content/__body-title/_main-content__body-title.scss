@@ -1,0 +1,5 @@
+.main-content__body-title {
+    @extend %title-s;
+    color: $color_neutral_100;
+    margin-bottom: $gap_m;
+}

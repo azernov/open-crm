@@ -1,0 +1,155 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Contract'
+block content
+    +main-content
+        +main-content__head
+            +main-content__head-row
+                +main-content__title-w
+                    +main-content__title 20220115-О-2
+                    +main-content__subtitle Контракт
+                +page-controls
+                    +button.button_size_s.button_transparent
+                        +icon('color-swatch')
+                        span Настройка полей
+        +main-content__body
+            +main-content__body-title Сделки
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell Ответственный
+                            +table__head-cell.table__head-cell_width_min Срок поставки
+                            +table__head-cell.table__head-cell_width_min Сумма
+                            +table__head-cell.table__head-cell_width_min Статус
+                            +table__head-cell.table__head-cell_actions
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('cog')
+                                +button.button_no-text.button_size_xs.button_transparent
+                                    +icon('filter')
+
+                    +table__body
+                        +table__body-row.table__body-row_color_warning
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 25 сен
+                            +table__body-cell.table__body-cell_one-line
+                                | 25 000 ₽
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+                        +table__body-row.table__body-row_color_warning
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('fire').icon_size_s.table__cell-item
+                                span 25 сен
+                            +table__body-cell.table__body-cell_one-line
+                                | $ 14 000
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('calendar').icon_size_s.table__cell-item
+                                span 5 мар 2023
+                            +table__body-cell.table__body-cell_one-line
+                                | $ 14 000
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row.table__body-row_color_error
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('calendar').icon_size_s.table__cell-item
+                                span 5 мар 2023
+                            +table__body-cell.table__body-cell_one-line
+                                | $ 14 000
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('calendar').icon_size_s.table__cell-item
+                                span 5 мар 2023
+                            +table__body-cell.table__body-cell_one-line
+                                | $ 14 000
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('calendar').icon_size_s.table__cell-item
+                                span 5 мар 2023
+                            +table__body-cell.table__body-cell_one-line
+                                | $ 14 000
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell
+                                a(href="#") Иванов И. И. (ip.ivanov@mail.ru)
+                            +table__body-cell.table__body-cell_one-line
+                                +icon('calendar').icon_size_s.table__cell-item
+                                span 5 мар 2023
+                            +table__body-cell.table__body-cell_one-line
+                                | $ 14 000
+                            +table__body-cell
+                                +dropdown-select.dropdown-select_size_s
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+
+                +pagination
+    +right-bar
+        +entity-fields
+            +entity-fields__group
+                +textbox(label="Создатель" fixable=false value='Иванов И.И. (ip.ivanov@noemail.com)').textbox_fixable.textbox_no-editable
+            +entity-fields__group
+                +textbox(label="Номер" fixable=true value='20220115-О-2').textbox_fixable
+                +dropdown-select(label="Заказчик" placeholder='' fixable=true value='ООО "Иванов и партнеры"').dropdown-select_fixable
+                +dropdown-select(label="Исполнитель" placeholder='' fixable=true value='ООО "Кит консалтинг"').dropdown-select_fixable
+            +entity-fields__group
+                +datepicker(label="Дата формирования" fixable=true placeholder="Выберите дату" value='25 мар 2022').datepicker_fixable
+                +datepicker(label="Дата подписания" fixable=true placeholder="Выберите дату" value='').datepicker_fixable
+            +entity-fields__group
+                +textbox(label="Кастомное поле" fixable=true value="Кастомное значение").textbox_fixable
+                +textbox(textarea=true fixable=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк").textbox_fixable
+                +textbox(textarea=true fixable=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк").textbox_fixable
+                +textbox(textarea=true fixable=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк").textbox_fixable
+
