@@ -1,0 +1,6 @@
+.textbox.textbox_no-editable {
+    .textbox__input {
+        //Определяем правый отступ по размеру кнопок и отступов между ними
+        padding-right: $gap_m;
+    }
+}
