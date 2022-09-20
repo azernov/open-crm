@@ -1,0 +1,16 @@
+.page-notifications {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $gap_s $gap_s $gap_s $gap_xl;
+    z-index: 999;
+    width: $page_notifications_width + $gap_s + $gap_xl;
+    max-height: 100%;
+    @extend %scrollbar;
+    overflow: auto;
+
+    > .notification {
+        margin-bottom: $gap_s;
+        width: 100%;
+    }
+}
