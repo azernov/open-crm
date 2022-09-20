@@ -1,4 +1,8 @@
 .main-content__title {
     @extend %title-xl;
     color: $color_neutral_100;
+
+    > .button {
+        margin-left: $gap_m;
+    }
 }

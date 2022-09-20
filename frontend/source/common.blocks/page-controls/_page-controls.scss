@@ -1,1 +1,8 @@
-.page-controls {}
+.page-controls {
+    > .button {
+        margin-left: $gap_s;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

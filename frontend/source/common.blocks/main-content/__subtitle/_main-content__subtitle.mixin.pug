@@ -1,0 +1,6 @@
+mixin main-content__subtitle
+    .main-content__subtitle(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -4,11 +4,12 @@ append vars
 block content
     +main-content
         +main-content__head
-            +main-content__title Контрагенты
-            +page-controls
-                +button.button_size_s
-                    +icon('plus-circle')
-                    span Новый контрагент
+            +main-content__head-row
+                +main-content__title Контрагенты
+                +page-controls
+                    +button.button_size_s
+                        +icon('plus-circle')
+                        span Новый контрагент
         +main-content__body
             +named-filter-group
                 +named-filter(title="Ожидают подписания контракта" description="Обработайте этих клиентов или отложите подписание контракта").named-filter_color_error.named-filter_active

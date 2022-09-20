@@ -1,8 +1,3 @@
 .main-content__head {
-    @extend %flex-row-vstart-hstart-nowrap;
     margin-bottom: $gap_l;
-
-    .page-controls {
-        margin-left: auto;
-    }
 }

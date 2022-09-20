@@ -4,11 +4,12 @@ append vars
 block content
     +main-content
         +main-content__head
-            +main-content__title Контракты
-            +page-controls
-                +button.button_size_s
-                    +icon('plus-circle')
-                    span Новый контракт
+            +main-content__head-row
+                +main-content__title Контракты
+                +page-controls
+                    +button.button_size_s
+                        +icon('plus-circle')
+                        span Новый контракт
         +main-content__body
             +named-filter-group
                 +named-filter(title="Сроки нарушены!" description="Контракты, в которых есть сделки с нарушенными сроками поставки. Обработайте их или перенесите сроки сделки").named-filter_color_error.named-filter_active

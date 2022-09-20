@@ -1,0 +1,17 @@
+.main-content__head-row {
+    @extend %flex-row-vstart-hstart-nowrap;
+
+    margin-bottom: $gap_l;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > .textbox {
+        width: 100%;
+        display: block;
+    }
+
+    > .page-controls {
+        margin-left: auto;
+    }
+}
