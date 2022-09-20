@@ -24,6 +24,7 @@
     transition: all $animation_speed_m $animation_type;
     background: $color_neutral_0;
     color: $color_neutral_100;
+    text-overflow: ellipsis;
 
     &::placeholder {
         color: $color_neutral_40;
