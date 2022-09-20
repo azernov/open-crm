@@ -2,7 +2,7 @@ mixin dropdown-select
     .dropdown-select(class!=attributes.class)
         +dropdown-select__wrapper
             if attributes.label
-                +dropdown-select__label Название поля
+                +dropdown-select__label= attributes.label
             +dropdown-select__input-wrapper
                 +dropdown-select__input(type="text" value!=attributes.value)
                 +dropdown-select__arrow

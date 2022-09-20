@@ -5,7 +5,7 @@ mixin datepicker
             +icon('x')
             if attributes.label
                 +datepicker__label= attributes.label
-            +datepicker__input(type=attributes.type value=attributes.value textarea=attributes.textarea)
+            +datepicker__input(type=attributes.type value=attributes.value textarea=attributes.textarea placeholder=attributes.placeholder)
             if attributes.fixable
                 +datepicker__controls
                     +button.button_size_xs.button_rounded.button_no-text.button_transparent
