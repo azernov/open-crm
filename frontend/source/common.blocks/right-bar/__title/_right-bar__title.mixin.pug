@@ -1,0 +1,6 @@
+mixin right-bar__title
+    .right-bar__title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

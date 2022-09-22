@@ -1,0 +1,7 @@
+.right-bar__title {
+    @extend %title-m;
+    margin-bottom: $gap_m;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
