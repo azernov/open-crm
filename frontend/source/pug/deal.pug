@@ -1,0 +1,55 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Deal'
+block content
+    +main-content
+        +main-content__head
+            +main-content__head-row
+                +main-content__title-w
+                    +main-content__title Сделка
+                    +main-content__subtitle Контракт:
+                        a(href="#") 20220115-О-2
+                +page-controls
+                    +button.button_size_s.button_transparent
+                        +icon('color-swatch')
+                        span Настройка полей
+            +main-content__head-row
+                +status-line
+        +main-content__body
+            +entity-fields
+                +entity-fields__group
+                    +entity-fields__row
+                        +entity-fields__col
+                            +dropdown-select(label="Заказчик" placeholder="Выберите заказчика" value='ООО "Иванов и партнеры"' fixable=true).dropdown-select_fixable
+                        +entity-fields__col
+                            +dropdown-select(label="Исполнитель" placeholder="Выберите исполнителя" value='' fixable=true).dropdown-select_fixable
+                    +entity-fields__row
+                        +entity-fields__col
+                            +datepicker(label="Дата формирования" placeholder="Выберите дату" value="25 мар 2022" fixable=true).datepicker_fixable
+                        +entity-fields__col
+                            +datepicker(label="Дата исполнения" placeholder="Выберите дату" value="" fixable=true).datepicker_fixable
+
+                    +entity-fields__row
+                        +entity-fields__col
+                            +dropdown-select(label="Контракт" placeholder="Выберите контракт" value='20220115-О-2' fixable=true).dropdown-select_fixable
+                        +entity-fields__col
+                            +textbox(label="Сумма" placeholder="Сумма" value='25 000 ₽' fixable=true).textbox_fixable
+
+                    +entity-fields__row
+                        +entity-fields__col
+                            +dropdown-select(label="Ответственный" placeholder="Выберите ответственного" value='Иванов И.И. (ip.ivanov@noemail.com)' fixable=true).dropdown-select_fixable
+                        +entity-fields__col
+                            +textbox(label="Создатель сделки" fixable=false value='Иванов И.И. (ip.ivanov@noemail.com)').textbox_fixable.textbox_no-editable
+
+                    +textbox(label="Комментарии и заметки к сделке" placeholder="Комментарии и заметки к сделке" value='' fixable=true textarea=true).textbox_fixable
+
+    +right-bar.right-bar_color_neutral-20
+        +right-bar__title История статусов
+        +history
+            +history-item
+            +history-item
+            +history-item
+            +history-item
+            +history-item
+            +history-item
+            +history-item
