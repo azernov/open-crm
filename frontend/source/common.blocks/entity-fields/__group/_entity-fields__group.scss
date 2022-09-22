@@ -1,5 +1,5 @@
 .entity-fields__group {
-    @extend %flex-column-hcenter-vstart-nowrap;
+    @extend %flex-column-hstretch-vstart-nowrap;
     width: 100%;
 
     > * {

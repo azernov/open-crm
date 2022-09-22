@@ -1,0 +1,6 @@
+mixin entity-fields__row
+    .entity-fields__row(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

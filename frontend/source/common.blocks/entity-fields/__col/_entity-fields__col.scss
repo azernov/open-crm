@@ -1,0 +1,10 @@
+.entity-fields__col {
+    @extend %column;
+
+    > .textbox,
+    > .dropdown-select,
+    > .datepicker {
+        width: 100%;
+        display: block;
+    }
+}
