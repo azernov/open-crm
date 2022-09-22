@@ -1,0 +1,56 @@
+//////////////////////////////////////////////////////////////////
+//
+//     COLUMNS
+//
+//////////////////////////////////////////////////////////////////
+%columns-w {
+    @extend %flex-row-vstart-hspacebetween-nowrap;
+    align-items: stretch;
+    margin: -#{math.div($gap_m, 2)};
+}
+
+%column {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: #{math.div($gap_m, 2)};
+}
+
+%columns-w-l {
+    @extend %columns-w;
+    margin: -#{math.div($gap_l, 2)};
+}
+
+%column-l {
+    @extend %column;
+    padding: #{math.div($gap_l, 2)};
+}
+
+%columns-w-xl {
+    @extend %columns-w;
+    margin: -#{math.div($gap_xl, 2)};
+}
+
+%column-xl {
+    @extend %column;
+    padding: #{math.div($gap_xl, 2)};
+}
+
+%columns-w-m {
+    @extend %columns-w;
+    margin: -#{math.div($gap_l, 2)};
+}
+
+%column-m {
+    @extend %column;
+    padding: #{math.div($gap_l, 2)};
+}
+
+%columns-w-s {
+    @extend %columns-w;
+    margin: -#{math.div($gap_s, 2)};
+}
+
+%column-s {
+    @extend %column;
+    padding: #{math.div($gap_s, 2)};
+}
