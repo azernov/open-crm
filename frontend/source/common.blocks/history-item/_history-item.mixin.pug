@@ -1,0 +1,14 @@
+mixin history-item
+    .history-item(class!=attributes.class)
+        +history-item__row
+            +history-item__date
+                +icon('calendar').icon_size_s
+                span 25 мар 2022 в 15:05
+            +history-item__user
+                +icon('user').icon_size_s
+                a(href='#') Иван Иванов
+        +history-item__row
+            +history-item__action
+                span Статус "Новая"
+                +icon('arrow-right').icon_size_s
+                span "В работе"

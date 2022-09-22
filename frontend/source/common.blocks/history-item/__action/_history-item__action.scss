@@ -1,0 +1,8 @@
+.history-item__action {
+    @extend %flex-row-vcenter-hstart-wrap;
+    display: inline-flex;
+
+    .icon {
+        margin: 0 $gap_xs;
+    }
+}

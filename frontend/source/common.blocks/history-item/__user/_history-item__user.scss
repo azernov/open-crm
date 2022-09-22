@@ -1,0 +1,7 @@
+.history-item__user {
+    @extend %flex-row-vcenter-hstart-wrap;
+    display: inline-flex;
+    .icon {
+        margin-right: $gap_xs;
+    }
+}

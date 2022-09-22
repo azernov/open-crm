@@ -1,0 +1,8 @@
+.history-item__date {
+    @extend %flex-row-vcenter-hstart-wrap;
+    display: inline-flex;
+    color: $color_neutral_60;
+    .icon {
+        margin-right: $gap_xs;
+    }
+}

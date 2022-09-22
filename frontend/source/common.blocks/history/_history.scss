@@ -1,0 +1,8 @@
+.history {
+    > .history-item {
+        margin-bottom: $gap_m;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

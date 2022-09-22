@@ -1,0 +1,6 @@
+.history-item__row {
+    margin-bottom: $gap_xs;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

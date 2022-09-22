@@ -1,0 +1,6 @@
+mixin history-item__user
+    .history-item__user(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
