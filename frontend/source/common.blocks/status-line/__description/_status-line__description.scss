@@ -1,0 +1,6 @@
+.status-line__description {
+    @extend %text-xs;
+    text-align: center;
+    color: $color_neutral_60;
+    margin-top: $gap_xs;
+}

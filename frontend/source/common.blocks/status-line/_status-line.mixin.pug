@@ -1,0 +1,22 @@
+mixin status-line
+    .status-line(class!=attributes.class)
+        +status-line__item
+            +button.button_size_xs Новая
+            +status-line__description с 28 марта
+        +status-line__divider
+            +icon('chevron-right').icon_size_s
+        +status-line__item
+            +button.button_size_xs В работе
+            +status-line__description с 9 апреля
+        +status-line__divider
+            +icon('chevron-right').icon_size_s
+        +status-line__item
+            +button.button_size_xs.button_transparent На согласовании
+        +status-line__divider
+            +icon('chevron-right').icon_size_s
+        +status-line__item
+            +button.button_size_xs.button_transparent Выполнена
+        +status-line__divider
+            +icon('chevron-right').icon_size_s
+        +status-line__item
+            +button.button_size_xs.button_transparent Завершена

@@ -1,0 +1,6 @@
+mixin status-line__divider
+    .status-line__divider(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

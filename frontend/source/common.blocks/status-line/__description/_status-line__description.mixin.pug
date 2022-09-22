@@ -1,0 +1,6 @@
+mixin status-line__description
+    .status-line__description(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

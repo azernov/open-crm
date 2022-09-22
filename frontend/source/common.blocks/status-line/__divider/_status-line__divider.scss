@@ -1,0 +1,6 @@
+.status-line__divider {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+
+    height: $gap_s + $gap_s + $fontsize_text_xs;
+    margin: 0 $gap_xs;
+}
