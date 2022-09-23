@@ -1,7 +1,7 @@
 .main-content__head-row {
     @extend %flex-row-vstart-hstart-nowrap;
 
-    margin-bottom: $gap_l;
+    margin-bottom: $gap_m;
     &:last-child {
         margin-bottom: 0;
     }
