@@ -1,0 +1,6 @@
+mixin settings-deal-statuses
+    .settings-deal-statuses(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

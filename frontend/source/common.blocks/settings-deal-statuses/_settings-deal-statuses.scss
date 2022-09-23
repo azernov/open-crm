@@ -1,0 +1,17 @@
+.settings-deal-statuses {
+    @extend %flex-row-vcenter-hstart-wrap;
+
+    .dialog-deal-status {
+        align-self: stretch;
+        //width: 30%;
+        flex: 0 0 35rem;
+        margin-right: $gap_m;
+        margin-bottom: $gap_m;
+        max-width: 100%;
+    }
+
+    > .button {
+        margin-right: $gap_m;
+        margin-bottom: $gap_m;
+    }
+}
