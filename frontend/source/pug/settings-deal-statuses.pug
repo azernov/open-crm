@@ -1,0 +1,25 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Deal statuses'
+block content
+    +main-content
+        +main-content__head
+            +main-content__head-row
+                +main-content__title Статусы сделок
+            +main-content__head-row
+                +main-content__description Добавьте статусы, через которые проходит сделка в вашей бизнес-модели. Начальный и конечный статус являются неудаляемыми. Перед начальным и после конечного статуса нельзя добавить новые.
+        +main-content__body
+            +settings-deal-statuses
+                +dialog-deal-status(number=1 title="Новая")
+                +button.button_no-text.button_transparent.button_size_s
+                    +icon('plus-circle')
+                +dialog-deal-status(number=2 title="В работе").dialog-deal-status_editable
+                +button.button_no-text.button_transparent.button_size_s
+                    +icon('plus-circle')
+                +dialog-deal-status(number=3 title="На согласовании")
+                +button.button_no-text.button_transparent.button_size_s
+                    +icon('plus-circle')
+                +dialog-deal-status(number=4 title="Выполнена")
+                +button.button_no-text.button_transparent.button_size_s
+                    +icon('plus-circle')
+                +dialog-deal-status(number=5 title="Завершена")
