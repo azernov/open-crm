@@ -1,5 +1,6 @@
 %dialog-close {
     position: absolute;
+    z-index: 99;
     top: $gap_s;
     right: $gap_s;
     cursor: pointer;
