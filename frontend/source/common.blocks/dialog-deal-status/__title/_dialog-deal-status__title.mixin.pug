@@ -1,0 +1,6 @@
+mixin dialog-deal-status__title
+    .dialog-deal-status__title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

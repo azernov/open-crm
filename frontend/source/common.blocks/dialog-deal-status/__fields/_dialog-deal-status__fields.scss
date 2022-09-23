@@ -1,0 +1,15 @@
+.dialog-deal-status__fields {
+    margin-bottom: $gap_s;
+
+    > .textbox {
+        display: block;
+    }
+
+    > * {
+        margin-bottom: $gap_s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+mixin dialog-deal-status
+    .dialog-deal-status(class!=attributes.class)
+        +dialog-deal-status__fixed-state-wrapper
+            +dialog-deal-status__title= attributes.number ? attributes.number : "1"
+                |
+                | /
+                |
+                =attributes.title ? attributes.title : "Новая"
+            +dialog-deal-status__description= attributes.description ? attributes.description : "Статус по-умолчанию для новой создаваемой сделки"
+            +dialog-deal-status__buttons
+                +button.button_size_xs
+                    +icon('pencil')
+                    span Изменить
+        +dialog-deal-status__editable-state-wrapper
+            +dialog-deal-status__close
+                +icon('x').icon_size_xs
+            +dialog-deal-status__fields
+                +textbox(label="Название статуса" value=attributes.title ? attributes.title : "Новая" placeholder="Название статуса").textbox_size_s
+                +textbox(label="Описание статуса" value="" placeholder="Описание статуса" textarea=true).textbox_size_s
+            +dialog-deal-status__buttons
+                +button.button_size_xs
+                    +icon('check')
+                    span Сохранить
+                +button.button_size_xs.button_transparent.button_color_secondary
+                    +icon('x')
+                    span Отменить

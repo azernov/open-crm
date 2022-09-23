@@ -1,0 +1,7 @@
+.dialog-deal-status {
+    @extend %flex-column-hstart-vstart-nowrap;
+    padding: $gap_s;
+    border-radius: $radius_m;
+    background-color: $color_neutral_20;
+    position: relative;
+}

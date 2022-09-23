@@ -1,0 +1,6 @@
+mixin dialog-deal-status__editable-state-wrapper
+    .dialog-deal-status__editable-state-wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

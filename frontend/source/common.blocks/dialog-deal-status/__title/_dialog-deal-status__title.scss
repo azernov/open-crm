@@ -1,0 +1,5 @@
+.dialog-deal-status__title {
+    @extend %title-m;
+    color: $color_neutral_100;
+    margin-bottom: $gap_xs;
+}

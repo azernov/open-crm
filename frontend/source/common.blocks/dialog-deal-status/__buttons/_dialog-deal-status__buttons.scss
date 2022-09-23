@@ -1,0 +1,10 @@
+.dialog-deal-status__buttons {
+    margin-top: auto;
+
+    .button {
+        margin-right: $gap_xs;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

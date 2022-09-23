@@ -1,0 +1,5 @@
+.dialog-deal-status__fixed-state-wrapper {
+    @extend %flex-column-hstart-vstart-nowrap;
+    width: 100%;
+    height: 100%;
+}
