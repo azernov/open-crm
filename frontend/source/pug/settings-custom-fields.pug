@@ -1,0 +1,69 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Custom fields'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Настройка дополнительных полей
+        +main-content__body
+            +tabs(items=[{
+                title: "Сделка",
+                class: "tabs__tab_active"
+            }, {
+                title: "Контрагент",
+                class: ""
+            }, {
+                title: "Контракт",
+                class: ""
+            }, {
+                title: "Пользователь",
+                class: ""
+            }])
+                +tabs__content.tabs__content_active
+                    +table-view
+                        +table
+                            +table__head
+                                +table__head-row
+                                    +table__head-cell.table__head-cell_width_min Ключ
+                                    +table__head-cell.table__head-cell_width_min Название поля
+                                    +table__head-cell.table__head-cell_width_min Тип значения
+                                    +table__head-cell.table__head-cell_actions
+                                        +button.button_size_xs
+                                            +icon('plus-circle')
+                                            span Добавить поле
+                            +table__body
+                                +table__body-row
+                                    +table__body-cell.table__body-cell_one-line creation_date
+                                    +table__body-cell.table__body-cell_one-line Дата формирования
+                                    +table__body-cell.table__body-cell_one-line Дата
+                                    +table__body-cell.table__body-cell_actions
+                                        |
+                                +table__body-row
+                                    +table__body-cell.table__body-cell_one-line plan_close_date
+                                    +table__body-cell.table__body-cell_one-line Предполагаемая дата закрытия
+                                    +table__body-cell.table__body-cell_one-line Дата
+                                    +table__body-cell.table__body-cell_actions
+                                        |
+                                +table__body-row
+                                    +table__body-cell.table__body-cell_one-line contract_id
+                                    +table__body-cell.table__body-cell_one-line Контракт
+                                    +table__body-cell.table__body-cell_one-line Контракты
+                                    +table__body-cell.table__body-cell_actions
+                                        |
+                                +table__body-row
+                                    +table__body-cell.table__body-cell_one-line custom_field
+                                    +table__body-cell.table__body-cell_one-line Кастомное поле
+                                    +table__body-cell.table__body-cell_one-line Число
+                                    +table__body-cell.table__body-cell_actions
+                                        +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                            +icon('refresh')
+                                        +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                            +icon('trash')
+                        +pagination
+                +tabs__content
+                    p здесь должна быть таблица настройки полей контрагента
+                +tabs__content
+                    p здесь должна быть таблица настройки полей контракта
+                +tabs__content
+                    p здесь должна быть таблица настройки полей пользователя
+
