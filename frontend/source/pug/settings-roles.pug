@@ -1,0 +1,43 @@
+extends layouts/layout-inner
+append vars
+    - pageTitle = 'Roles'
+block content
+    +main-content
+        +main-content__head
+            +main-content__title Роли и права
+        +main-content__body
+            +table-view
+                +table
+                    +table__head
+                        +table__head-row
+                            +table__head-cell.table__head-cell_width_min Роль
+                            +table__head-cell Описание
+                            +table__head-cell.table__head-cell_width_min Разрешения
+                            +table__head-cell.table__head-cell_actions
+                    +table__body
+                        +table__body-row
+                            +table__body-cell.table__body-cell_one-line Администратор
+                            +table__body-cell Неограниченные права и возможности
+                            +table__body-cell.table__body-cell_one-line 55 из 55
+                            +table__body-cell.table__body-cell_actions
+                                |
+                        +table__body-row
+                            +table__body-cell.table__body-cell_one-line Менеджер
+                            +table__body-cell Управляет клиентами/контрактами/сделками
+                            +table__body-cell.table__body-cell_one-line 18 из 55
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                        +table__body-row
+                            +table__body-cell.table__body-cell_one-line Пользователь
+                            +table__body-cell Роль для учетной записи обычного пользователя
+                            +table__body-cell.table__body-cell_one-line 2 из 55
+                            +table__body-cell.table__body-cell_actions
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('pencil')
+                                +button.button_size_xs.button_rounded.button_no-text.button_transparent
+                                    +icon('trash')
+                +pagination
+
