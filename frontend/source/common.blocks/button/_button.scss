@@ -15,6 +15,7 @@
     background-color: $color_primary_100;
     color: $color_neutral_0;
     font-size: $fontsize_text_l;
+    font-weight: $fontweight_text_m;
     line-height: $lineheight_text;
     padding: calc(#{$gap_m} - #{$border_width_m * 2}) calc(#{$gap_l} - #{$border_width_m * 2});
 
