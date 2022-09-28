@@ -36,6 +36,24 @@
         }
     }
 
+    &.button_color_success {
+        color: $color_success_100;
+        &:hover {
+            background-color: $color_success_100;
+            border-color: $color_success_100;
+            color: $color_neutral_0;
+        }
+    }
+
+    &.button_color_error {
+        color: $color_error_100;
+        &:hover {
+            background-color: $color_error_100;
+            border-color: $color_error_100;
+            color: $color_neutral_0;
+        }
+    }
+
     &.button_disabled {
         color: $color_neutral_40;
     }

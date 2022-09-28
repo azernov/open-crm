@@ -1,0 +1,9 @@
+.button.button_color_error {
+    background-color: $color_error_100;
+    border-color: $color_error_100;
+
+    &:hover {
+        background-color: $color_error_80;
+        border-color: $color_error_80;
+    }
+}

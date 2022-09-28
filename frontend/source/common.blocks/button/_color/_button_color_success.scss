@@ -1,0 +1,9 @@
+.button.button_color_success {
+    background-color: $color_success_100;
+    border-color: $color_success_100;
+
+    &:hover {
+        background-color: $color_success_80;
+        border-color: $color_success_80;
+    }
+}
