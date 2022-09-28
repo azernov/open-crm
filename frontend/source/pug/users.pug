@@ -242,4 +242,54 @@ block content
 
 
                 +pagination
+    +modal.modal_aside
+        +modal__main
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Новый пользователь
+                +entity-fields
+                    +user-avatar(imageSet=false editable=true).user-avatar_size_xl.user-avatar_empty
+                    +entity-fields__group
+                        +textbox(label="Имя" value="Иванов")
+                        +textbox(label="Фамилия" value="Иван")
+                        +textbox(label="Отчество" value="Иванович")
+                        +entity-fields__row
+                            +entity-fields__col
+                                +textbox(label="E-mail (логин)" value="noemail@please.com")
+                            +entity-fields__col
+                                +textbox(label="Телефон" value="+7(123) 456-55-11")
+                        +textbox(label="Пароль" type="password" value="qwertyuiop")
+                    +linked-fields(hideControls=true).linked-fields_edit
+                    +entity-fields__expandable-wrapper
+                        +entity-fields__expander
+                        +entity-fields__expandable-group
+                            +entity-fields__group
+                                +textbox(label="Кастомное поле" value="Кастомное значение")
+                                +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                    +entity-fields__expandable-wrapper.entity-fields__expandable-wrapper_expanded
+                        +entity-fields__expander
+                        +entity-fields__expandable-group
+                            +entity-fields__group
+                                +textbox(label="Кастомное поле" value="Кастомное значение")
+                                +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+
+            +modal__footer
+                +button.button_transparent Сохранить и закрыть
+                +button Сохранить
+
+    +modal
+        +modal__main
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Удалить пользователя?
+                +modal__description Вы удаляете пользователя Иванов Иван Иванович (ip.ivanov@nomail.com). Вы уверены? После удаления пользователь не сможет войти в систему
+            +modal__footer
+                +button.button_transparent.button_color_success Удалить
+                +button.button_transparent.button_color_error Отменить
 

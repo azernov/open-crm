@@ -182,4 +182,37 @@ block content
                 +textbox(textarea=true fixable=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк").textbox_fixable
                 +textbox(textarea=true fixable=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк").textbox_fixable
                 +textbox(textarea=true fixable=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк").textbox_fixable
+    +modal.modal_aside
+        +modal__main
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Новый контрагент
+                +entity-fields
+                    +entity-fields__group
+                        +dropdown-select(label="Юридическая форма" placeholder="Юридическая форма" value="Общество с ограниченной ответственностью")
+                        +textbox(label="Краткое название" placeholder="Краткое название" value="")
+                        +textbox(label="Полное название" placeholder="Полное название" value="")
+                        +dropdown-select(label="Группа компаний" placeholder="Группа компаний" value="")
+                        +textbox(label="ИНН" placeholder="7715000000" value="")
+                        +textbox(label="КПП" placeholder="7701001" value="")
+                        +entity-fields__expandable-wrapper
+                            +entity-fields__expander
+                            +entity-fields__expandable-group
+                                +entity-fields__group
+                                    +textbox(label="Кастомное поле" value="Кастомное значение")
+                                    +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                        +entity-fields__expandable-wrapper.entity-fields__expandable-wrapper_expanded
+                            +entity-fields__expander
+                            +entity-fields__expandable-group
+                                +entity-fields__group
+                                    +textbox(label="Кастомное поле" value="Кастомное значение")
+                                    +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
 
+            +modal__footer
+                +button.button_transparent Сохранить и закрыть
+                +button Сохранить
