@@ -9,6 +9,10 @@
         }
     }
 
+    > .entity-fields__row {
+        margin-bottom: $gap_m - math.div($gap_m, 2);
+    }
+
     > .textbox,
     > .dropdown-select,
     > .datepicker {
