@@ -1,0 +1,7 @@
+.modal__body {
+    @extend %scrollbar;
+    overflow-y: auto;
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 0 $gap_l;
+}

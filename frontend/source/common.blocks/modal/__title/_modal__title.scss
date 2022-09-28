@@ -1,0 +1,4 @@
+.modal__title {
+    @extend %title-m;
+    margin-bottom: $gap_l;
+}

@@ -1,0 +1,6 @@
+mixin modal__title
+    .modal__title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

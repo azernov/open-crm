@@ -1,0 +1,14 @@
+.modal {
+    position: fixed;
+    z-index: 9999;
+    background-color: $color_overlay;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity $animation_speed_m $animation_type;
+}

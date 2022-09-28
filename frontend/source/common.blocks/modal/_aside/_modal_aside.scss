@@ -1,0 +1,22 @@
+.modal.modal_aside {
+    .modal__main {
+        padding: $gap_m 0;
+        border-radius: 0;
+        top: 0;
+        left: unset;
+        right: 0;
+        transform: translateX(100%);
+        height: 100%;
+        width: 55.8rem;
+        max-width: 100%;
+    }
+
+    .modal__body {
+        padding: 0 $gap_m;
+    }
+
+    .modal__footer {
+        @extend %flex-row-vcenter-hend-nowrap;
+        padding: $gap_m $gap_m 0 $gap_m;
+    }
+}

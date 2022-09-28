@@ -1,0 +1,11 @@
+.modal.modal_active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+
+    &.modal_aside {
+        .modal__main {
+            transform: translateX(0);
+        }
+    }
+}

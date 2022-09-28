@@ -1,0 +1,13 @@
+.modal__footer {
+    margin-top: auto;
+    background-color: $color_neutral_20;
+    padding: $gap_m $gap_l 0 $gap_l;
+    width: 100%;
+
+    > .button {
+        margin-right: $gap_m;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

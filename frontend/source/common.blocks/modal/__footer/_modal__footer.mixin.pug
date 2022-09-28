@@ -1,0 +1,6 @@
+mixin modal__footer
+    .modal__footer(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"
