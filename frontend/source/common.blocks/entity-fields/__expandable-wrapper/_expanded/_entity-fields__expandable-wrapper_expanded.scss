@@ -1,0 +1,11 @@
+.entity-fields__expandable-wrapper.entity-fields__expandable-wrapper_expanded {
+    > .entity-fields__expandable-group {
+        display: block;
+    }
+
+    > .entity-fields__expander {
+        .button {
+            transform: rotate(180deg);
+        }
+    }
+}

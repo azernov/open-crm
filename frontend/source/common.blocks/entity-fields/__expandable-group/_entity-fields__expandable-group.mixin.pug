@@ -1,0 +1,6 @@
+mixin entity-fields__expandable-group
+    .entity-fields__expandable-group(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

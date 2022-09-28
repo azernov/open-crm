@@ -1,0 +1,6 @@
+mixin entity-fields__expandable-wrapper
+    .entity-fields__expandable-wrapper(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

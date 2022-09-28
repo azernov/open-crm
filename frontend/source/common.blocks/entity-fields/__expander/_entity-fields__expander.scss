@@ -1,0 +1,14 @@
+.entity-fields__expander {
+    @extend %flex-row-vcenter-hcenter-nowrap;
+    cursor: pointer;
+    width: 100%;
+
+    > span {
+        @extend %text-s;
+        text-decoration: underline;
+    }
+
+    > .button {
+        margin-left: $gap_m;
+    }
+}
