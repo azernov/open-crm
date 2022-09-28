@@ -7,8 +7,6 @@
         right: 0;
         transform: translateX(100%);
         height: 100%;
-        width: 55.8rem;
-        max-width: 100%;
     }
 
     .modal__body {
@@ -18,5 +16,9 @@
     .modal__footer {
         @extend %flex-row-vcenter-hend-nowrap;
         padding: $gap_m $gap_m 0 $gap_m;
+    }
+
+    .modal__title {
+        margin-bottom: $gap_l;
     }
 }

@@ -8,6 +8,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 100%;
+    width: 55rem;
+    max-width: 100%;
 
     transition: transform $animation_speed_m $animation_type;
 }
