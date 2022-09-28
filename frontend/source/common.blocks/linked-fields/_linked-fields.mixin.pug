@@ -2,13 +2,14 @@ mixin linked-fields
     .linked-fields(class!=attributes.class)
         +linked-fields__label-row
             +linked-fields__label Котрагент/должность
-            +linked-fields__top-controls
-                +button.button_no-text.button_transparent.button_size_xs.button_rounded
-                    +icon('pencil')
-                +button.button_no-text.button_size_xs.button_rounded
-                    +icon('check')
-                +button.button_no-text.button_size_xs.button_rounded
-                    +icon('x')
+            if !attributes.hideControls
+                +linked-fields__top-controls
+                    +button.button_no-text.button_transparent.button_size_xs.button_rounded
+                        +icon('pencil')
+                    +button.button_no-text.button_size_xs.button_rounded
+                        +icon('check')
+                    +button.button_no-text.button_size_xs.button_rounded
+                        +icon('x')
         +linked-fields__main
             +linked-fields__main-item
                 +linked-fields__display-item
