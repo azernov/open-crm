@@ -1,0 +1,17 @@
+.textbox.textbox_fixable_no-buttons {
+    .textbox__input {
+        &:not(:focus) {
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 0;
+            background: transparent;
+        }
+    }
+
+    &:not(:focus-within){
+        .textbox__label {
+            background: transparent;
+        }
+    }
+}
