@@ -1,5 +1,10 @@
 .linked-fields.linked-fields_edit {
-    background: $color_neutral_10;
+    background-color: $color_neutral_10;
+
+    &:focus-within {
+        background-color: $color_primary_10;
+        box-shadow: $shadow_m;
+    }
 
     .linked-fields__edit-item {
         display: flex;

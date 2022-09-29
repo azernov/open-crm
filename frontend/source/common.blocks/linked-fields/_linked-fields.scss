@@ -3,4 +3,5 @@
     padding: $gap_s 0;
     border-radius: $radius_m;
     border: $border_width_s solid $color_neutral_20;
+    transition: background-color $animation_speed_m $animation_type, box-shadow $animation_speed_m $animation_type;
 }
