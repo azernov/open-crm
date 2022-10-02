@@ -1,56 +1,59 @@
 mixin linked-fields
     .linked-fields(class!=attributes.class)
-        +linked-fields__label-row
-            +linked-fields__label Котрагент/должность
-            if !attributes.hideControls
-                +linked-fields__top-controls
-                    +button.button_no-text.button_transparent.button_size_xs.button_rounded
-                        +icon('pencil')
-                    +button.button_no-text.button_size_xs.button_rounded
-                        +icon('check')
-                    +button.button_no-text.button_size_xs.button_rounded
-                        +icon('x')
-        +linked-fields__main
-            +linked-fields__main-item
-                +linked-fields__display-item
-                    +linked-fields__display-item-col
-                        +icon('office-building')
-                    +linked-fields__display-item-col
-                        +linked-fields__display-item-title ООО Иванов и партнеры
-                        +linked-fields__display-item-subtitle Менеджер среднего звена
-                +linked-fields__edit-item
-                    +textbox(label='Контрагент' value="ООО Иванов и партнеры").textbox_fixable_no-buttons
-                    +textbox(label='Должность' value="Менеджер среднего звена").textbox_fixable_no-buttons
-            +linked-fields__main-item
-                +linked-fields__display-item
-                    +linked-fields__display-item-col
-                        +icon('office-building')
-                    +linked-fields__display-item-col
-                        +linked-fields__display-item-title ООО Иванов и партнеры
-                        +linked-fields__display-item-subtitle Менеджер среднего звена
-                +linked-fields__edit-item
-                    +textbox(label='Контрагент').textbox_fixable_no-buttons
-                    +textbox(label='Должность').textbox_fixable_no-buttons
-            +linked-fields__main-item
-                +linked-fields__display-item
-                    +linked-fields__display-item-col
-                        +icon('office-building')
-                    +linked-fields__display-item-col
-                        +linked-fields__display-item-title ООО Иванов и партнеры
-                        +linked-fields__display-item-subtitle Менеджер среднего звена
-                +linked-fields__edit-item
-                    +textbox(label='Контрагент').textbox_fixable_no-buttons
-                    +textbox(label='Должность').textbox_fixable_no-buttons
-            +linked-fields__main-item
-                +linked-fields__display-item
-                    +linked-fields__display-item-col
-                        +icon('office-building')
-                    +linked-fields__display-item-col
-                        +linked-fields__display-item-title ООО Иванов и партнеры
-                        +linked-fields__display-item-subtitle Менеджер среднего звена
-                +linked-fields__edit-item
-                    +textbox(label='Контрагент').textbox_fixable_no-buttons
-                    +textbox(label='Должность').textbox_fixable_no-buttons
-        +linked-fields__bottom-controls
-            +button.button_no-text.button_size_xs.button_rounded
-                +icon('plus-circle')
+        if block
+            block
+        else
+            +linked-fields__label-row
+                +linked-fields__label Котрагент/должность
+                if !attributes.hideControls
+                    +linked-fields__top-controls
+                        +button.button_no-text.button_transparent.button_size_xs.button_rounded
+                            +icon('pencil')
+                        +button.button_no-text.button_size_xs.button_rounded
+                            +icon('check')
+                        +button.button_no-text.button_size_xs.button_rounded
+                            +icon('x')
+            +linked-fields__main
+                +linked-fields__main-item
+                    +linked-fields__display-item
+                        +linked-fields__display-item-col
+                            +icon('office-building')
+                        +linked-fields__display-item-col
+                            +linked-fields__display-item-title ООО Иванов и партнеры
+                            +linked-fields__display-item-subtitle Менеджер среднего звена
+                    +linked-fields__edit-item
+                        +textbox(label='Контрагент' value="ООО Иванов и партнеры").textbox_fixable_no-buttons
+                        +textbox(label='Должность' value="Менеджер среднего звена").textbox_fixable_no-buttons
+                +linked-fields__main-item
+                    +linked-fields__display-item
+                        +linked-fields__display-item-col
+                            +icon('office-building')
+                        +linked-fields__display-item-col
+                            +linked-fields__display-item-title ООО Иванов и партнеры
+                            +linked-fields__display-item-subtitle Менеджер среднего звена
+                    +linked-fields__edit-item
+                        +textbox(label='Контрагент').textbox_fixable_no-buttons
+                        +textbox(label='Должность').textbox_fixable_no-buttons
+                +linked-fields__main-item
+                    +linked-fields__display-item
+                        +linked-fields__display-item-col
+                            +icon('office-building')
+                        +linked-fields__display-item-col
+                            +linked-fields__display-item-title ООО Иванов и партнеры
+                            +linked-fields__display-item-subtitle Менеджер среднего звена
+                    +linked-fields__edit-item
+                        +textbox(label='Контрагент').textbox_fixable_no-buttons
+                        +textbox(label='Должность').textbox_fixable_no-buttons
+                +linked-fields__main-item
+                    +linked-fields__display-item
+                        +linked-fields__display-item-col
+                            +icon('office-building')
+                        +linked-fields__display-item-col
+                            +linked-fields__display-item-title ООО Иванов и партнеры
+                            +linked-fields__display-item-subtitle Менеджер среднего звена
+                    +linked-fields__edit-item
+                        +textbox(label='Контрагент').textbox_fixable_no-buttons
+                        +textbox(label='Должность').textbox_fixable_no-buttons
+            +linked-fields__bottom-controls
+                +button.button_no-text.button_size_xs.button_rounded
+                    +icon('plus-circle')
