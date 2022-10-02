@@ -4,6 +4,12 @@
         padding-right: calc($gap_s + 1 * ($gap_xs * 2 + $icon_size_xs + $border_width_m * 2 + $gap_xs) + $gap_xs);
     }
 
+    &:focus-within {
+        .dropdown-select__list-wrapper {
+            display: none;
+        }
+    }
+
     &:not(.dropdown-select_fixable_edit) {
         .dropdown-select__wrapper {
             pointer-events: none;

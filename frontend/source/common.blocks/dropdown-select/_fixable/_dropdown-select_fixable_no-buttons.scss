@@ -1,0 +1,17 @@
+.dropdown-select.dropdown-select_fixable_no-buttons {
+    .dropdown-select__input {
+        &:not(:focus) {
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 0;
+            background: transparent;
+        }
+    }
+
+    &:not(:focus-within){
+        .dropdown-select__label {
+            background: transparent;
+        }
+    }
+}

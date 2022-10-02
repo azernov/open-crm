@@ -1,4 +1,11 @@
 .dropdown-select {
     display: inline-block;
     position: relative;
+
+    &:focus-within {
+        z-index: 1000;
+        .dropdown-select__list-wrapper {
+            display: block;
+        }
+    }
 }
