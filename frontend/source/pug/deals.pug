@@ -171,5 +171,39 @@ block content
                                     +icon('trash')
 
                 +pagination
+    +modal.modal_aside
+        +modal__main
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Новая сделка
+                +entity-fields
+                    +entity-fields__group
+                        +entity-fields__row
+                            +entity-fields__col
+                                +datepicker(label="Дата формирования" fixable=false placeholder="Выберите дату" value='25 мар 2022')
+                            +entity-fields__col
+                                +datepicker(label="Планируемая дата завершения" fixable=false placeholder="Выберите дату" value='')
+                        +dropdown-select(label="Заказчик" placeholder='Выберите заказчика' fixable=false value='ООО "Иванов и партнеры"')
+                        +dropdown-select(label="Исполнитель" placeholder='Выберите испонителя' fixable=false value='ООО "Кит консалтинг"')
+                        +dropdown-select(label="Контракт" placeholder='Выберите контракт' fixable=false value='')
+                        +dropdown-select(label="Ответственное лицо" placeholder='Выберите пользователя' fixable=false value='')
+                        +entity-fields__row
+                            +entity-fields__col
+                                +textbox(label="Сумма сделки" fixable=false placeholder="Сумма сделки")
+                            +entity-fields__col.entity-fields__col_size_xs
+                                +dropdown-select(placeholder='' fixable=false value='₽ (RUB)')
+                        +entity-fields__expandable-wrapper.entity-fields__expandable-wrapper_expanded
+                            +entity-fields__expander
+                            +entity-fields__expandable-group
+                                +entity-fields__group
+                                    +textbox(label="Кастомное поле" fixable=false value="Кастомное значение")
+                                    +textbox(textarea=true fixable=false label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true fixable=false label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true fixable=false label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+
+            +modal__footer
+                +button.button_transparent Сохранить и закрыть
+                +button Сохранить
 block notifications
-    +page-notifications
+    //+page-notifications

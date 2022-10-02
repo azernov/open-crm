@@ -1,6 +1,6 @@
 extends layouts/layout-inner
 append vars
-    - pageTitle = 'Contractors'
+    - pageTitle = 'Contracts'
 block content
     +main-content
         +main-content__head
@@ -161,4 +161,33 @@ block content
                                 +button.button_size_xs.button_rounded.button_no-text.button_transparent
                                     +icon('trash')
                 +pagination
+    +modal.modal_aside
+        +modal__main
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Новый контракт
+                +entity-fields
+                    +entity-fields__group
+                        +textbox(label="Номер" fixable=false value='20220115-О-2')
+                        +dropdown-select(label="Заказчик" placeholder='' fixable=false value='ООО "Иванов и партнеры"')
+                        +dropdown-select(label="Исполнитель" placeholder='' fixable=false value='ООО "Кит консалтинг"')
+                        +entity-fields__row
+                            +entity-fields__col
+                                +datepicker(label="Дата формирования" fixable=false placeholder="Выберите дату" value='25 мар 2022')
+                            +entity-fields__col
+                                +datepicker(label="Дата подписания" fixable=false placeholder="Выберите дату" value='')
+                        +textbox(textarea=true fixable=false placeholder="Комментарии и заметки к контракту")
+                        +entity-fields__expandable-wrapper.entity-fields__expandable-wrapper_expanded
+                            +entity-fields__expander
+                            +entity-fields__expandable-group
+                                +entity-fields__group
+                                    +textbox(label="Кастомное поле" fixable=false value="Кастомное значение")
+                                    +textbox(textarea=true fixable=false label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true fixable=false label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+                                    +textbox(textarea=true fixable=false label="Кастомное поле" value="Кастомное значение гораздо длиннее по своему значению. Возможно даже на несколько строк")
+
+            +modal__footer
+                +button.button_transparent Сохранить и закрыть
+                +button Сохранить
 
