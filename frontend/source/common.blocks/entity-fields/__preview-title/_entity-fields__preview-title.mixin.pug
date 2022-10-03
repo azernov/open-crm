@@ -1,0 +1,6 @@
+mixin entity-fields__preview-title
+    .entity-fields__preview-title(class!=attributes.class)
+        if block
+            block
+        else
+            = "default content"

@@ -1,0 +1,5 @@
+.entity-fields__preview-title {
+    @extend %text-m;
+    font-weight: $fontweight_text_bold;
+    margin-bottom: $gap_m;
+}
