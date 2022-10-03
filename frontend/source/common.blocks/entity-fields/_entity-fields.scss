@@ -1,5 +1,5 @@
 .entity-fields {
-    @extend %flex-column-hcenter-vstart-nowrap;
+    @extend %flex-column-hstretch-vstart-nowrap;
 
     > * {
         margin-bottom: $gap_l;
@@ -12,5 +12,10 @@
     > .dropdown-select {
         width: 100%;
         display: block;
+    }
+
+    > .user-avatar {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
