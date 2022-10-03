@@ -40,4 +40,64 @@ block content
                                 +button.button_size_xs.button_rounded.button_no-text.button_transparent
                                     +icon('trash')
                 +pagination
+    +modal.modal_aside
+        +modal__main.modal__main_width_l
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Новая роль
+                +entity-fields
+                    +entity-fields__row
+                        +entity-fields__col
+                            +entity-fields__group
+                                +textbox(label="Название роли" fixable=false placeholder="Название роли")
+                                +textbox(label="Описание или комментарий" fixable=false placeholder="Описание или комментарий" textarea=true)
+                        +entity-fields__col
+                            +table
+                                +table__body
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Видеть список пользователей
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Создавать сделки
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Создавать контракты
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Создавать контрагентов
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Входить в личный кабинет
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Менять статус сделки
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Удалять пользователей
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Неограниченные права и возможности
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Неограниченные права и возможности
+                                    +table__body-row
+                                        +table__body-cell.table__body-cell_width_min
+                                            +checkbox
+                                        +table__body-cell Неограниченные права и возможности
+
+
+            +modal__footer
+                +button.button_transparent Сохранить и закрыть
+                +button Сохранить
 

@@ -66,4 +66,26 @@ block content
                     p здесь должна быть таблица настройки полей контракта
                 +tabs__content
                     p здесь должна быть таблица настройки полей пользователя
+    +modal.modal_aside
+        +modal__main
+            +modal__close
+                +icon('x')
+            +modal__body
+                +modal__title Новое поле (Сделки)
+                +entity-fields
+                    +entity-fields__group
+                        +textbox(label="Название поля" fixable=false placeholder="Название поля")
+                        +dropdown-select(label="Тип значения" placeholder='Выберите тип значения' fixable=false value='')
+                    +entity-fields__group
+                        +entity-fields__preview
+                            +entity-fields__preview-title Как это будет выглядеть:
+                            +entity-fields__row
+                                +entity-fields__col
+                                    +textbox(label="Сумма сделки" fixable=false placeholder="Сумма сделки")
+                                +entity-fields__col.entity-fields__col_size_xs
+                                    +dropdown-select(placeholder='' fixable=false value='₽ (RUB)')
+
+            +modal__footer
+                +button.button_transparent Сохранить и закрыть
+                +button Сохранить
 
