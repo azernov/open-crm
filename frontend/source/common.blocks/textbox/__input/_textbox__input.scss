@@ -4,6 +4,7 @@
     @at-root {
         textarea#{&} {
             @extend %scrollbar;
+            height: 14.7rem;
         }
     }
 }
