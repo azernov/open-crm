@@ -229,4 +229,4 @@ gulp.task('browser-sync', function () {
     });
 });
 
-gulp.task('default', gulp.parallel('pug', 'sass', 'imageSync', 'fontsSync', gulp.series('webpackBuild', 'jsSync'), 'watch', 'browser-sync'));
+gulp.task('default', gulp.series('imageSync', 'pug', 'sass', 'svgSpriteBuild', 'fontsSync', 'webpackBuild', 'jsSync', 'watch', 'browser-sync'));
